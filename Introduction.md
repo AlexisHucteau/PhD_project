@@ -48,8 +48,14 @@ By combining transcription factor activity, differential gene expression, functi
 
 ## Relevant analyses
 
-1. In a huge paper, they did a network genomic integration of phenotypic, structural, and functional relationships. They highlighted   [Metabolic resilience is encoded in genome plasticity](https://www.biorxiv.org/content/10.1101/2021.06.25.449953v2) they showed that a lot of epigenome features are linked to the metabolism.
-2. A hierarchical regulatory network analysis of the vitamin D induced transcriptome reveals novel regulators and complete VDR dependency in monocytes
+1. In a huge paper, they did a network genomic integration of phenotypic, structural, and functional relationships. [Metabolic resilience is encoded in genome plasticity](https://www.biorxiv.org/content/10.1101/2021.06.25.449953v2) they showed that a lot of epigenome features are linked to the metabolism.
+2. By combining Chip-seq of VDR, FAIRE-seq and RNAseq, they highlighted signatures of VDR pathway [A hierarchical regulatory network analysis of the vitamin D induced transcriptome reveals novel regulators and complete VDR dependency in monocytes](https://pubmed.ncbi.nlm.nih.gov/33753848/)
 3. Splicing biblio & Rmats
 4. Integrated Stress response biblio
 5.
+
+## Reflections on the topic
+
+Firstly, the main topic of the thesis is the resistance of refractory/relapsed AML patients cells to IDH inhibitor by metabolic plasticity and/or stress response through epigenomic changes. 
+In a bioinformatic point of view, it's important to know the tools and the data that permit to dig into their regulations. Transcriptions data are the first part of the analysis as it permits to find transcriptional regulation and by different tools, it's possible to infer the activity of proteins involved in the transcription (like Transcription factor activity), metabolic analysis, deconvolution. But transcriptions data don't exhibit regulation downstream regulations like translational regulation, splicing event neither upstream regulations like epigenetic features. In this project where there are many epigenetic changes, looking at upstream regulations can exhibit what trnascriptional data can't or can explain some underestimated gene expression deregulations and make them part of the main mechanism. 
+In a bioinformatic point of view, it's important to know the tools and the data that permit to investigate those epigenetic changes. Epigenetic in IDH is characterised, as we said, in a DNA hypermethylation phenotype. The data 

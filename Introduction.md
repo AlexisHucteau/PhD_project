@@ -48,7 +48,7 @@ By combining transcription factor activity, differential gene expression, functi
 
 ## Relevant analyses
 
-1. HAD
+1. In a huge paper, they did a network genomic integration of phenotypic, structural, and functional relationships. They highlighted   [Metabolic resilience is encoded in genome plasticity](https://www.biorxiv.org/content/10.1101/2021.06.25.449953v2) they showed that a lot of epigenome features are linked to the metabolism.
 2. A hierarchical regulatory network analysis of the vitamin D induced transcriptome reveals novel regulators and complete VDR dependency in monocytes
 3. Splicing biblio & Rmats
 4. Integrated Stress response biblio

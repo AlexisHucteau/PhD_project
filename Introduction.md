@@ -1,5 +1,7 @@
 # Introduction
 
+The main topic of the thesis is in silico, epigenomic and functional investigations of resistance to IDH inhibitors in acute myeloid leukemia.
+
 Acute myeloid leukemia (AML) is a deadly disease associated with poor outcomes. The median age of patients harbouring AML is around 70 years old and the prognoses decline with the age. For decades, intensive chemotherapies were the only treatments available. The combination of Cytarabine (AraC) and daunorubicin shows good results but not all the patients are eligible for intensive therapy. Hypomethylating agents are the current alternative therapy but only 16% of patients achieve complete remission with a median overall survival about 21 months.
 
 Novel therapies have been accepted like the combinaison Venetoclax + Azacitidine to avoid intensive therapy but there is still a crucial need of novel therapies to overcome the relapses and refractory diseases. Although 60–80% of AML adult patients achieve complete remission after the first induction chemotherapy, roughly 20% will show primary refractory disease and more than 50% will relapse.
@@ -23,43 +25,22 @@ By combining transcription factor activity, differential gene expression, functi
     5. Stabilization of NF-κB-inducing kinase (**NIK**) suppresses AML. Stabilization of NIK-induced activation of NF-κB non-canonical signaling upregulates **Dnmt3a** and downregulates **Mef2c**, which suppresses and promotes AML development, respectively. [Stabilization of NF-κB-Inducing Kinase Suppresses MLL-AF9-Induced Acute Myeloid Leukemia](https://pubmed.ncbi.nlm.nih.gov/29320732/)
 
 2.  1. [A Myc enhancer cluster regulates normal and leukaemic haematopoietic stem cell hierarchies](https://drive.google.com/file/d/1Z0EUt4SEl1aKonIxNyraw3rbo27JNyu6/view?usp=sharing)
-    2.
-
-
-3.  1. **HIF1a**
-    2. test
-
-
-4.  1. **SMAD3**
-    2. test
-
-
-5.  1. **REL**
-    2. test
-
-
-6.  1. **STAT3**
-    2. test
-
-
-7.  1. **STAT4**
-    2. test
 
 
 ## Relevant analyses
 
+To investigate deeper in those results, we need to look into the epigenomic features that might explain that dysregulation of RELA and MYC by in vivo experiments and in vitro analysis.
+
+About in vivo analysis, it would be interesting to check in cell lines the protein abundance of RELA as NF-κB before and after the treatment to IDH inhibitors and before and after chemotherapy with AraC.
+In a more large investigation, an overview of the epigenomics features induced by resistance to IDH inhibitors may highlight some mechanisms behind those dysregulation.
+
+The idea of this project around TF analysis is to find the mechanisms that is behind the dysregulation from an epigenomic point of view to a metabolic shift or metabolism adaptability and resistance.
+
+There is different points that can lead to a TF dysregulation. From the accessibility of the chromatin analysed by ATACseq, to the effective binding of a specific TF targeted by a CHiPseq data. The DNA methylation can also be analyzed as it can explain the effective or absence of TF binding to enhancer/promoter in a specific phenotype.
+
+In this paper: [Identification of transcription factor binding sites using ATAC-seq](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1642-2), they developed a framework that uses open chromatin data to identify the active transcription factor binding sites. Their method is originally proposed to model the active binding sites by simultaneous analysis of DNase-seq and the ChIP-seq profiles of histone modifications on a genome-wide level.
+
+In this one: [methyl-ATAC-seq measures DNA methylation at accessible chromatin](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6581052/) they present a methyl-ATAC-seq, which implements modifications to ATAC-seq, including subjecting the output to BS-seq. Merging these assays into a single protocol identifies the locations of open chromatin and reveals, unambiguously, the DNA methylation state of the underlying DNA. Such combinatorial methods eliminate the need to perform assays independently and infer where features are coincident
+
 1. In a huge paper, they did a network genomic integration of phenotypic, structural, and functional relationships. [Metabolic resilience is encoded in genome plasticity](https://www.biorxiv.org/content/10.1101/2021.06.25.449953v2) they showed that a lot of epigenome features are linked to the metabolism.
 2. By combining Chip-seq of VDR, FAIRE-seq and RNAseq, they highlighted signatures of VDR pathway [A hierarchical regulatory network analysis of the vitamin D induced transcriptome reveals novel regulators and complete VDR dependency in monocytes](https://pubmed.ncbi.nlm.nih.gov/33753848/)
-3. Splicing biblio & Rmats
-4. Integrated Stress response biblio
-5.
-
-## Reflections on the topic
-
-The main topic of the thesis is the resistance of refractory/relapsed AML patients cells to IDH inhibitor by metabolic plasticity and/or stress response through epigenomic changes.
-
-In a bioinformatic point of view, it's important to know the tools and the data that permit to dig into their regulations. Transcriptions data are the first part of the analysis as it permits to find transcriptional regulation and by different tools, it's possible to infer the activity of proteins involved in the transcription (like Transcription factor activity), metabolic analysis, deconvolution. But transcriptions data don't exhibit regulation downstream regulations like translational regulation, splicing event neither upstream regulations like epigenetic features. In this project where there are many epigenetic changes, looking at upstream regulations can exhibit what trnascriptional data can't or can explain some underestimated gene expression deregulations and make them part of the main mechanism.
-
-In a bioinformatic point of view, it's important to know the tools and the data that permit to investigate those epigenetic changes. Epigenetic in IDH is characterised, as we said, in a DNA hypermethylation phenotype. DNA methylation can be catched by Bisulfite Sequencing through CpGs methylation sequencing. It permits to find promoter hyper/hypomethylation that can interfer the binding of TFs on DNA and block the transcription of genes. We can notice that the hyper/hypomethylation of a promoter is directly linked to the transcription and if the gene is not up/down expressed, it may be not relevant to notice it. In other terms, DNA methylation in promoter and even in enhancer can't highlight different genes than transcription analysis. It only permits to highlight mechanisms behind the transcription. The mechanisms that can be found are the mechanisms that explain why some genes are dysregulated.
-
-DNA methylation can appear in enhancer but the data on it is not very robust as sequencing is often focused on promoter and it's not possible for some data to suggest if an enhancer is hyper or hypomethylated. It's possible to bypass the problem by looking at overall methylation in a 3D context by using a 3D chromatin contact network but it need to be specific of the cell and, to me, AML cells that are close to HSC cells have their own chromatin contact network that change due to genomic mutations and alterations. Methylations alteractions can also be directly /indirectly linked to that chromatin modifications (need to read this paper : [DNA Methylation and Chromatin Remodeling: The Blueprint of Cancer Epigenetics](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4826949/)). Methylation and chormatin remodeling looks like a feedback loop where we need the two data to understand their effect on transcription. It's important to add histone modifications in the loop too.

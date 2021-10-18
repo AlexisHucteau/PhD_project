@@ -11,6 +11,13 @@
 
 * Make a poster
 
+### Splicing project
+
+* Look at rMATS code
+
+* Read rMATS paper
+
+
 ### Wet-lab
 
 * Do a clear recap on upcoming experiments
@@ -27,10 +34,9 @@
 
 * Read paper on MYC
 
+
 ### Scripting
 
 * Create Githuhb.io?
 
 * Remake a clear rmd file
-
-* Look at rMATS code

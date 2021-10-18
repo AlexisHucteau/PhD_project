@@ -2,7 +2,12 @@
 
 ## 18.10.2021 - 22.10.2021
 
+### 18.10.2021
 
+* Made a todo list
+* Looked at papers
+  * Selected 3 papers
+* Install rMATS
 
 
 ---------

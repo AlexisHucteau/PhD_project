@@ -1,2 +1,2 @@
 # PhD_project
-PhD about AML and resistance to targeted therapy through stress or metabolic pathway.
+In silico, epigenomic and functional investigations of resistance to IDH inhibitors in acute myeloid leukemia

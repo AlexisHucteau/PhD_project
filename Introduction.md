@@ -28,21 +28,3 @@ By combining transcription factor activity, differential gene expression, functi
 
 
 ## Relevant analyses
-
-To investigate deeper in those results, we need to look into the epigenomic features that might explain that dysregulation of RELA and MYC by in vivo experiments and in vitro analysis.
-
-About in vivo analysis, it would be interesting to check in cell lines the protein abundance of RELA as NF-κB before and after the treatment to IDH inhibitors and before and after chemotherapy with AraC.
-In a more large investigation, an overview of the epigenomics features induced by resistance to IDH inhibitors may highlight some mechanisms behind those dysregulation.
-
-The idea of this project around TF analysis is to find the mechanisms that is behind the dysregulation from an epigenomic point of view to a metabolic shift or metabolism adaptability and resistance.
-
-There is different points that can lead to a TF dysregulation. From the accessibility of the chromatin analysed by ATACseq, to the effective binding of a specific TF targeted by a CHiPseq data. The DNA methylation can also be analyzed as it can explain the effective or absence of TF binding to enhancer/promoter in a specific phenotype.
-
-In this paper: [Identification of transcription factor binding sites using ATAC-seq](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1642-2), they developed a framework that uses open chromatin data to identify the active transcription factor binding sites. Their method is originally proposed to model the active binding sites by simultaneous analysis of DNase-seq and the ChIP-seq profiles of histone modifications on a genome-wide level.
-
-In this one: [methyl-ATAC-seq measures DNA methylation at accessible chromatin](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6581052/) they present a methyl-ATAC-seq, which implements modifications to ATAC-seq, including subjecting the output to BS-seq. Merging these assays into a single protocol identifies the locations of open chromatin and reveals, unambiguously, the DNA methylation state of the underlying DNA. Such combinatorial methods eliminate the need to perform assays independently and infer where features are coincident.
-
-
-
-1. In a huge paper, they did a network genomic integration of phenotypic, structural, and functional relationships. [Metabolic resilience is encoded in genome plasticity](https://www.biorxiv.org/content/10.1101/2021.06.25.449953v2) they showed that a lot of epigenome features are linked to the metabolism.
-2. By combining Chip-seq of VDR, FAIRE-seq and RNAseq, they highlighted signatures of VDR pathway [A hierarchical regulatory network analysis of the vitamin D induced transcriptome reveals novel regulators and complete VDR dependency in monocytes](https://pubmed.ncbi.nlm.nih.gov/33753848/)

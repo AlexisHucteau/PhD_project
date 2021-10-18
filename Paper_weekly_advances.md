@@ -25,6 +25,16 @@ Current understanding of the biological roles of wild-type and mutant IDH enzyme
 REVIEW     
 \-\> To read
 
+* [The language of chromatin modification in human cancers](https://www-nature-com.proxy.insermbiblio.inist.fr/articles/s41568-021-00357-x)  
+REVIEW      
+\-\> To read
+
+* [The Roles of 2-Hydroxyglutarate](https://www.frontiersin.org/articles/10.3389/fcell.2021.651317/full)  
+REVIEW      
+\-\> 
+
+
+
 ### Selected paper
 
 

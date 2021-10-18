@@ -1,8 +1,22 @@
 # Paper Weekly advances
 
+
 ## 18.10.2021 - 22.10.2021
 
-### Paper briefly read (Intro/Conclusion)
+### Selected paper
+
+[Genome-wide analysis of focal DNA hypermethylation in IDH-mutant AML samples](https://www.biorxiv.org/content/10.1101/2021.03.03.433799v2.full)  
+[Notes .md]()
+
+<details><summary>Notes</summary>
+
+
+</details>  
+
+### Paper briefly read
+
+<details>
+  <summary>Details</summary>
 
 * [An evaluation of enasidenib for the treatment of acute myeloid leukemia](https://www-tandfonline-com.proxy.insermbiblio.inist.fr/doi/full/10.1080/14656566.2019.1654456)  
 Area covered: This review describes the mechanisms of action, the pharmacodynamic and pharmacokinetic properties, the safety, and efficacy of enasidenib. Phase I/II/III clinical trials are also reported and discussed.   
@@ -19,7 +33,7 @@ PERSPECTIVE: an update on targeting IDH-mutated AML is provided
 
 * [Emerging Roles of Wild-type and Mutant IDH1 in Growth, Metabolism and Therapeutics of Glioma](https://exonpublications.com/index.php/exon/article/view/300)  
 Current understanding of the biological roles of wild-type and mutant IDH enzymes in glioblastoma. We discuss the challenges hampering the development of IDH targeted therapeutics and the current status of IDH1 mutant inhibitor development    
-\-\> To read ++
+\-\> **To read +++**
 
 * [The impact of mitochondria on cancer treatment resistance](https://link.springer.com/article/10.1007/s13402-021-00623-y) available on sci-hub   
 REVIEW     
@@ -30,13 +44,62 @@ REVIEW
 \-\> To read
 
 * [The Roles of 2-Hydroxyglutarate](https://www.frontiersin.org/articles/10.3389/fcell.2021.651317/full)  
-REVIEW      
-\-\> 
+REVIEW DNAmeth, Histone Methylation, Hypoxia-Inducible Factor Signaling, Other α-Ketoglutarate-Dependent Dioxygenases, Modulates the Immune Microenvironment, Confers Vulnerabilities, Exerts Toxicity on Cancer Cell, Adaption to Hypoxia, Immunometabolite,    
+\-\> **To read ++**
+
+* [Towards a druggable epitranscriptome: Compounds that target RNA modifications in cancer](https://bpspubs.onlinelibrary.wiley.com/doi/10.1111/bph.15604)  
+REVIEW     
+\-\> Not urgent
+
+* [Metabolic reprogramming and epigenetic modifications on the path to cancer](https://link.springer.com/article/10.1007%2Fs13238-021-00846-7)  
+Review      
+\-\> **To read ++**
+
+* [Deregulation of enhancer structure, function, and dynamics in acute lymphoblastic leukemia](https://www-sciencedirect-com.proxy.insermbiblio.inist.fr/science/article/pii/S1471490621000533?via%3Dihub)  
+Review       
+\-\> Not urgent
+
+* [Immunotherapeutic Potential of m6A-Modifiers and MicroRNAs in Controlling Acute Myeloid Leukaemia](https://www.mdpi.com/2227-9059/9/6/690/htm)  
+Review  
+\-\> To read
+
+* [Genome-wide analysis of focal DNA hypermethylation in IDH-mutant AML samples](https://www.biorxiv.org/content/10.1101/2021.03.03.433799v2.full)  
+BioRxiv "IDHmut-specific hypermethylation was highly enriched for enhancers that form direct interactions with genes involved in normal hematopoiesis and AML, including MYC and ETV6"  
+\-\> **To read +++**
+
+* [Efficacy and Safety Profile of Ivosidenib in the Management of Patients with Acute Myeloid Leukemia (AML): An Update on the Emerging Evidence](https://www.dovepress.com/efficacy-and-safety-profile-of-ivosidenib-in-the-management-of-patient-peer-reviewed-fulltext-article-BLCTT#)  
+Review  
+\-\> Not urgent
+
+* [D-2-Hydroxyglutarate in Glioma Biology](https://www.mdpi.com/2073-4409/10/9/2345/htm)  
+Review  
+\-\> To read
+
+* [A Therapeutic Strategy for Preferential Targeting of TET2-Mutant and TET Dioxygenase–Deficient Cells in Myeloid Neoplasms](https://bloodcancerdiscov.aacrjournals.org/content/2/2/146)  
+Review
+\-\> Not urgent
+
+* [R-2-HG in AML… friend or foe?](https://journals.lww.com/bls/Fulltext/2021/04000/R_)  
+COMMENTARY
+\-\> **To read (short text)**
+
+* [Cytosolic GDH1 degradation restricts protein synthesis to sustain tumor cell survival following amino acid deprivation](https://www.embopress.org/doi/full/10.15252/embj.2020107480)  
+"depletion of glutamate dehydrogenase 1 (GDH1), an enzyme that converts glutamate to α-ketoglutarate (αKG) confers resistance to amino acid deprivation on kidney renal clear cell carcinoma (KIRC) cells"  
+\-\> To read
+
+* [Immature acute leukaemias: lessons from the haematopoietic roadmap](https://febs.onlinelibrary.wiley.com/doi/10.1111/febs.16030)  
+Review "how modern models of haematopoiesis might inform approaches to diagnosis and management of immature leukaemias"  
+\-\> To read
+
+* [Metabolic enzymes function as epigenetic modulators: A Trojan Horse for chromatin regulation and gene expression](https://www-sciencedirect-com.proxy.insermbiblio.inist.fr/science/article/pii/S1043661821004187)  
+Review "metabolic enzymes functioning as epigenetic modulators in the regulation of chromatin architecture and gene expression"  
+\-\> Not urgent
+
+* [RNA modifications in hematopoietic malignancies: a new research frontier]()
 
 
 
-### Selected paper
-
+</details>
 
 
 ---------

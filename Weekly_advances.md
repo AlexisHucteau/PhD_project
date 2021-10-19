@@ -13,3 +13,8 @@
 ---------
 
 ## 24.10.2021 - 29.10.2021
+
+* Biblio on Genome_wide_analysis_of_focal_DNA_hypermethylation_in_IDH_mutant_AML_samples
+* Installing rMATS
+* Testing the scripts of rMATS
+* Understanding results and try to understand how to interpret its [In Progress]

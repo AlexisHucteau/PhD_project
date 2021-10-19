@@ -12,6 +12,14 @@
 
 <details><summary>Notes</summary>
 
+* IDHm hypermethylation occurs in thousands of focal regions compared to CD34+ and other AML subtypes.
+* Not really in CGI
+* IDH1m has more hypermethylation than IDH2m
+* IDH1 & IDH2 hypermeth highly overlap
+* IDHm hypermeth enriched in active enhancer
+* MYC & ETV6 but expr not changed
+* DNMT3 & TET activity may be concentrated in specific genomic regions
+
 </details>  
 
 #### [2]

@@ -17,6 +17,9 @@
 
 * Read rMATS paper [**DONE**]
 
+* Learn how to use rMATS [**DONE**]
+
+* Learn how to use rmatsashimiplot [**DONE**]
 
 ### Wet-lab
 
@@ -32,7 +35,6 @@
   * Genome_wide_analysis_of_focal_DNA_hypermethylation_in_IDH_mutant_AML_samples [**DONE**]
   * The_implications_of_IDH_mutations_for_cancer_development_and_therapy
   * The STAT3-MYC Axis Promotes Survival of Leukemia Stem Cells by Regulating SLC1A5 and Oxidative Phosphorylation [**DONE**]
-
 
 * Look at paper already found on RELA
 

@@ -38,6 +38,11 @@
 
 <details><summary>Notes</summary>
 
+* **STAT3** regulates amino acid influx and glutaminolysis in leukemia stem cells by
+promoting expression of **MYC** and **SLC1A5**.
+Depletion of glutamine and its downstream metabolites leads to a decrease in
+OXPHOS activity in LSCs resulting in cell death.
+
 </details>  
 
 

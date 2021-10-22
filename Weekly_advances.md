@@ -26,8 +26,10 @@
 
 * Try to download .bam file from GDC portal (need token)
 * Split BEATAML patient using HighOXPHOS vs RNAsplicing 18 genes
-* Do a clear recap of wet lab experiments
 
 ---------
 
 ## 24.10.2021 - 29.10.2021
+
+* Do a clear recap of wet lab experiments
+* Biblio on The implications of IDH mutations for cancer development and therapy

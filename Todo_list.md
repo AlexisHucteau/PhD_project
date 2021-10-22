@@ -31,9 +31,9 @@
 
 ### Biblio
 
-* Make a summary of a paper [2/3]
+* Make a summary of a paper [3/3]
   * Genome_wide_analysis_of_focal_DNA_hypermethylation_in_IDH_mutant_AML_samples [**DONE**]
-  * The_implications_of_IDH_mutations_for_cancer_development_and_therapy
+  * The_implications_of_IDH_mutations_for_cancer_development_and_therapy [**AML part DONE**]
   * The STAT3-MYC Axis Promotes Survival of Leukemia Stem Cells by Regulating SLC1A5 and Oxidative Phosphorylation [**DONE**]
 
 * Look at paper already found on RELA
@@ -43,6 +43,6 @@
 
 ### Scripting
 
-* Create Githuhb.io?
+* Create Github.io?
 
 * Remake a clear rmd file

@@ -164,3 +164,13 @@ Review "metabolic enzymes functioning as epigenetic modulators in the regulation
 
 
 </details>  
+
+### Paper briefly read
+
+<details>
+  <summary>Details</summary>
+
+* [Integrated Stress Response Activity Marks Stem Cells in Normal Hematopoiesis and Leukemia](https://www-sciencedirect-com.proxy.insermbiblio.inist.fr/science/article/pii/S2211124718315973?via%3Dihub)  
+AML displayed **eIF2** scarcity promoting **ATF4** upregulation that activates ISR promoting cell survival. 
+
+</details>

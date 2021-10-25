@@ -31,5 +31,8 @@
 
 ## 24.10.2021 - 29.10.2021
 
-* Do a clear recap of wet lab experiments
-* Biblio on The implications of IDH mutations for cancer development and therapy
+### 24.10.2021
+
+* Make a todo list
+* Make a quick picture about my project for the team poster
+* Work on the thesis introduction

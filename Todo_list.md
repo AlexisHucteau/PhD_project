@@ -2,6 +2,8 @@
 
 ## 18.10.2021 - 22.10.2021
 
+<details><summary>18.10.2021</summary>
+
 ### IDH PhD project
 * Look at clinical data from Verhaak cohort & do OS IDHwt analysis
 
@@ -40,6 +42,52 @@
 
 * Read paper on MYC
 
+
+### Scripting
+
+* Create Github.io?
+
+* Remake a clear rmd file
+
+</details>
+
+## 25.10.2021 - 29.10.2021
+
+### Communication
+
+* Make a part of the Team 18 poster
+
+* Redesign pictures and text for Cancer cell symposium poster
+
+* Prepare a flash talk for Cancer cell symposium
+
+### IDH PhD project
+
+* Look at clinical data from Verhaak cohort & do OS IDHwt analysis
+
+* Continue to look at cell lines previous analysis
+
+* Make a signature of response
+
+* Start wet-lab
+
+* Look at Koichi RNAseq if bam files available
+
+### Biblio
+
+* Find 3 papers
+
+* Make a summary of a paper [0/3]  
+  *  
+  *  
+  *  
+
+
+* Look at paper already found on RELA
+
+* Read paper on MYC
+
+* Do a thesis introduction
 
 ### Scripting
 

@@ -29,6 +29,20 @@
 
 <details><summary>Notes</summary>
 
+* Need heterozygote IDHm/wt
+* IDHm -> aberrant histone and DNA methylation, chromatin restructuring, blocking of cellular differentiation and other transformative effects
+* Competitive inhibition of TETs
+* H2K27me3 changes in glioma
+* In hepatoblasts, silencing of HNF4a
+* In Pre-adipocytes, downregulation of CEBPa, PPARG, ADIPOQ through H3K27/9me3
+* Dysruption of NADPH production
+* Dysregulation of GE, DNA repair, inflammation, intracellular trafficking, ageing and cell death
+* NAD+ levels is low due to NAPRT1 decreased expression or NAMPT inhibition
+* H3K9me3 disrupt DNA damage signalling
+* Downregulation of ATM -> impaired DNA damage response
+* Increased abundance of unrepaired DNA double-strand breaks link to PARP pathway that need NAD+
+* IDHm cells are NAD+ dependant and PARP inhibitor sensitive
+
 </details>  
 
 #### [3]
@@ -98,7 +112,7 @@ Review
 
 * [Genome-wide analysis of focal DNA hypermethylation in IDH-mutant AML samples](https://www.biorxiv.org/content/10.1101/2021.03.03.433799v2.full)  
 BioRxiv "IDHmut-specific hypermethylation was highly enriched for enhancers that form direct interactions with genes involved in normal hematopoiesis and AML, including MYC and ETV6"  
-\-\> **To read +++**
+\-\> **To read +++** [**DONE**]
 
 * [Efficacy and Safety Profile of Ivosidenib in the Management of Patients with Acute Myeloid Leukemia (AML): An Update on the Emerging Evidence](https://www.dovepress.com/efficacy-and-safety-profile-of-ivosidenib-in-the-management-of-patient-peer-reviewed-fulltext-article-BLCTT#)  
 Review  
@@ -138,3 +152,15 @@ Review "metabolic enzymes functioning as epigenetic modulators in the regulation
 ---------
 
 ## 24.10.2021 - 29.10.2021
+
+### Selected paper
+
+#### [1]
+
+[Metabolic reprogramming and epigenetic modifications on the path to cancer](https://link.springer.com/article/10.1007%2Fs13238-021-00846-7)  
+[Notes .md](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/Metabolic_reprogramming_and_epigenetic_modifications_on_the_path_to_cancer.md)
+
+<details><summary>Notes</summary>
+
+
+</details>  

@@ -8,7 +8,7 @@
 #### [1]
 
 [Genome-wide analysis of focal DNA hypermethylation in IDH-mutant AML samples](https://www.biorxiv.org/content/10.1101/2021.03.03.433799v2.full)  
-[Notes .md](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/Genome_wide_analysis_of_focal_DNA_hypermethylation_in_IDH_mutant_AML_samples.md)
+[Notes](https://alexishucteau.github.io/PhD_project/Weekly_paper_notes/Paper_read_and_notes/Genome_wide_analysis_of_focal_DNA_hypermethylation_in_IDH_mutant_AML_samples.md)
 
 * IDHm hypermethylation occurs in thousands of focal regions compared to CD34+ and other AML subtypes.
 * Not really in CGI
@@ -21,7 +21,7 @@
 #### [2]
 
 [The implications of IDH mutations for cancer development and therapy](https://www-nature-com.proxy.insermbiblio.inist.fr/articles/s41571-021-00521-0)  
-[Nodes .md](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/The_implications_of_IDH_mutations_for_cancer_development_and_therapy.md)
+[Nodes](https://alexishucteau.github.io/PhD_project/Weekly_paper_notes/Paper_read_and_notes/The_implications_of_IDH_mutations_for_cancer_development_and_therapy.md)
 
 * Need heterozygote IDHm/wt
 * IDHm -> aberrant histone and DNA methylation, chromatin restructuring, blocking of cellular differentiation and other transformative effects
@@ -41,7 +41,7 @@
 #### [3]
 
 [The STAT3-MYC Axis Promotes Survival of Leukemia Stem Cells by Regulating SLC1A5 and Oxidative Phosphorylation](https://www-sciencedirect-com.proxy.insermbiblio.inist.fr/science/article/pii/S0006497121016049?via%3Dihub)  
-[Notes .md](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/The_STAT3_MYC_Axis_Promotes_Survival_of_Leukemia_Stem_Cells_by_Regulating_SLC1A5_and_Oxidative_Phosphorylation.md)
+[Notes](https://alexishucteau.github.io/PhD_project/Weekly_paper_notes/Paper_read_and_notes/The_STAT3_MYC_Axis_Promotes_Survival_of_Leukemia_Stem_Cells_by_Regulating_SLC1A5_and_Oxidative_Phosphorylation.md)
 
 * **STAT3** regulates amino acid influx and glutaminolysis in leukemia stem cells by
 promoting expression of **MYC** and **SLC1A5**.

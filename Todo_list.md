@@ -2,8 +2,6 @@
 
 ## 18.10.2021 - 22.10.2021
 
-<details><summary>18.10.2021</summary>
-
 ### IDH PhD project
 * Look at clinical data from Verhaak cohort & do OS IDHwt analysis
 
@@ -49,7 +47,6 @@
 
 * Remake a clear rmd file
 
-</details>
 
 ## 25.10.2021 - 29.10.2021
 

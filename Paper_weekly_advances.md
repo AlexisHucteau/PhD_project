@@ -10,8 +10,6 @@
 [Genome-wide analysis of focal DNA hypermethylation in IDH-mutant AML samples](https://www.biorxiv.org/content/10.1101/2021.03.03.433799v2.full)  
 [Notes .md](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/Genome_wide_analysis_of_focal_DNA_hypermethylation_in_IDH_mutant_AML_samples.md)
 
-<details><summary>Notes</summary>
-
 * IDHm hypermethylation occurs in thousands of focal regions compared to CD34+ and other AML subtypes.
 * Not really in CGI
 * IDH1m has more hypermethylation than IDH2m
@@ -20,14 +18,10 @@
 * MYC & ETV6 but expr not changed
 * DNMT3 & TET activity may be concentrated in specific genomic regions
 
-</details>  
-
 #### [2]
 
 [The implications of IDH mutations for cancer development and therapy](https://www-nature-com.proxy.insermbiblio.inist.fr/articles/s41571-021-00521-0)  
 [Nodes .md](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/The_implications_of_IDH_mutations_for_cancer_development_and_therapy.md)
-
-<details><summary>Notes</summary>
 
 * Need heterozygote IDHm/wt
 * IDHm -> aberrant histone and DNA methylation, chromatin restructuring, blocking of cellular differentiation and other transformative effects
@@ -43,27 +37,19 @@
 * Increased abundance of unrepaired DNA double-strand breaks link to PARP pathway that need NAD+
 * IDHm cells are NAD+ dependant and PARP inhibitor sensitive
 
-</details>  
 
 #### [3]
 
 [The STAT3-MYC Axis Promotes Survival of Leukemia Stem Cells by Regulating SLC1A5 and Oxidative Phosphorylation](https://www-sciencedirect-com.proxy.insermbiblio.inist.fr/science/article/pii/S0006497121016049?via%3Dihub)  
 [Notes .md](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/The_STAT3_MYC_Axis_Promotes_Survival_of_Leukemia_Stem_Cells_by_Regulating_SLC1A5_and_Oxidative_Phosphorylation.md)
 
-<details><summary>Notes</summary>
-
 * **STAT3** regulates amino acid influx and glutaminolysis in leukemia stem cells by
 promoting expression of **MYC** and **SLC1A5**.
 Depletion of glutamine and its downstream metabolites leads to a decrease in
 OXPHOS activity in LSCs resulting in cell death.
 
-</details>  
-
 
 ### Paper briefly read
-
-<details>
-  <summary>Details</summary>
 
 * [An evaluation of enasidenib for the treatment of acute myeloid leukemia](https://www-tandfonline-com.proxy.insermbiblio.inist.fr/doi/full/10.1080/14656566.2019.1654456)  
 Area covered: This review describes the mechanisms of action, the pharmacodynamic and pharmacokinetic properties, the safety, and efficacy of enasidenib. Phase I/II/III clinical trials are also reported and discussed.   
@@ -146,9 +132,6 @@ Review "metabolic enzymes functioning as epigenetic modulators in the regulation
 
 
 
-</details>
-
-
 ---------
 
 ## 24.10.2021 - 29.10.2021
@@ -160,17 +143,9 @@ Review "metabolic enzymes functioning as epigenetic modulators in the regulation
 [Metabolic reprogramming and epigenetic modifications on the path to cancer](https://link.springer.com/article/10.1007%2Fs13238-021-00846-7)  
 [Notes .md](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/Metabolic_reprogramming_and_epigenetic_modifications_on_the_path_to_cancer.md)
 
-<details><summary>Notes</summary>
 
-
-</details>  
 
 ### Paper briefly read
 
-<details>
-  <summary>Details</summary>
-
 * [Integrated Stress Response Activity Marks Stem Cells in Normal Hematopoiesis and Leukemia](https://www-sciencedirect-com.proxy.insermbiblio.inist.fr/science/article/pii/S2211124718315973?via%3Dihub)  
-AML displayed **eIF2** scarcity promoting **ATF4** upregulation that activates ISR promoting cell survival. 
-
-</details>
+AML displayed **eIF2** scarcity promoting **ATF4** upregulation that activates ISR promoting cell survival.

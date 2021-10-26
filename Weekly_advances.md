@@ -2,8 +2,6 @@
 
 ## 18.10.2021 - 22.10.2021
 
-<details><summary>Week 42</summary>
-
 ### 18.10.2021
 
 * Made a todo list
@@ -28,8 +26,6 @@
 
 * Try to download .bam file from GDC portal (need token)
 * Split BEATAML patient using HighOXPHOS vs RNAsplicing 18 genes
-
-</details>
 
 ---------
 

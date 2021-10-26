@@ -446,11 +446,11 @@ MOLM14_Mut_IDHi_vs_no_treat_network$most_important_network$ranked_eigen_gene
 write.csv(MOLM14_Mut_IDHi_vs_no_treat_network$features, "~/tmp/MOLM14_Mut_IDHi_vs_no_treat_features.csv", quote = F, sep = "\t")
 MOLM14_Mut_IDHi_vs_no_treat_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/MOLM14_Mut_IDHi_vs_no_treat_network.csv", quote = F)
 ```
-### HL60 IDHm + IDHi vs HL60 IDHm + DMF
+## HL60 IDHm + IDHi vs HL60 IDHm + DMF
 ![HL60 IDHi](Pictures/HL60_IDHi.png)
-### HL60 IDHm vs HL60 IDHwt
+## HL60 IDHm vs HL60 IDHwt
 ![HL60 m/wt](Pictures/HL60_Mut.png)
 
-### MOLM14 IDHm + IDHi vs MOLM14 IDHm + DMF
+## MOLM14 IDHm + IDHi vs MOLM14 IDHm + DMF
 ![MOLM14 IDHi](Pictures/MOLM14_IDHi.png)
 

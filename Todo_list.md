@@ -52,7 +52,7 @@
 
 ### Communication
 
-* Make a part of the Team 18 poster
+* Make a part of the Team 18 poster [**DONE**]
 
 * Redesign pictures and text for Cancer cell symposium poster
 
@@ -62,32 +62,28 @@
 
 * Look at clinical data from Verhaak cohort & do OS IDHwt analysis
 
-* Continue to look at cell lines previous analysis
+* Continue to look at cell lines previous analysis [**DONE**]
 
 * Make a signature of response
 
-* Start wet-lab
+* Start wet-lab [**DONE**]
 
 * Look at Koichi RNAseq if bam files available
 
 ### Biblio
 
-* Find 3 papers [1/3]
+* Find 3 papers [4/3] [**DONE**]
 
 * Make a summary of a paper [0/3]  
   *  Metabolic reprogramming and epigenetic modifications on the path to cancer
-  *  
-  *  
-
-
-* Look at paper already found on RELA
-
-* Read paper on MYC
+  *  Genetic perturbation of PU.1 binding and chromatin looping at neutrophil enhancers associates with autoimmune disease
+  * Mapping long-range promoter contacts in human cells with high-resolution capture Hi-C
+  * EXTRA already read: Rewiring of the Transcription Factor Network in Acute Myeloid Leukemia
 
 * Do a thesis introduction
 
 ### Scripting
 
-* Create Github.io?
+* Create Github.io? [**DONE**]
 
 * Remake a clear rmd file

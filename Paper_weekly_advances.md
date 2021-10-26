@@ -141,9 +141,22 @@ Review "metabolic enzymes functioning as epigenetic modulators in the regulation
 #### [1]
 
 [Metabolic reprogramming and epigenetic modifications on the path to cancer](https://link.springer.com/article/10.1007%2Fs13238-021-00846-7)  
-[Notes .md](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/Metabolic_reprogramming_and_epigenetic_modifications_on_the_path_to_cancer.md)
+[Notes](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/Metabolic_reprogramming_and_epigenetic_modifications_on_the_path_to_cancer.md)
 
+#### [2]
 
+[Genetic perturbation of PU.1 binding and chromatin looping at neutrophil enhancers associates with autoimmune disease](https://www-nature-com.proxy.insermbiblio.inist.fr/articles/s41467-021-22548-8)  
+[Notes](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/Genetic_perturbation_of_PU.1_binding_and_chromatin_looping_at_neutrophil_enhancers_associates_with_autoimmune_disease)
+
+#### [3]
+
+[Mapping long-range promoter contacts in human cells with high-resolution capture Hi-C](https://www-nature-com.proxy.insermbiblio.inist.fr/articles/ng.3286)  
+[Notes](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/Mapping_long-range_promoter_contacts_in_human_cells_with_high-resolution_capture_Hi-C)
+
+#### [4 but already read]
+
+[Rewiring of the Transcription Factor Network in Acute Myeloid Leukemia](https://journals-sagepub-com.proxy.insermbiblio.inist.fr/doi/10.1177/1176935119859863?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed)  
+[Notes](https://github.com/AlexisHucteau/PhD_project/blob/main/Weekly_paper_notes/Rewiring_of_the_Transcription_Factor_Network_in_Acute_Myeloid_Leukemia)
 
 ### Paper briefly read
 

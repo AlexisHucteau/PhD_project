@@ -1,11 +1,10 @@
 # PhD_project
 In silico, epigenomic and functional investigations of resistance to IDH inhibitors in acute myeloid leukemia
 
-# Introduction
+# [**Introduction**](https://alexishucteau.github.io/PhD_project/Introduction)
 
 An introduction of the thesis topic with some bibliography on AML, IDHm, epigenomic and stress in cancer.
 
-## [**Introduction**](https://alexishucteau.github.io/PhD_project/Introduction)
 
 # Organisation
 

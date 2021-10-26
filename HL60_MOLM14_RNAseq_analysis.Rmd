@@ -1,6 +1,8 @@
 ---
 title: "R Notebook"
-output: html_notebook
+author: Alexis Hucteau
+date: October 26, 2021
+output: html_document
 ---
 
 # Analysis of HL60 MOLM14 IDHm cell lines +/- IDHi
@@ -32,6 +34,7 @@ Transcriptomes <- merge(Annotations, Transcriptomes, by.x = 0, by.y = 0, all.y =
 Transcriptomes <- tibble::column_to_rownames(Transcriptomes, var = "Row.names")
 Annot <- Transcriptomes[,c(1:3)]
 Transcriptomes <- Transcriptomes[,c(4:28)]
+Phenotype <- paste(SDRF$Characteristics.cell.line., SDRF$Characteristics.genotype., SDRF$Characteristics.treatment., sep = ".")
 ```
 
 # 2. PCA analysis
@@ -126,10 +129,10 @@ dorothea2viper_regulons <- function(df) {
 # https://github.com/saezlab/ConservedFootprints/blob/master/src/dorothea_analysis.R#L126
 viper_regulons2dorothea <- function(r) {
   res <- r %>%
-    map_df(
+    purrr::map_df(
       .f = function(i) {
         tf_target <- i$tfmode %>%
-          enframe(name = "target", value = "mor") %>%
+          tibble::enframe(name = "target", value = "mor") %>%
           mutate(likelihood = i$likelihood)
       },
       .id = "tf"
@@ -317,7 +320,7 @@ Make_gene_expr_boxplots <- function(RNAseq, Gene_to_focus, Gene_name, Comparison
 ```{r Making box plot of Expression}
 ID_RELA <- dplyr::filter(Annot, SYMBOL == "RELA") %>% rownames(.)
 ID_MYC <- dplyr::filter(Annot, SYMBOL == "MYC") %>% rownames(.)
-Phenotype <- paste(SDRF$Characteristics.cell.line., SDRF$Characteristics.genotype., SDRF$Characteristics.treatment., sep = ".")
+
 
 Make_gene_expr_boxplots(Transcriptomes, ID_RELA, "RELA", "HL60.Mut.AGI5198", "HL60_IDHi", "HL60.Mut.DMF", "HL60_DMF", Phenotype)
 
@@ -426,7 +429,7 @@ HL60_Mut_vs_HL60_WT_network  <- All_workflow(Differential_Cell_lines_analysis$`H
 MOLM14_Mut_IDHi_vs_no_treat_network <- All_workflow(Differential_Cell_lines_analysis$`MOLM14.Mut.AGI5198-MOLM14.Mut.DMF`, c(10, 2, 5), HL60_Mut_IDHi_vs_no_treat$mrs_table, c(1,2,3), PPI_TF_target_Network)
 ```
 
-```{r Make & save graph}
+```{r Make & save graph, include = F}
 message("Most_important_genes in HL60 mut +/- IDHi")
 HL60_Mut_IDHi_vs_no_treat_network$most_important_network$ranked_eigen_gene
 write.csv(HL60_Mut_IDHi_vs_no_treat_network$features, "~/tmp/HL60_IDHi.tsv", quote = F, sep = "\t")

@@ -2,6 +2,8 @@
 
 ## 18.10.2021 - 22.10.2021
 
+<details><summary>Week 42</summary>
+
 ### 18.10.2021
 
 * Made a todo list
@@ -27,6 +29,8 @@
 * Try to download .bam file from GDC portal (need token)
 * Split BEATAML patient using HighOXPHOS vs RNAsplicing 18 genes
 
+</details>
+
 ---------
 
 ## 24.10.2021 - 29.10.2021
@@ -36,3 +40,8 @@
 * Make a todo list
 * Make a quick picture about my project for the team poster
 * Work on the thesis introduction
+* Defrost 56-11 HL60 & MOLM14 IDHm cells
+
+### 25.10.2021
+
+* Correct cell lines analysis to make a .md result file

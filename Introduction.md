@@ -69,3 +69,5 @@ It's important to define one of the topic of the thesis that is stress.
 In the paper [Integrated Stress Response Activity Marks Stem Cells in Normal Hematopoiesis and Leukemia](https://www-sciencedirect-com.proxy.insermbiblio.inist.fr/science/article/pii/S2211124718315973?via%3Dihub), they show that AML displayed **eIF2** scarcity promoting **ATF4** upregulation that activates ISR promoting cell survival.
 
 ![Integrated Stress Response Activity Marks Stem Cells in Normal Hematopoiesis and Leukemia](Pictures/ISR_Stem_Leukemia)
+
+[A stress-responsive enhancer induces dynamic drug resistance in acute myeloid leukemia](https://www.jci.org/articles/view/130809)

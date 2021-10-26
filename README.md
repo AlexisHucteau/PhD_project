@@ -28,4 +28,4 @@ The weekly advances updated day by day.
 
 * [**Weekly biblio**](https://alexishucteau.github.io/PhD_project/Paper_weekly_advances)
 
-* [**Papers read and notes**](https://alexishucteau.github.io/PhD_project/Paper_read_and_notes)
+* [**Papers read and notes**](https://alexishucteau.github.io/PhD_project/Weekly_paper_notes/Paper_read_and_notes)

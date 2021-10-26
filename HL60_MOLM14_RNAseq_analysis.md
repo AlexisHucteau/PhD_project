@@ -59,8 +59,11 @@
 
 # 4. Network signatures
 
+### HL60 IDHm + IDHi vs HL60 IDHm + DMF
 ![HL60 IDHi](Pictures/HL60_IDHi.png)
 
+### HL60 IDHm vs HL60 IDHwt
 ![HL60 m/wt](Pictures/HL60_Mut.png)
 
+### MOLM14 IDHm + IDHi vs MOLM14 IDHm + DMF
 ![MOLM14 IDHi](Pictures/MOLM14_IDHi.png)

@@ -70,4 +70,4 @@ In the paper [Integrated Stress Response Activity Marks Stem Cells in Normal Hem
 
 ![Integrated Stress Response Activity Marks Stem Cells in Normal Hematopoiesis and Leukemia](Pictures/ISR_Stem_Leukemia)
 
-[A stress-responsive enhancer induces dynamic drug resistance in acute myeloid leukemia](https://www.jci.org/articles/view/130809)
+Mark S. Williams et al., in [A stress-responsive enhancer induces dynamic drug resistance in acute myeloid leukemia](https://www.jci.org/articles/view/130809) they analyzed an integrated stress response-like transcriptional program that induces ABCB1 through remodeling and activation of an ATF4-bound, stress-responsive enhancer.

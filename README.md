@@ -26,3 +26,5 @@ The weekly advances updated day by day.
 * [**<span style="color:blue">Weekly biblio</span>**](https://alexishucteau.github.io/PhD_project/Paper_weekly_advances)
 
 * [**<span style="color:blue">Papers read and notes</span>**](https://alexishucteau.github.io/PhD_project/Weekly_paper_notes/Paper_read_and_notes)
+
+* [**<span style="color:blue">List of potential papers</span>**](https://alexishucteau.github.io/PhD_project/List_of_potential_papers)

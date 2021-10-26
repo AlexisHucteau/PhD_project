@@ -2,8 +2,12 @@
 title: "R Notebook"
 author: Alexis Hucteau
 date: October 26, 2021
-output: html_document
+output: 
+  html_document: 
+    toc: yes
 ---
+
+Back to [PhD Project](https://alexishucteau.github.io/PhD_project/)
 
 # Analysis of HL60 MOLM14 IDHm cell lines +/- IDHi
 
@@ -19,6 +23,7 @@ library(dorothea)
 library(data.table)
 library(stringr)
 library(igraph)
+
 ```
 
 # 1. Preparation of transcriptomes
@@ -279,13 +284,11 @@ HL60_Mut_vs_HL60_WT <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne =
 MOLM14_Mut_IDHi_vs_no_treat <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne = T, Phenotype == "MOLM14.Mut.AGI5198", Phenotype == "MOLM14.Mut.DMF",  "MOLM14_IDHi", "MOLM14_DMF", minsize = 4, ges.filter=T)
 ```
 
-
 ```{r Do TF plot}
 plot(HL60_Mut_IDHi_vs_no_treat$mrs)
 plot(HL60_Mut_vs_HL60_WT$mrs)
 plot(MOLM14_Mut_IDHi_vs_no_treat$mrs)
 ```
-
 
 ```{r Boxplot gene expression function, include = F}
 Focus_on_one_gene_not_TF <- function(RNAseq, Gene, Comparison_A, Comparison_A_name, Comparison_B, Comparison_B_name, phenotype){
@@ -422,7 +425,6 @@ Combined_network <- read.csv("~/GitHub/Koichi_gene_expression_git/Koichi_gene_ex
 PPI_TF_target_Network <- graph_from_data_frame(Combined_network, directed = T)
 ```
 
-
 ```{r Generate Cell lines network signature, include = F}
 HL60_Mut_IDHi_vs_no_treat_network <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-HL60.Mut.DMF`, c(10, 2, 5), HL60_Mut_IDHi_vs_no_treat$mrs_table, c(1,2,3), PPI_TF_target_Network)
 HL60_Mut_vs_HL60_WT_network  <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.None-HL60.WT.None`, c(10, 2, 5), HL60_Mut_IDHi_vs_no_treat$mrs_table, c(1,2,3), PPI_TF_target_Network)
@@ -432,7 +434,7 @@ MOLM14_Mut_IDHi_vs_no_treat_network <- All_workflow(Differential_Cell_lines_anal
 ```{r Make & save graph, include = F}
 message("Most_important_genes in HL60 mut +/- IDHi")
 HL60_Mut_IDHi_vs_no_treat_network$most_important_network$ranked_eigen_gene
-write.csv(HL60_Mut_IDHi_vs_no_treat_network$features, "~/tmp/HL60_IDHi.tsv", quote = F, sep = "\t")
+write.csv(HL60_Mut_IDHi_vs_no_treat_network$features, "~/tmp/HL60_IDHi.tsv", quote = F)
 HL60_Mut_IDHi_vs_no_treat_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_IDHi_net.csv", quote = F)
 
 message("Most_important_genes in HL60 IDHm/wt")
@@ -443,14 +445,14 @@ HL60_Mut_vs_HL60_WT_network$network %>% igraph::as_data_frame() %>% write.csv("~
 
 message("Most_important_genes in MOLM14 mut +/- IDHi")
 MOLM14_Mut_IDHi_vs_no_treat_network$most_important_network$ranked_eigen_gene
-write.csv(MOLM14_Mut_IDHi_vs_no_treat_network$features, "~/tmp/MOLM14_Mut_IDHi_vs_no_treat_features.csv", quote = F, sep = "\t")
+write.csv(MOLM14_Mut_IDHi_vs_no_treat_network$features, "~/tmp/MOLM14_Mut_IDHi_vs_no_treat_features.csv", quote = F)
 MOLM14_Mut_IDHi_vs_no_treat_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/MOLM14_Mut_IDHi_vs_no_treat_network.csv", quote = F)
 ```
+
 ## HL60 IDHm + IDHi vs HL60 IDHm + DMF
-![HL60 IDHi](Pictures/HL60_IDHi.png)
-## HL60 IDHm vs HL60 IDHwt
-![HL60 m/wt](Pictures/HL60_Mut.png)
+
+![HL60 IDHi](Pictures/HL60_IDHi.png) ## HL60 IDHm vs HL60 IDHwt ![HL60 m/wt](Pictures/HL60_Mut.png)
 
 ## MOLM14 IDHm + IDHi vs MOLM14 IDHm + DMF
-![MOLM14 IDHi](Pictures/MOLM14_IDHi.png)
 
+![MOLM14 IDHi](Pictures/MOLM14_IDHi.png)

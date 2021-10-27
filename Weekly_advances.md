@@ -1,10 +1,9 @@
 # Weekly advances
 
-* [Week 18.10.2021 - 22.10.2021](https://alexishucteau.github.io/PhD_project/Weekly_advances#18.10.2021)
-* [Week 24.10.2021 - 29.10.2021](https://alexishucteau.github.io/PhD_project/Weekly_advances#24.10.2021)
+* [Week 42](#week-42)
+* [Week 43](#week-43)
 
-
-## 18.10.2021 - 22.10.2021
+## 18.10.2021 - 22.10.2021 {#week-42}
 
 ### 18.10.2021
 
@@ -33,7 +32,7 @@
 
 ---------
 
-## 25.10.2021 - 29.10.2021
+## 25.10.2021 - 29.10.2021 {#week-43}
 
 ### 25.10.2021
 

@@ -1,5 +1,10 @@
 # Table of content
 
+* [Week 42](#week-42)
+* [Week 43](#week-43)
+
+# 18.10.2021 - 22.10.2021 {#week-42}
+
 ## [Genome-wide analysis of focal DNA hypermethylation in IDH-mutant AML samples](https://www.biorxiv.org/content/10.1101/2021.03.03.433799v2.full)  
 
 * [Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/Genome_wide_analysis_of_focal_DNA_hypermethylation_in_IDH_mutant_AML_samples)
@@ -16,6 +21,8 @@
 
 
 --------------------------------------------
+
+# 25.10.2021 - 29.10.2021 {#week-43}
 
 ## [Metabolic reprogramming and epigenetic modifications on the path to cancer](https://link.springer.com/article/10.1007%2Fs13238-021-00846-7)  
 

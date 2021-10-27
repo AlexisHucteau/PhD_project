@@ -1,10 +1,9 @@
 # Paper Weekly advances
 
-[18.10.2021 - 22.10.2021](https://alexishucteau.github.io/PhD_project/Bibliography/Paper_weekly_advances#Week_42)  
-[24.10.2021 - 29.10.2021](https://alexishucteau.github.io/PhD_project/Bibliography/Paper_weekly_advances#Week_43)
+[Week 42](#week-42)  
+[Week 43](#week-43)  
 
-# Week_42
-## 18.10.2021 - 22.10.2021
+## 18.10.2021 - 22.10.2021 {#week-42}
 
 ### Selected paper
 
@@ -137,8 +136,7 @@ Review "metabolic enzymes functioning as epigenetic modulators in the regulation
 
 ---------
 
-# Week_43
-## 24.10.2021 - 29.10.2021
+## 24.10.2021 - 29.10.2021 {#week-43}
 
 ### Selected paper
 

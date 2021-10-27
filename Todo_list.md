@@ -1,6 +1,9 @@
 # Weekly Todo list
 
-## 18.10.2021 - 22.10.2021
+* [Week 42](#week-42)
+* [Week 43](#week-43)
+
+## 18.10.2021 - 22.10.2021 {#week-42}
 
 ### IDH PhD project
 * Look at clinical data from Verhaak cohort & do OS IDHwt analysis
@@ -48,7 +51,7 @@
 * Remake a clear rmd file
 
 
-## 25.10.2021 - 29.10.2021
+## 25.10.2021 - 29.10.2021 {#week-43}
 
 ### Communication
 

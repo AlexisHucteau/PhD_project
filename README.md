@@ -18,7 +18,7 @@ The weekly advances updated day by day.
 
 ## Analysis
 
-* [**<span style="color:blue">Cell line analysis on HL60 and MOLM14 IDHm +/- IDHi RNAseq</span>**](https://alexishucteau.github.io/PhD_project/Annalysis/HL60_MOLM14_RNAseq_analysis)
+* [**<span style="color:blue">Cell line analysis on HL60 and MOLM14 IDHm +/- IDHi RNAseq</span>**](https://alexishucteau.github.io/PhD_project/Analysis/HL60_MOLM14_RNAseq_analysis)
 
 
 ## Bibliography

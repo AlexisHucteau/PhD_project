@@ -33,17 +33,22 @@
 
 ---------
 
-## 24.10.2021 - 29.10.2021
+## 25.10.2021 - 29.10.2021
 
-### 24.10.2021
+### 25.10.2021
 
 * Make a todo list
 * Make a quick picture about my project for the team poster
 * Work on the thesis introduction
 * Defrost 56-11 HL60 & MOLM14 IDHm cells
 
-### 25.10.2021
+### 26.10.2021
 
 * Correct cell lines analysis to make a .md result file
 * Starting a [git pages](https://alexishucteau.github.io/PhD_project/)
 * Do method bibliography
+
+### 27.10.2021
+
+* Rearrange code of cell lines analysis
+* Reorganize Git pages

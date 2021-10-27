@@ -1,7 +1,7 @@
 # PhD_project
 In silico, epigenomic and functional investigations of resistance to IDH inhibitors in acute myeloid leukemia
 
-## [<span style="color:blue">Introduction</span>](https://alexishucteau.github.io/PhD_project/Introduction)
+## [<span style="color:blue">Introduction</span>](https://alexishucteau.github.io/PhD_project/Bibliography/Introduction)
 
 An introduction of the thesis topic with some bibliography on AML, IDHm, epigenomic and stress in cancer.
 
@@ -18,13 +18,15 @@ The weekly advances updated day by day.
 
 ## Analysis
 
-* [**<span style="color:blue">Cell line analysis on HL60 and MOLM14 IDHm +/- IDHi RNAseq</span>**](https://alexishucteau.github.io/PhD_project/HL60_MOLM14_RNAseq_analysis)
+* [**<span style="color:blue">Cell line analysis on HL60 and MOLM14 IDHm +/- IDHi RNAseq</span>**](https://alexishucteau.github.io/PhD_project/Annalysis/HL60_MOLM14_RNAseq_analysis)
 
 
 ## Bibliography
 
-* [**<span style="color:blue">Weekly biblio</span>**](https://alexishucteau.github.io/PhD_project/Paper_weekly_advances)
+* [**<span style="color:blue">Weekly biblio</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/Paper_weekly_advances)
 
-* [**<span style="color:blue">Papers read and notes</span>**](https://alexishucteau.github.io/PhD_project/Weekly_paper_notes/Paper_read_and_notes)
+* [**<span style="color:blue">Papers read and notes</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/Paper_read_and_notes)
 
-* [**<span style="color:blue">List of potential papers</span>**](https://alexishucteau.github.io/PhD_project/List_of_potential_papers)
+* [**<span style="color:blue">List of potential papers</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/List_of_potential_interesting_papers)
+
+* [**<span style="color:blue">Bioinfo Teams working on close field</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/Bioinfo_Teams)

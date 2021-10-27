@@ -82,6 +82,10 @@
 
 * Do a thesis introduction [**will never ends**]
 
+* Look at CHO abstracts
+
+* Do method and team method bibliography
+
 ### Scripting
 
 * Create Github.io? [**DONE**]

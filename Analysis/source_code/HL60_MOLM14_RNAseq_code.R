@@ -279,30 +279,6 @@ Make_gene_expr_boxplots <- function(RNAseq, Gene_to_focus, Gene_name, Comparison
 ID_RELA <- dplyr::filter(Annot, SYMBOL == "RELA") %>% rownames(.)
 ID_MYC <- dplyr::filter(Annot, SYMBOL == "MYC") %>% rownames(.)
 
-## RELA in HL60 +/- IDHi Expression
-
-Make_gene_expr_boxplots(Transcriptomes, ID_RELA, "RELA", "HL60.Mut.AGI5198", "HL60_IDHi", "HL60.Mut.DMF", "HL60_DMF", Phenotype)
-
-## MYC in HL60 +/- IDHi  Expression
-
-Make_gene_expr_boxplots(Transcriptomes, ID_MYC, "MYC", "HL60.Mut.AGI5198", "HL60_IDHi", "HL60.Mut.DMF", "HL60_DMF", Phenotype)
-
-## RELA in HL60 +/- IDHm  Expression
-
-Make_gene_expr_boxplots(Transcriptomes, ID_RELA, "RELA", "HL60.Mut.None", "HL60_Mut", "HL60.WT.None", "HL60_WT", Phenotype)
-
-## MYC in HL60 +/- IDHm  Expression
-
-Make_gene_expr_boxplots(Transcriptomes, ID_MYC, "MYC", "HL60.Mut.None", "HL60_Mut", "HL60.WT.None", "HL60_WT", Phenotype)
-
-## RELA in MOLM14 +/- IDHi  Expression
-
-Make_gene_expr_boxplots(Transcriptomes, ID_RELA, "RELA", "MOLM14.Mut.AGI5198", "MOLM14_IDHi", "MOLM14.Mut.DMF", "MOLM14_DMF", Phenotype)
-
-## MYC in MOLM14 +/- IDHi  Expression
-
-Make_gene_expr_boxplots(Transcriptomes, ID_MYC, "MYC", "MOLM14.Mut.AGI5198", "MOLM14_IDHi", "MOLM14.Mut.DMF", "MOLM14_DMF", Phenotype)
-
 # Network signatures
 
 Prepare_features <- function(feature_data_frame, column_of_interest, type_of_data){

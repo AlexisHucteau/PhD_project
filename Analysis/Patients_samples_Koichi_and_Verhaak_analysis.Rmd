@@ -1,0 +1,80 @@
+---
+title: "Patients samples Koichi and Verhaak, RNAseq and affy analysis"
+author: Alexis Hucteau
+date: "`r Sys.Date()`"
+output:
+    html_document: 
+      toc: yes
+      toc_float: yes
+      theme: united
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+Back to [PhD Project](https://alexishucteau.github.io/PhD_project/)
+
+[Cell lines analysis](https://alexishucteau.github.io/PhD_project/Analysis/HL60_MOLM14_RNAseq_analysis)
+
+[Source code](https://alexishucteau.github.io/PhD_project/Analysis/source_code/Patients_samples_Koichi_analysis_code.R)
+
+[Source code](https://alexishucteau.github.io/PhD_project/Analysis/source_code/Patients_samples_Verhaak_analysis_code.R)
+
+
+```{r, include = F}
+library(FactoMineR)
+library(factoextra)
+library(viper)
+library(dplyr)
+
+load("source_code/Koichi_analysis.RData")
+```
+
+
+# Analysis of Patients samples Koichi's dataset
+
+# PCA analysis
+
+```{r PCA plots}
+plot.PCA(PCA_rnaseq)
+fviz_eig(PCA_rnaseq, addlabels = T)
+```
+
+# TF analysis
+
+## NR vs R IDHi
+
+```{r TF mviper plots}
+plot(R_NR_msviper$mrs)
+```
+
+## High OS vs Low OS
+
+```{r}
+
+```
+
+# RELA and MYC expression in cell lines
+
+## RELA in NR vs R Expression
+
+```{r}
+Make_gene_expr_boxplots(RNAseq, "RELA", "NR.B", "Non_responder", "R.B", "Good_responder", Factor_R_OR_NR_B)
+```
+
+## MYC in NR vs R Expression
+
+```{r}
+Make_gene_expr_boxplots(RNAseq, "MYC", "NR.B", "Non_responder", "R.B", "Good_responder", Factor_R_OR_NR_B)
+```
+
+# Network signatures
+
+## NR vs R
+
+
+
+
+
+
+## High OS vs Low OS

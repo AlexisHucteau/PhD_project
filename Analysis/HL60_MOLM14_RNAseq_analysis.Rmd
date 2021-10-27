@@ -29,7 +29,7 @@ library(data.table)
 library(stringr)
 library(igraph)
 
-load("source_code/Cell_lines _analysis.RData")
+load("source_code/Cell_lines_analysis.RData")
 ```
 
 

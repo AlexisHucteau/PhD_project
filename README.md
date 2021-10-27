@@ -29,4 +29,4 @@ The weekly advances updated day by day.
 
 * [**<span style="color:blue">List of potential papers</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/List_of_potential_interesting_papers)
 
-* [**<span style="color:blue">Bioinfo Teams working on close field</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/Bioinfo_Teams)
+* [**<span style="color:blue">Teams working on close field</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/Bioinfo_Teams)

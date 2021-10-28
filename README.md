@@ -20,7 +20,7 @@ The weekly advances updated day by day.
 
 * [**<span style="color:blue">Cell line analysis on HL60 and MOLM14 IDHm +/- IDHi RNAseq</span>**](https://alexishucteau.github.io/PhD_project/Analysis/HL60_MOLM14_RNAseq_analysis)
 
-* [**span style="color:blue">Patients samples analysis on Koichi and Verhaak dataset RNAseq & affymetrix</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis)
+* [**<span style="color:blue">Patients samples analysis on Koichi and Verhaak dataset RNAseq & affymetrix</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis)
 
 ## Bibliography
 

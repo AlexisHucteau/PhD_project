@@ -16,6 +16,8 @@ Back to [PhD Project](https://alexishucteau.github.io/PhD_project/)
 
 [Source code](https://alexishucteau.github.io/PhD_project/Analysis/source_code/HL60_MOLM14_RNAseq_code.R)
 
+[Patients samples analysis](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis)
+
 ```{r, include = F}
 library(hugene20sttranscriptcluster.db)
 library(oligo)
@@ -28,6 +30,7 @@ library(dorothea)
 library(data.table)
 library(stringr)
 library(igraph)
+library(ggplot2)
 
 load("source_code/Cell_lines_analysis.RData")
 ```
@@ -60,6 +63,26 @@ plot(HL60_Mut_vs_HL60_WT$mrs)
 
 ```{r MOLM14_Mut_IDHi_vs_no_treat}
 plot(MOLM14_Mut_IDHi_vs_no_treat$mrs)
+```
+
+# Eigen centrality analysis
+
+## HL60 +/- IDHi
+
+```{r}
+Do_cool_scatterplot(HL60_Mut_IDHi_vs_no_treat_network$features, "HL60 +/- IDHi")
+```
+
+## HL60 +/- IDHm
+
+```{r}
+Do_cool_scatterplot(HL60_Mut_vs_HL60_WT_network$features, "HL60 +/- IDHm")
+```
+
+## MOLM14 +/- IDHi
+
+```{r}
+Do_cool_scatterplot(MOLM14_Mut_IDHi_vs_no_treat_network$features, "MOLM14 +/- IDHi")
 ```
 
 

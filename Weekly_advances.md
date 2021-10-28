@@ -43,6 +43,7 @@
 
 ### 26.10.2021
 
+* Team 21 Journal club [11am-12.30pm]
 * Correct cell lines analysis to make a .md result file
 * Starting a [git pages](https://alexishucteau.github.io/PhD_project/)
 * Do method bibliography
@@ -51,3 +52,15 @@
 
 * Rearrange code of cell lines analysis
 * Reorganize Git pages
+* Observation of cell culture
+* Rearrange code of Patients samples analysis
+
+### 28.10.2021
+
+* Rearrange code of Patients samples analysis
+* Upload all on the git pages
+* Team 18 lab meeting [11am-12.30pm]
+* COMET journal Club [1pm-1.30pm]
+* Team 21 lab meeting [2pm-3.30pm]
+* Tutorial Github pages [3.30pm-4pm]
+* Wetlab

@@ -1,5 +1,10 @@
 library(FactoMineR)
 library(igraph)
+library(limma)
+library(viper)
+library(stringr)
+library(data.table)
+library(dplyr)
 
 "%ni%" <- Negate("%in%")
 RNAseq_diff_gene_expression_analysis <- list()
@@ -369,5 +374,21 @@ Combined_network <- read.csv("~/GitHub/Koichi_gene_expression_git/Koichi_gene_ex
 PPI_TF_target_Network <- graph_from_data_frame(Combined_network, directed = T)
 
 NR_R_network <- All_workflow(RNAseq_diff_gene_expression_analysis$R_OR_NR_B$`NR.B-R.B`, c(7, 1, 4), R_NR_msviper$mrs_table, c(1,3,4), PPI_TF_target_Network)
+
+write.csv(NR_R_network$features, "~/tmp/NR_R_network_features.csv", quote = F)
+NR_R_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/NR_R_network_network.csv", quote = F)
+
+
+Do_cool_scatterplot <- function(Feature, title){
+  Feature <- dplyr::filter(Feature, Eigen_centrality > 0.0005 & Page_rank != 0)
+  DEG <- ifelse(Feature$logFC < 0, "DOWN", "UP")
+  ggplot(Feature, aes(x = log(Page_rank), y = log(Eigen_centrality), label = Gene, colour = DEG))+
+    geom_text(check_overlap = F, size = 2, nudge_x = 0.05, hjust = 0, outlier.size = 0)+
+    geom_point(size = 0.5)+
+    labs(title = paste0("Network-based node prioritization ", title))+
+    xlab("Page Rank (log)")+
+    ylab("Eigen Centrality (log)")+
+    scale_colour_manual(values=c("#0000FF", "#FF0000"))
+}
 
 gc()

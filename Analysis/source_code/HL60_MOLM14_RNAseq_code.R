@@ -22,7 +22,7 @@ Annot <- Transcriptomes[,c(1:3)]
 Transcriptomes <- Transcriptomes[,c(4:28)]
 Phenotype <- paste(SDRF$Characteristics.cell.line., SDRF$Characteristics.genotype., SDRF$Characteristics.treatment., sep = ".")
 
-PCA_analysis <- PCA(as.matrix(t(Transcriptomes)))
+PCA_analysis <- PCA(as.matrix(t(Transcriptomes)), graph = F)
 # fviz_eig(PCA_analysis, addlabels = T)
 
 DEGs <- function(data, Phenotype, Annotations){
@@ -361,30 +361,29 @@ Combined_network <- read.csv("~/GitHub/Koichi_gene_expression_git/Koichi_gene_ex
 PPI_TF_target_Network <- graph_from_data_frame(Combined_network, directed = T)
 
 HL60_Mut_IDHi_vs_no_treat_network <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-HL60.Mut.DMF`, c(10, 2, 5), HL60_Mut_IDHi_vs_no_treat$mrs_table, c(1,2,3), PPI_TF_target_Network)
-HL60_Mut_vs_HL60_WT_network  <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.None-HL60.WT.None`, c(10, 2, 5), HL60_Mut_IDHi_vs_no_treat$mrs_table, c(1,2,3), PPI_TF_target_Network)
-MOLM14_Mut_IDHi_vs_no_treat_network <- All_workflow(Differential_Cell_lines_analysis$`MOLM14.Mut.AGI5198-MOLM14.Mut.DMF`, c(10, 2, 5), HL60_Mut_IDHi_vs_no_treat$mrs_table, c(1,2,3), PPI_TF_target_Network)
+HL60_Mut_vs_HL60_WT_network  <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.None-HL60.WT.None`, c(10, 2, 5), HL60_Mut_vs_HL60_WT$mrs_table, c(1,2,3), PPI_TF_target_Network)
+MOLM14_Mut_IDHi_vs_no_treat_network <- All_workflow(Differential_Cell_lines_analysis$`MOLM14.Mut.AGI5198-MOLM14.Mut.DMF`, c(10, 2, 5), MOLM14_Mut_IDHi_vs_no_treat$mrs_table, c(1,2,3), PPI_TF_target_Network)
 
-message("Most_important_genes in HL60 mut +/- IDHi")
-HL60_Mut_IDHi_vs_no_treat_network$most_important_network$ranked_eigen_gene
 write.csv(HL60_Mut_IDHi_vs_no_treat_network$features, "~/tmp/HL60_IDHi.tsv", quote = F)
 HL60_Mut_IDHi_vs_no_treat_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_IDHi_net.csv", quote = F)
 
-message("Most_important_genes in HL60 IDHm/wt")
-HL60_Mut_vs_HL60_WT_network$most_important_network$ranked_eigen_gene
 write.csv(HL60_Mut_vs_HL60_WT_network$features, "~/tmp/HL60_Mut_vs_HL60_WT_features.csv", quote = F)
 HL60_Mut_vs_HL60_WT_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_Mut_vs_HL60_WT_network.csv", quote = F)
 
 
-message("Most_important_genes in MOLM14 mut +/- IDHi")
-MOLM14_Mut_IDHi_vs_no_treat_network$most_important_network$ranked_eigen_gene
 write.csv(MOLM14_Mut_IDHi_vs_no_treat_network$features, "~/tmp/MOLM14_Mut_IDHi_vs_no_treat_features.csv", quote = F)
 MOLM14_Mut_IDHi_vs_no_treat_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/MOLM14_Mut_IDHi_vs_no_treat_network.csv", quote = F)
 
+Do_cool_scatterplot <- function(Feature, title){
+  Feature <- dplyr::filter(Feature, Eigen_centrality > 0.0005 & Page_rank != 0)
+  DEG <- ifelse(Feature$logFC < 0, "DOWN", "UP")
+  ggplot(Feature, aes(x = log(Page_rank), y = log(Eigen_centrality), label = Gene, colour = DEG))+
+    geom_text(check_overlap = F, size = 2, nudge_x = 0.05, hjust = 0, outlier.size = 0)+
+    geom_point(size = 0.5)+
+    labs(title = paste0("Network-based node prioritization ", title))+
+    xlab("Page Rank (log)")+
+    ylab("Eigen Centrality (log)")+
+    scale_colour_manual(values=c("#0000FF", "#FF0000"))
+}
+
 gc()
-
-
-
-
-
-
-

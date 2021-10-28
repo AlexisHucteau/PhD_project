@@ -27,7 +27,7 @@ library(factoextra)
 library(viper)
 library(dplyr)
 
-load("source_code/Koichi_analysis.RData")
+load("source_code/Patients_data.RData")
 ```
 
 
@@ -35,10 +35,20 @@ load("source_code/Koichi_analysis.RData")
 
 # PCA analysis
 
+## Koichi's dataset
+
 ```{r PCA plots}
 plot.PCA(PCA_rnaseq)
 fviz_eig(PCA_rnaseq, addlabels = T)
 ```
+
+## Verhaak's dataset
+
+```{r}
+plot.PCA(PCA_Verhaak)
+fviz_eig(PCA_Verhaak, addlabels = T)
+```
+
 
 # TF analysis
 
@@ -48,13 +58,29 @@ fviz_eig(PCA_rnaseq, addlabels = T)
 plot(R_NR_msviper$mrs)
 ```
 
+
+
 ## High OS vs Low OS
 
 ```{r}
-
+plot(High_OS_vs_Low_OS_msviper$mrs)
 ```
 
-# RELA and MYC expression in cell lines
+# Eigen centrality analysis
+
+## NR vs R
+
+```{r}
+Do_cool_scatterplot(NR_R_network$features, "NR vs R")
+```
+
+## High OS vs Low OS
+
+```{r}
+Do_cool_scatterplot(High_OS_vs_Low_OS_network$features, "High OS versus Low OS")
+```
+
+# RELA and MYC expression Patients samples
 
 ## RELA in NR vs R Expression
 
@@ -68,13 +94,28 @@ Make_gene_expr_boxplots(RNAseq, "RELA", "NR.B", "Non_responder", "R.B", "Good_re
 Make_gene_expr_boxplots(RNAseq, "MYC", "NR.B", "Non_responder", "R.B", "Good_responder", Factor_R_OR_NR_B)
 ```
 
+## RELA in High OS vs Low OS
+
+```{r}
+Make_gene_expr_boxplots(Verhaak_norm_data_SYMBOL, "RELA", "High_OS", "High_OS", "Low_OS", "Low_OS", OS)
+```
+
+## MYC in High OS vs Low OS
+
+```{r}
+Make_gene_expr_boxplots(Verhaak_norm_data_SYMBOL, "MYC", "High_OS", "High_OS", "Low_OS", "Low_OS", OS)
+```
+
+
 # Network signatures
 
 ## NR vs R
 
-
+![NR vs R](../Pictures/NR_R.png)
 
 
 
 
 ## High OS vs Low OS
+
+![High OS vs Low OS](../Pictures/High_low_OS.png)

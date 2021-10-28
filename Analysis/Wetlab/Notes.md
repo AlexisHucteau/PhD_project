@@ -1,7 +1,7 @@
 # Wet-lab notes
 
 * [Cheat sheet](#cheat-sheet)
-* [HL60 & MOLM14 starting experiments](#hl-60-molm14)
+* [HL60 & MOLM14 starting experiments](#hl60-molm14)
 
 ## Cheat sheet {#cheat-sheet}
 
@@ -25,11 +25,11 @@ Concentration to reach (CtR) = 0.5 M/mL
 Cell Volume to extract (Ce) = CtR/CiC * Final volume
 Middle volume = Final volume - Ce
 
-## Experiments on 56-11 & MOLM14 {hl-60-molm14}
+## Experiments on 56-11 & MOLM14 {#hl60-molm14}
 
 * [28.10.2021](#28-10-2021)
 
-### 28.10.2021 {#28-10-2021}
+### 28.10.2021 {#j28-10-2021}
 
 Counting HL60 P0 = 167 --> 1.336 M/mL  
 Counting MOLM14 P0 = 31 --> 0.248 M/mL

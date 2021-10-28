@@ -20,13 +20,20 @@ The weekly advances updated day by day.
 
 ### In silico analysis
 
-* [**<span style="color:blue">Cell line analysis on HL60 and MOLM14 IDHm +/- IDHi RNAseq</span>**](https://alexishucteau.github.io/PhD_project/Analysis/HL60_MOLM14_RNAseq_analysis)
+* [**<span style="color:blue">Meeting notes</span>**](https://alexishucteau.github.io/PhD_project/Analysis/In_silico/Meeting_notes)  
+Notes for and about meetings
+
+* [**<span style="color:blue">Cell line analysis on HL60 and MOLM14 IDHm +/- IDHi Affymetrix</span>**](https://alexishucteau.github.io/PhD_project/Analysis/HL60_MOLM14_RNAseq_analysis)  
 
 * [**<span style="color:blue">Patients samples analysis on Koichi and Verhaak dataset RNAseq & affymetrix</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis)
 
 ### In vitro analysis
 
 * [**<span style="color:blue">Notes on Wet lab</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Notes)
+
+## Presentations
+
+
 
 ## Bibliography
 

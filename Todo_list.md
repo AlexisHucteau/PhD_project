@@ -2,10 +2,11 @@
 
 * [Week 42](#week-42)
 * [Week 43](#week-43)
+* [Week 44](#week-44)
 
-## 18.10.2021 - 22.10.2021 {#week-42}
+# **18.10.2021 - 22.10.2021** {#week-42}
 
-### IDH PhD project
+## IDH PhD project
 * Look at clinical data from Verhaak cohort & do OS IDHwt analysis
 
 * Look at cell lines previous analysis
@@ -14,7 +15,7 @@
 
 * Make a poster
 
-### Splicing project
+## Splicing project
 
 * Look at rMATS code [**DONE**]
 
@@ -24,15 +25,15 @@
 
 * Learn how to use rmatsashimiplot [**DONE**]
 
-### Wet-lab
+## Wet-lab
 
 * Do a clear recap on upcoming experiments
 
-### Deconvolution
+## Deconvolution
 
 * Try to find a way to investigate on the 40 genes
 
-### Biblio
+## Biblio
 
 * Make a summary of a paper [3/3]
   * Genome_wide_analysis_of_focal_DNA_hypermethylation_in_IDH_mutant_AML_samples [**DONE**]
@@ -44,16 +45,16 @@
 * Read paper on MYC
 
 
-### Scripting
+## Scripting
 
 * Create Github.io?
 
 * Remake a clear rmd file
 
 
-## 25.10.2021 - 29.10.2021 {#week-43}
+# **25.10.2021 - 29.10.2021** {#week-43}
 
-### Communication
+## Communication
 
 * Make a part of the Team 18 poster [**DONE**]
 
@@ -61,7 +62,7 @@
 
 * Prepare a flash talk for Cancer cell symposium
 
-### IDH PhD project
+## IDH PhD project
 
 * Look at clinical data from Verhaak cohort & do OS IDHwt analysis
 
@@ -73,7 +74,7 @@
 
 * Look at Koichi RNAseq if bam files available [**DONE**]
 
-### Biblio
+## Biblio
 
 * Find 3 papers [4/3] [**DONE**]
 
@@ -89,8 +90,14 @@
 
 * Do method and team method bibliography
 
-### Scripting
+## Scripting
 
 * Create Github.io? [**DONE**]
 
 * Remake a clear rmd file
+
+# **02.11.2021** {week-44}
+
+## IDH PhD Project
+
+* Put tables of DEG, Mviper etc.

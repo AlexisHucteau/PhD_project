@@ -12,3 +12,8 @@ Dans les lignées MOLM14 IDHm +/-IDHi : **MYC** FOS CEBPa NFKB1 [link](https://a
 Dans les lignées HL60 +/- IDHm : STAT1 FOS **STAT3** GATA3 CEBPA [link](https://alexishucteau.github.io/PhD_project/Analysis/HL60_MOLM14_RNAseq_analysis#HL60_+-_IDHm)   
 
 3 Genes potentielles : RELA, STAT3 et MYC
+
+STAT3 linked to MYC in LSCs OXPHOS activity
+
+bam files of Koichi's available
+Need storage to manage bam files

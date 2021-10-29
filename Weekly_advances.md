@@ -64,3 +64,16 @@
 * Team 21 lab meeting [2pm-3.30pm]
 * Tutorial Github pages [3.30pm-4pm]
 * Wetlab
+  * Counting
+  * Subculture HL60
+
+### 29.10.2021
+
+* Wetlab
+  * Counting
+  * Centri MOLM14
+  * Subculture HL60
+* Downloading bam files from Koichi's experiment
+  * Need storage
+
+  

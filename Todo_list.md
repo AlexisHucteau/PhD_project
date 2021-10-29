@@ -71,7 +71,7 @@
 
 * Start wet-lab [**DONE**]
 
-* Look at Koichi RNAseq if bam files available
+* Look at Koichi RNAseq if bam files available [**DONE**]
 
 ### Biblio
 

@@ -96,13 +96,11 @@
 
 * Remake a clear rmd file
 
-# **02.11.2021** {week-44}
+# **02.11.2021 - 05.11.2021** {#week-44}
 
 ## IDH PhD Project
 
-* Put tables of DEG, Mviper etc. [**DONE**]
-
-# **02.11.2021 - 05.11.2021** {#week-44}
+* Put tables of DEG, Mviper etc. 
 
 ## Communication
 

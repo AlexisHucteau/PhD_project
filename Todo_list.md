@@ -27,7 +27,7 @@
 
 ## Wet-lab
 
-* Do a clear recap on upcoming experiments
+* Do a clear recap on upcoming experiments [**DONE**]
 
 ## Deconvolution
 
@@ -47,9 +47,9 @@
 
 ## Scripting
 
-* Create Github.io?
+* Create Github.io? [**DONE**]
 
-* Remake a clear rmd file
+* Remake a clear rmd file [**DONE**]
 
 
 # **25.10.2021 - 29.10.2021** {#week-43}
@@ -100,4 +100,24 @@
 
 ## IDH PhD Project
 
-* Put tables of DEG, Mviper etc.
+* Put tables of DEG, Mviper etc. [**DONE**]
+
+# **02.11.2021 - 05.11.2021** {#week-44}
+
+## Communication
+
+* Make poster for Cancer cell symposium
+
+* Record a flash talk for Cancer cell symposium
+
+## Deconvolution
+
+* Redo Venn diagram
+
+## Wet lab
+
+* Wednesday --> Subculture
+
+* Thursday --> Make "ampoule de congélation"
+
+* Friday --> test mycoplasme

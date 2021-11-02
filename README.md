@@ -33,7 +33,7 @@ Notes for and about meetings
 
 ## Presentations
 
-
+* [**<span style="color:blue">Cell symposia CDRC</span>**](https://alexishucteau.github.io/PhD_project/Presentations/Cell_symposia_Poster_and_flash_talk)
 
 ## Bibliography
 

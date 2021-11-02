@@ -130,3 +130,9 @@
   * Metabolic reprogramming and epigenetic modifications on the path to cancer
   * Genetic perturbation of PU.1 binding and chromatin looping at neutrophil enhancers associates with autoimmune disease
   * Mapping long-range promoter contacts in human cells with high-resolution capture Hi-C
+
+# **08.11.2021 - 10.11.2021** {#week-45}
+
+## Communication
+
+* CDRC poster presentation on Monday

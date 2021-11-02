@@ -20,6 +20,8 @@ The weekly advances updated day by day.
 
 ### In silico analysis
 
+* [**<span style="color:blue">Tutorial rMATS</span>**](https://alexishucteau.github.io/PhD_project/Analysis/In_silico/rMATS_tuto)  
+
 * [**<span style="color:blue">Meeting notes</span>**](https://alexishucteau.github.io/PhD_project/Analysis/In_silico/Meeting_notes)  
 Notes for and about meetings
 

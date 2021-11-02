@@ -76,4 +76,10 @@
 * Downloading bam files from Koichi's experiment
   * Need storage
 
-  
+## 02.11.2021 - 05.11.2021 {#week-44}
+
+### 02.11.2021
+
+* Make a To do list
+* Start poster
+* 

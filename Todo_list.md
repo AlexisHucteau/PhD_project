@@ -79,10 +79,10 @@
 * Find 3 papers [4/3] [**DONE**]
 
 * Make a summary of a paper [0/3]  
-  *  Metabolic reprogramming and epigenetic modifications on the path to cancer
-  *  Genetic perturbation of PU.1 binding and chromatin looping at neutrophil enhancers associates with autoimmune disease
+  * Metabolic reprogramming and epigenetic modifications on the path to cancer
+  * Genetic perturbation of PU.1 binding and chromatin looping at neutrophil enhancers associates with autoimmune disease
   * Mapping long-range promoter contacts in human cells with high-resolution capture Hi-C
-  * EXTRA already read: Rewiring of the Transcription Factor Network in Acute Myeloid Leukemia
+  * EXTRA already read: Rewiring of the Transcription Factor Network in Acute Myeloid Leukemia [**DONE**]
 
 * Do a thesis introduction [**will never ends**]
 
@@ -100,7 +100,11 @@
 
 ## IDH PhD Project
 
-* Put tables of DEG, Mviper etc. 
+* Put tables of DEG, Mviper etc. on git .io
+
+* Find datasets on glioma IDH
+
+* Continue Introduction
 
 ## Communication
 
@@ -119,3 +123,10 @@
 * Thursday --> Make "ampoule de congélation"
 
 * Friday --> test mycoplasme
+
+## Bibliography
+
+* Make a summary of a paper [0/3]  
+  * Metabolic reprogramming and epigenetic modifications on the path to cancer
+  * Genetic perturbation of PU.1 binding and chromatin looping at neutrophil enhancers associates with autoimmune disease
+  * Mapping long-range promoter contacts in human cells with high-resolution capture Hi-C

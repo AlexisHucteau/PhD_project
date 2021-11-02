@@ -82,4 +82,4 @@
 
 * Make a To do list
 * Start poster
-* 
+* Making network representations for poster

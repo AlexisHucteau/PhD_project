@@ -1,9 +1,9 @@
 # Meeting notes
 
-* [29.10.2021](#29-10-2021)
+* [29.10.2021](##week-43)
 
 
-# 29.10.2021 {#29-10-2021}
+# 29.10.2021 {#week-43}
 
 Chez les patients NR vs R à l'IDHi : **RELA** **STAT3** HIF1a **MYC** [link](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis#NR_vs_R)  
 Chez les patients High OS vs Low OS : **STAT3** MAPK1 FYN CTNN [link](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis#High_OS_vs_Low_OS10)  

@@ -7,6 +7,7 @@
   * [Online poster](#online-poster)
   * [Poster Number Allocation](#poster-number-allocation)
   * [POSTER PITCH VIDEO](#poster-pitch-video)
+  * [Poster production guidelines](#guidelines)
 * [The poster](#poster)
   * [Introduction](#introduction)
   * [Conclusion](#conclusion)
@@ -71,6 +72,30 @@ Titles and Fonts
 Titles and captions should be short and easy to read, preferably in a sans serif font. Use large lettering, allowing
 attendees to easily read the information presented. Remember to caption your poster with the abstract title,
 authors names and affiliations.  
+
+## General guidelines for poster production {#guidelines}
+
+A poster should be self-contained and self-explanatory, allowing different viewers to proceed on their own while
+the author is free to supplement or discuss particular points raised in inquiry. Presentations should be kept simple
+and clear. A mixture of text and graphics is recommended. Remember that the viewer, not the author, as in the
+case of slide presentations, determines the time spent at each poster.  
+### Poster Layout
+Arrange materials in columnsrather than rows. It is easier for viewers to scan a poster by moving along it, rather
+than by zigzagging back and forth in front of it. An introduction should be placed at the upper left and a conclusion
+at the lower right. The abstract does not need to be presented, as this is available to attendees beforehand in the
+conference app.  
+### Illustrations
+Figures should be clear, visible graphics, with large type. Each figure or table should have a heading of one or two
+lines. Additional essential information should be provided below in a legend. Photographs should have good
+contrast, sharp focus and, if necessary, an indication of scale.
+### Text
+Minimise narrative. Use large type in short, separated paragraphs. Numbered or bulleted lists are effective ways
+to convey a series of points. Do not set entire paragraphs in uppercase or boldface type.
+### Titles and Fonts
+Titles and captions should be short and easy to read, preferably in a sans serif font. Use large lettering, allowing
+attendees to easily read the information presented. Remember to caption your poster with the abstract title,
+authors names and affiliations.
+
 
 # The poster {#poster}
 

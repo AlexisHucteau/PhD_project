@@ -114,7 +114,21 @@ These IDH inhibitors have shown good clinical response in AML patients. However,
 
 ![AML Intro](Figures/AML_intro.jpg)
 
+![PPI network](Figures/PPI_network.png)
+
+![TF network](Figures/TF_network.png)
+
+![DEG](Figures/DEG_NR_R.png)
+
+![Network analysis](Figures/centrality_measures.jpg)
+
+![Before network analysis](Figures/Before_net_analysis.png)
+
+![Combination network](Figures/IDHi_network.png)
+
 ![Non responder vs responder Eigen measurement](Figures/Eigen_nr_r.png)
+
+![Potential method figure](Figures/Methods.png)
 
 ![RELA expression](Figures/RELA.png)
 

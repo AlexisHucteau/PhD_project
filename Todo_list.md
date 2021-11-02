@@ -114,7 +114,7 @@
 
 ## Deconvolution
 
-* Redo Venn diagram
+* Redo Venn diagram and analyze results
 
 ## Wet lab
 

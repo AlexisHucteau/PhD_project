@@ -119,11 +119,11 @@
 
 ## Wet lab
 
-* Wednesday --> Subculture
+* Wednesday --> Subculture 1:30pm --> 2:30pm
 
-* Thursday --> Make "ampoule de congélation"
+* Thursday --> Make "ampoule de congélation" 4:00pm --> 6:00pm
 
-* Friday --> test mycoplasme
+* Friday --> test mycoplasme --> 1:30pm --> 2:30pm
 
 ## Bibliography
 

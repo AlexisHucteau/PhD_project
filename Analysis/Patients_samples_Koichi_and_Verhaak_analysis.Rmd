@@ -85,7 +85,7 @@ Do_cool_scatterplot(High_OS_vs_Low_OS_network$features, "High OS versus Low OS")
 ## RELA in NR vs R Expression
 
 ```{r}
-Make_gene_expr_boxplots(RNAseq, "RELA", "R.B", "Good responder", "NR.B", "Bad responder", Factor_R_OR_NR_B)
+Make_gene_expr_boxplots(RNAseq, "RELA", "NR.B", "Bad responder", "R.B", "Good responder", Factor_R_OR_NR_B)
 ```
 
 ## MYC in NR vs R Expression

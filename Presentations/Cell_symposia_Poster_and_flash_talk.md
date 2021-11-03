@@ -110,11 +110,21 @@ These IDH inhibitors have shown good clinical response in AML patients. However,
 
 ## Methods {#methods}
 
-In this study, we analysed RNAseq and affymetrix data from different cohorts of AML patient in an IDHm context [1][Verhaak][TCGA].
-
-Using knowledge-based network of protein-protein interaction and transcription factor to target gene network, we reconstructed a specific regulatory network of the resistance to IDHi. 
+* Datasets
+  * RNAseq (IDHi therapy)
+  * Affymetrix (Chemotherapy)
+* Raw data analysis
+  * Differential gene expression
+  * Transcription factor activity inference
+* Knowledge-based network
+  * Protein-protein interaction
+  * Transcription factor - target genes
+* Network analysis
+  * Eigenvalue centrality
 
 ## Conclusion {#conlusion}
+
+
 
 ## Figures {#figures}
 
@@ -136,6 +146,6 @@ Using knowledge-based network of protein-protein interaction and transcription f
 
 ![Potential method figure](Figures/Methods.png)
 
-![RELA expression](Figures/RELA.png)
+![RELA expression](Figures/RELA_Koichi.png)
 
-![MYC expression](Figures/MYC.png)
+![MYC expression](Figures/MYC_Koichi.png)

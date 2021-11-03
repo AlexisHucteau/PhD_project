@@ -83,3 +83,8 @@
 * Make a To do list
 * Start poster
 * Making network representations for poster
+
+### 03.11.2021
+
+* Work on poster
+* Wet-lab 

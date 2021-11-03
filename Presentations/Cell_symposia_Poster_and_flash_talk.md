@@ -108,6 +108,12 @@ These IDH inhibitors have shown good clinical response in AML patients. However,
 
 **In this study, we analysed RNAseq and affymetrix data from different cohorts of AML patient in an IDHm context** [1][Verhaak][TCGA].
 
+## Methods {#methods}
+
+In this study, we analysed RNAseq and affymetrix data from different cohorts of AML patient in an IDHm context [1][Verhaak][TCGA].
+
+Using knowledge-based network of protein-protein interaction and transcription factor to target gene network, we reconstructed a specific regulatory network of the resistance to IDHi. 
+
 ## Conclusion {#conlusion}
 
 ## Figures {#figures}

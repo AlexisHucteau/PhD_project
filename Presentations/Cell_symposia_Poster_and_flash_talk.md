@@ -1,5 +1,7 @@
 # Cell symposia CDRC
 
+![The poster](Figures/Cancer_Cell_Symposium_CDRC_Alexis_H.png)
+
 [Link of google slide poster](https://docs.google.com/presentation/d/1SGu41BTUbBmlxsSAGCN7r55c-_qUw5zR97AjK1UJVxc/edit?usp=sharing)
 
 * [Instructions](#instructions)

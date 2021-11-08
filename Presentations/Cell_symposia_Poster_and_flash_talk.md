@@ -14,6 +14,7 @@
   * [Introduction](#introduction)
   * [Conclusion](#conclusion)
   * [Figures](#figures)
+* [Poster presentation](#presentation)
 * [Potential questions](#potential-questions)
 
 # Instructions {#instructions}
@@ -167,6 +168,26 @@ In addition, the network may model the resistance to IDHi inhibitor and may be t
 ![RELA expression](Figures/RELA_Koichi.png)
 
 ![MYC expression](Figures/MYC_Koichi.png)
+
+## Poster presentation {#presentation}
+
+So I'm working on Acute myeloid leukemia, a blood cancer and more particularly in the case of IDH mutation. In a few words, the mutation of IDH induces the abnormal production of 2 hydroxyglutarate that causes epigenetic and metabolic changes. Thoses changes give the cancer cells the ability to escape from therapies.  
+There is already IDH inhibitor therapies but there is still resistance to therapies. My objective is to investigate this resistance and understand why some patients are good responders and some others are bad responders.  
+To proceed, as a computational biologist I analyzed data from RNAseq and affymetrix. Make some differential gene expression analysis and infered the activity of the transcription factor.  
+Here, in the first panel, we have some results on it. So some genes are differentially expressed and some tf that are differentially actives. I compared those results with what I found by comparing Good responders to chemotherapies to bad responders in a way to make it specific to IDHi resistance.
+
+I put results into a network that is a combination of a TF - Target gene network called dorothea and a functional protein protein interaction network called Reactome. Then to highlight some genes or tf nodes that are very important in the network, I computed two centrality measurement: the eigenvalue centrality and the page rank. In a few words, those measurement score the nodes depending on the number of connections they have to other nodes scaled by the score of those connected nodes. If a node is connected to a lot of nodes that are themself highly connected, then, the first node has a high score.  
+
+So the network that have been made for the IDHi resistance is in the 3rd panel. The color correspond to the logFC of expression between Bad responders to good responders and the size is the eigenvalue centrality.  
+As you can see, the two main nodes are MYC and RELA but we can also highlight TFs like HIF1a, SMAD3, REL or CREB1.
+
+In the last panel is shown the network analysis were genes and TFs are ranked for eigenvalue centrality and page rank. It shows even more the relevance of those TFs in the resistance. You may notice STAT3 but it is also link to chemoresistance so it doesn't appeared into the network.  
+
+Finally, by checking the expression of RELA and MYC through different patients samples and phenotypes, only the IDHi resistance showed a difference in their expression.  
+
+Now we are currently making some in vitro experiments to confirm the results and algorithm of prediction will be made to predict from that, the response of patients to IDHi.  
+
+Feel free to ask questions.
 
 ## Potential questions {#potential-questions}
 

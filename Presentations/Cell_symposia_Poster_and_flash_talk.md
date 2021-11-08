@@ -166,3 +166,23 @@ In addition, the network may model the resistance to IDHi inhibitor and may be t
 ![RELA expression](Figures/RELA_Koichi.png)
 
 ![MYC expression](Figures/MYC_Koichi.png)
+
+## Potential questions {#potential-questions}
+
+* About the cohort of patients
+
+Data came from a study from Koichi and Courtney Dinardo. It's a patient cohort harbouring IDH mutation that received IDHinhibitor treatments. The RNAseq I analysed are at baseline  so it permitted to investigate the inner state that may shift from good responders to bad responders.
+
+* TF activity
+
+To predict TF activity, I used an algorithm called VIPER that look at the gene expression of TF target genes to predict their relative activity. For example, the up regulation of a gene A that is known to be activated by a TF B will up level the activity of the TF B.
+
+* MYC?
+
+A chromatin alteration of the chromosome 16 leads to the repression MYC by replacing the SWI/SNF TF by RUNX1 on its enhancer.
+A SWI/SNF TF called ARID1A is hyper and downregulated in CHolangiocarcinoma IDHm.
+There is also a MYC enhancer cluster that regulated normal and leukeamic haematopoietic stem cell hierarchies.
+
+* RELA
+
+Also called NF-kB is involved in several cellular functions in hematological malignancies, i.e. inflammation, apoptosis, cell survival, proliferation, angiogenesis, and innate and acquired immunity.

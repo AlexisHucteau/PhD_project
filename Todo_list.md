@@ -150,4 +150,10 @@
 
 ## Wet lab
 
-Every 2 days --> Subculture?
+Monday --> Subculture (3 samples)
+Tuesday --> Subculture + Dox +/- AGI
+Wednesday --> Subculture (5 samples)
+
+## Conferences
+
+* Cell symposium

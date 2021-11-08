@@ -2,6 +2,8 @@
 
 * [Week 42](#week-42)
 * [Week 43](#week-43)
+* [Week 44](#week-44)
+* [Week 45](#week-45)
 
 ## 18.10.2021 - 22.10.2021 {#week-42}
 
@@ -87,4 +89,27 @@
 ### 03.11.2021
 
 * Work on poster
-* Wet-lab 
+* Wet-lab
+
+### 04.11.2021
+
+* Working on poster
+* Team 18 Meetings (11:00am - 12:45pm)
+* Team 21 Meetings (2:00pm - 4:00pm)
+* Wet lab (4:00pm - 6:00pm)
+
+### 05.11.2021
+
+* Working on poster
+* Wet lab (1:30pm - 3:30pm)
+* Working on Poster + Flash talk
+
+## 08.11.2021 - 10.11.2021 {#week-45}
+
+### 08.11.2021
+
+* Finishing the poster
+* Wet-lab (Sub culture HL60, M14 - Dox, M14 + Dox) (2:00pm - 3:30pm)
+* Preparing poster session
+
+### 09.11.2021

@@ -99,6 +99,10 @@ authors names and affiliations.
 
 # The poster {#poster}
 
+## Flash
+
+[Youtube Flash for poster presentation](https://www.youtube.com/watch?v=r1lHdCoC8YA)
+
 ## Introduction {#introduction}
 
 Acute Myeloid Leukemia is a blood cancer characterized by a blockage in myeloid differentiation and hyperproliferation of transformed myeloid progenitor cells.   
@@ -124,6 +128,17 @@ These IDH inhibitors have shown good clinical response in AML patients. However,
 
 ## Conclusion {#conlusion}
 
+From gene expression data and using computational approaches, we were able to highlight potential key genes of the resistance to IDH inhibitor therapies.
+
+Transcriptional informations provide a snapshot of the current state of cells. From this snapshot we can still infer transcription factor activity to better fit to the reality and to investigate the master of the regulation in resistance.
+
+The activity of TFs is linked to the gene expression and furthermore the downstream activity of proteins. Connections of targeted genes to other genes in a protein protein interaction manner help to understand mechanisms in actions.
+
+Network analysis permits to focus attention on the key effectors of the resistance.
+
+From this workflow RELA and MYC showed the highest interest and preliminary experiments in vitro are in progress to confirm this in silico result.
+
+In addition, the network may model the resistance to IDHi inhibitor and may be the starting point of a method to predict the response to the therapy.
 
 
 ## Figures {#figures}

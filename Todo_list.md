@@ -137,3 +137,17 @@
 ## Communication
 
 * CDRC poster presentation on Monday
+
+## IDH PhD Poject
+
+* Put tables of DEG, Mviper etc. on git .io
+
+* Find datasets on glioma IDH
+
+* Continue Introduction
+
+* glm of response (network?)
+
+## Wet lab
+
+Every 2 days --> Subculture?

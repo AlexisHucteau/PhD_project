@@ -16,6 +16,8 @@ Back to [PhD Project](https://alexishucteau.github.io/PhD_project/)
 
 [Source code](https://alexishucteau.github.io/PhD_project/Analysis/source_code/HL60_MOLM14_RNAseq_code.R)
 
+[Notes on cell lines](https://alexishucteau.github.io/PhD_project/Analysis/In_silico/Cell_lines_notes)
+
 [Patients samples analysis](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis)
 
 ```{r, include = F}

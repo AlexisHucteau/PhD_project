@@ -42,7 +42,7 @@ Notes about cell lines like HL60 and MOLM14 specificities
 
 ## Conferences
 
-* [**<span style="color:blue">Cell symposia CDRC</span>**](https://alexishucteau.github.io/PhD_project/Conferences/CDRC/Main)
+* [**<span style="color:blue">Cell symposia CDRC</span>**](https://alexishucteau.github.io/PhD_project/Conferences/CDRC/ Main)
 
 ## Bibliography
 

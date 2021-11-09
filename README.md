@@ -26,7 +26,7 @@ The weekly advances updated day by day.
 Notes for and about meetings
 
 * [**<span style="color:blue">Cell lines notes</span>**](https://alexishucteau.github.io/PhD_project/Analysis/In_silico/Cell_lines_notes)  
-Notes about cell lines like HL60 and MOLM14 specificities 
+Notes about cell lines like HL60 and MOLM14 specificities
 
 * [**<span style="color:blue">Cell line analysis on HL60 and MOLM14 IDHm +/- IDHi Affymetrix</span>**](https://alexishucteau.github.io/PhD_project/Analysis/HL60_MOLM14_RNAseq_analysis)  
 
@@ -39,6 +39,10 @@ Notes about cell lines like HL60 and MOLM14 specificities
 ## Presentations
 
 * [**<span style="color:blue">Cell symposia CDRC</span>**](https://alexishucteau.github.io/PhD_project/Presentations/Cell_symposia_Poster_and_flash_talk)
+
+## Conferences
+
+* [**<span style="color:blue">Cell symposia CDRC</span>**](https://alexishucteau.github.io/PhD_project/Conferences/CDRC/main)
 
 ## Bibliography
 

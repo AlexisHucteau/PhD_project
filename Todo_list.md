@@ -146,7 +146,7 @@
 
 * Continue Introduction
 
-* glm of response (network?)
+* Compare 56-11 to Molm14 
 
 ## Wet lab
 

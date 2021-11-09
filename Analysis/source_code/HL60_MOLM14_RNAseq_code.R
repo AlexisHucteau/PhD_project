@@ -8,6 +8,7 @@ library(dorothea)
 library(data.table)
 library(stringr)
 library(igraph)
+library(ggplot2)
 
 # Preparation of transcriptomes
 Annotations <- data.frame(ACCNUM = sapply(contents(hugene20sttranscriptclusterACCNUM), paste, collapse = ", "), 
@@ -201,10 +202,6 @@ mrs2cytoscape <- function(mrs,full.path) {
   
   my_style <- "my_style"
   
-  
-  
-  
-  
   createVisualStyle(my_style, list())
   setNodeColorDefault("#D3D3D3", style.name = my_style)
   blue_white_red <- c("#0000FF", "#FFFFFF", "#FF0000")
@@ -385,5 +382,31 @@ Do_cool_scatterplot <- function(Feature, title){
     ylab("Eigen Centrality (log)")+
     scale_colour_manual(values=c("#0000FF", "#FF0000"))
 }
+
+HL60_m_vs_M14_m <- run_msviper(Transcriptomes_SYMBOL, 
+                                   regulons, use_aracne = T, 
+                                   Phenotype == "HL60.Mut.DMF", Phenotype == "MOLM14.Mut.DMF",  
+                                   "HL60_Mut", "M14_Mut", 
+                                   minsize = 4, ges.filter=T)
+
+HL60_m_agi_vs_M14_m_agi <- run_msviper(Transcriptomes_SYMBOL, 
+                                           regulons, use_aracne = T, 
+                                           Phenotype == "HL60.Mut.AGI5198", Phenotype == "MOLM14.Mut.AGI5198",  
+                                           "HL60_IDHi", "M14_IDHi", 
+                                           minsize = 4, ges.filter=T)
+
+HL60_m_vs_M14_m_network <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.DMF-MOLM14.Mut.DMF`, c(10, 2, 5),
+                                        HL60_m_vs_M14_m$mrs_table, c(1,2,3), 
+                                                  PPI_TF_target_Network)
+
+HL60_m_agi_vs_M14_m_agi_network  <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-MOLM14.Mut.AGI5198`, c(10, 2, 5), 
+                                                 HL60_m_agi_vs_M14_m_agi$mrs_table, c(1,2,3), 
+                                             PPI_TF_target_Network)
+
+write.csv(HL60_m_vs_M14_m_network$features, "~/tmp/HL60_M14_IDHm_features.csv", quote = F, row.names = F)
+HL60_m_vs_M14_m_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_M14_IDHm_net.csv", quote = F, row.names = F)
+
+write.csv(HL60_m_agi_vs_M14_m_agi_network$features, "~/tmp/HL60_M14_IDHi_features.csv", quote = F, row.names = F)
+HL60_m_agi_vs_M14_m_agi_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_M14_IDHi_network.csv", quote = F)
 
 gc()

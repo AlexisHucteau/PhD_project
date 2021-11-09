@@ -113,3 +113,7 @@
 * Preparing poster session
 
 ### 09.11.2021
+
+* Looking at HL60 vs M14 (Possible Bad responders vs Good responders)
+* Journal club (11:00am - 12:15pm)
+* Wet lab (2:30 - 4:00pm)

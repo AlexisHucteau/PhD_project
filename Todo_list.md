@@ -146,13 +146,13 @@
 
 * Continue Introduction
 
-* Compare 56-11 to Molm14 
+* Compare 56-11 to Molm14
 
 ## Wet lab
 
-Monday --> Subculture (3 samples)
-Tuesday --> Subculture + Dox +/- AGI
-Wednesday --> Subculture (5 samples)
+Monday --> Subculture (3 samples)  
+Tuesday --> Subculture + Dox +/- AGI  
+Wednesday --> Subculture (5 samples)  
 
 ## Conferences
 

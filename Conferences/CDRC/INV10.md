@@ -1,6 +1,6 @@
 # Alternative ErbB-2 variants located in the nucleus as novel therapeutic targets for triple negative breast cancer
 
-![Main](Slides/Main_INV10.png)
+![Main](Slides/main_inv10.png)
 
 ## Abstract
 
@@ -9,29 +9,3 @@ Triple negative breast cancer (TNBC) refers to tumors that do not express clinic
 ## Slides notes
 
 ![Slide_1](Slides/slide1_inv10.png)
-
-
-
-
-![Slide_2](Slides/slide2_inv10.png)
-
-
-
-
-![Slide_3](Slides/slide3_inv10.png)
-
-
-
-
-![Slide_4](Slides/slide4_inv10.png)
-
-
-
-
-![Slide_5](Slides/slide5_inv10.png)
-
-
-
-
-
-![Slide_6](Slides/slide6_inv10.png)

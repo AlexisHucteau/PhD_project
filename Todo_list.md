@@ -134,6 +134,15 @@
 
 # **08.11.2021 - 10.11.2021** {#week-45}
 
+## Team 18 Informatic park
+
+* Install computer for new person
+* Buy some screens for the PC of the salle commune
+
+## Deconvolution
+
+* Redo Venn diagram and heatmap 
+
 ## Communication
 
 * CDRC poster presentation on Monday

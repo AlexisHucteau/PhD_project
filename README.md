@@ -5,16 +5,13 @@ In silico, epigenomic and functional investigations of resistance to IDH inhibit
 
 An introduction of the thesis topic with some bibliography on AML, IDHm, epigenomic and stress in cancer.
 
-
 ## Organisation
-
 
 * [**<span style="color:blue">Weekly to-do lists</span>**](https://alexishucteau.github.io/PhD_project/Todo_list)  
 The weekly to-do lists updated every days if needed.
 
 * [**<span style="color:blue">Weekly advances</span>**](https://alexishucteau.github.io/PhD_project/Weekly_advances)  
 The weekly advances updated day by day.
-
 
 ## Analysis
 

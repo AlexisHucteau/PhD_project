@@ -4,6 +4,7 @@
 * [Week 43](#week-43)
 * [Week 44](#week-44)
 * [week 45](#week-45)
+* [week 46](#week-46)
 
 # **18.10.2021 - 22.10.2021** {#week-42}
 
@@ -141,13 +142,13 @@
 
 ## Deconvolution
 
-* Redo Venn diagram and heatmap 
+* Redo Venn diagram and heatmap
 
 ## Communication
 
 * CDRC poster presentation on Monday
 
-## IDH PhD Poject
+## IDH PhD Project
 
 * Put tables of DEG, Mviper etc. on git .io
 
@@ -166,3 +167,43 @@ Wednesday --> Subculture (5 samples)
 ## Conferences
 
 * Cell symposium
+
+# **15.11.2021 - 19.11.2021** {#week-46}
+
+## Team 18 Informatics
+
+* Buy some screens for the PC of the salle commune
+
+## Deconvolution
+
+* Redo figure 2 of the paper
+
+## IDH PhD Project
+
+* Put tables of DEG, Mviper etc. on git .io
+
+* Redo DNA methylation analysis
+
+* From differences between Molm and HL60, make a signature to compare Good versus bad responders.
+
+* Find datasets on glioma IDH
+
+* Continue Introduction
+
+## Wet lab
+
+* ATP
+* Scenith
+* Rhod2
+* Subcultures
+
+## Bibliography
+
+* Find a paper on methods for analysis of DNA met and/or RNAseq data
+
+* Make a summary of a paper [0/1]  
+  *
+
+## Formations
+
+* Thursday --> Programme mentorat

@@ -2,6 +2,7 @@
 
 [Week 42](#week-42)  
 [Week 43](#week-43)  
+[Week 46](#week-46)
 
 ## 18.10.2021 - 22.10.2021 {#week-42}
 
@@ -164,3 +165,13 @@ Review "metabolic enzymes functioning as epigenetic modulators in the regulation
 
 * [Integrated Stress Response Activity Marks Stem Cells in Normal Hematopoiesis and Leukemia](https://www-sciencedirect-com.proxy.insermbiblio.inist.fr/science/article/pii/S2211124718315973?via%3Dihub)  
 AML displayed **eIF2** scarcity promoting **ATF4** upregulation that activates ISR promoting cell survival.
+
+
+------------
+
+## 15.11.2021 - 19.11.2021 {#week-46}
+
+#### [1]
+
+[Non-genetic mechanisms of therapeutic resistance in cancer](https://www-nature-com.proxy.insermbiblio.inist.fr/articles/s41568-020-00302-4)
+[Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/)

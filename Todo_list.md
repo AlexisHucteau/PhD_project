@@ -203,7 +203,7 @@ Wednesday --> Subculture (5 samples)
 * Find a paper on methods for analysis of DNA met and/or RNAseq data
 
 * Make a summary of a paper [0/1]  
-  *
+  * Non-genetic mechanisms of therapeutic resistance in cancer
 
 ## Formations
 

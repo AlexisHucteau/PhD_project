@@ -172,7 +172,8 @@ Wednesday --> Subculture (5 samples)
 
 ## Team 18 Informatics
 
-* Buy some screens for the PC of the salle commune
+* Buy some screens and stuff for the PC of the salle commune
+* Test PC commun and find out what happen to Thomas's computer
 
 ## Deconvolution
 

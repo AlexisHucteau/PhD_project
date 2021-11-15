@@ -117,3 +117,14 @@
 * Looking at HL60 vs M14 (Possible Bad responders vs Good responders)
 * Journal club (11:00am - 12:15pm)
 * Wet lab (2:30 - 4:00pm)
+
+## 15.11.2021 - 19.11.2021 {#week-46}
+
+### 15.11.2021
+
+* Making a todo list
+* Do some informatic management for team 18
+* Jean-Pascal CAPP talk
+* Wet lab subculture
+
+### 16.11.2021

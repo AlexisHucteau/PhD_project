@@ -191,6 +191,8 @@ Wednesday --> Subculture (5 samples)
 
 * Continue Introduction
 
+* Check gene expression variability through cell lines & Patient response
+
 ## Wet lab
 
 * ATP

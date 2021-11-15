@@ -14,3 +14,18 @@ editor_options:
 
 Back to [PhD Project](https://alexishucteau.github.io/PhD_project/)
 
+```{r}
+DMP.GUI(DMP = DMP_Res_vs_NonRes_Koichi$R_to_NR, 
+        beta = as.matrix(BMIQ_Koichi[,Focus_samples]), 
+        pheno = Factor_Koichi_response_methylation[Focus_samples]
+         )
+```
+
+```{r}
+DMR.GUI(DMR = DMR_Res_vs_NonRes_Koichi$R_to_NR, 
+        beta = as.matrix(BMIQ_Koichi[,Focus_samples]), 
+        pheno = Factor_Koichi_response_methylation[Focus_samples], 
+        arraytype = "EPIC"
+        )
+```
+

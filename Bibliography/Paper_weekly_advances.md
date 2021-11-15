@@ -174,4 +174,9 @@ AML displayed **eIF2** scarcity promoting **ATF4** upregulation that activates I
 #### [1]
 
 [Non-genetic mechanisms of therapeutic resistance in cancer](https://www-nature-com.proxy.insermbiblio.inist.fr/articles/s41568-020-00302-4)
+[Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/Non_genetic_mechanisms_of_therapeutic_resistance_in_cancer)
+
+#### [2]
+
+[]()
 [Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/)

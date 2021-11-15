@@ -126,5 +126,8 @@
 * Do some informatic management for team 18
 * Jean-Pascal CAPP talk
 * Wet lab subculture
+* Preparation of read-out
 
 ### 16.11.2021
+
+* Read-out the whole day

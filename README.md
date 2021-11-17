@@ -1,11 +1,20 @@
 # PhD_project
 In silico, epigenomic and functional investigations of resistance to IDH inhibitors in acute myeloid leukemia
 
-## [<span style="color:blue">Introduction</span>](https://alexishucteau.github.io/PhD_project/Bibliography/Introduction)
+* [Introduction](#intro)
+* [Organisation](#orga)
+* [Analysis](#analysis)
+  * [In silico analysis](#silico)
+  * [In vitro analysis](#vitro)
+* [Presentations](#presentations)
+* [Conferences](#conf)
+* [Bibliography](#biblio)
+
+## [<span style="color:blue">Introduction</span>](https://alexishucteau.github.io/PhD_project/Bibliography/Introduction) {#intro}
 
 An introduction of the thesis topic with some bibliography on AML, IDHm, epigenomic and stress in cancer.
 
-## Organisation
+## Organisation {#orga}
 
 * [**<span style="color:blue">Weekly to-do lists</span>**](https://alexishucteau.github.io/PhD_project/Todo_list)  
 The weekly to-do lists updated every days if needed.
@@ -13,9 +22,9 @@ The weekly to-do lists updated every days if needed.
 * [**<span style="color:blue">Weekly advances</span>**](https://alexishucteau.github.io/PhD_project/Weekly_advances)  
 The weekly advances updated day by day.
 
-## Analysis
+## Analysis {#analysis}
 
-### In silico analysis
+### In silico analysis {#silico}
 
 * [**<span style="color:blue">Tutorial rMATS</span>**](https://alexishucteau.github.io/PhD_project/Analysis/In_silico/rMATS_tuto)  
 
@@ -29,21 +38,21 @@ Notes about cell lines like HL60 and MOLM14 specificities
 
 * [**<span style="color:blue">Patients samples analysis on Koichi and Verhaak dataset RNAseq & affymetrix</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis)
 
-### In vitro analysis
+* [**<span style="color:blue">Methylation analysis on Koichi's cohort Patient sample</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Koichi_methylation_analysis)
+
+### In vitro analysis {#vitro}
 
 * [**<span style="color:blue">Notes on Wet lab</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Notes)
 
-## Presentations
+## Presentations {#presentations}
 
 * [**<span style="color:blue">Cell symposia CDRC</span>**](https://alexishucteau.github.io/PhD_project/Presentations/Cell_symposia_Poster_and_flash_talk)
 
-## Conferences
-
-* [**<span style="color:blue">Cell symposia CDRC</span>**](https://alexishucteau.github.io/PhD_project/Conferences/CDRC/ Main)
+## Conferences {#conf}
 
 * [**<span style="color:blue">CRCT conferences</span>**](https://alexishucteau.github.io/PhD_project/Conferences/CRCT_conf/Main)
 
-## Bibliography
+## Bibliography {#biblio}
 
 * [**<span style="color:blue">Weekly biblio</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/Paper_weekly_advances)
 

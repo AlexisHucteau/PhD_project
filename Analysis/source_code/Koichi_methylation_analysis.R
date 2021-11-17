@@ -27,8 +27,29 @@ DMP_Res_vs_NonRes_Koichi <- champ.DMP(as.matrix(BMIQ_Koichi[,Focus_samples]),
                                       pheno = Factor_Koichi_response_methylation[Focus_samples], 
                                       arraytype = "EPIC")
 
+Block_Res_vs_NonRes_Koichi <- champ.Block(beta = as.matrix(BMIQ_Koichi[,Focus_samples]), 
+            pheno = Factor_Koichi_response_methylation[Focus_samples], 
+            arraytype = "EPIC", cores = 6)
+
 DNAmet_GSEA <- champ.GSEA(beta = as.matrix(BMIQ_Koichi[,Focus_samples]), 
            DMP = DMP_Res_vs_NonRes_Koichi, 
            DMR = DMR_Res_vs_NonRes_Koichi, 
            pheno = Factor_Koichi_response_methylation[Focus_samples],
            arraytype = "EPIC")
+
+
+DMP.GUI(DMP = DMP_Res_vs_NonRes_Koichi$R_to_NR, 
+        beta = as.matrix(BMIQ_Koichi[,Focus_samples]), 
+        pheno = Factor_Koichi_response_methylation[Focus_samples]
+)
+
+DMR.GUI(DMR = DMR_Res_vs_NonRes_Koichi, 
+        beta = as.matrix(BMIQ_Koichi[,Focus_samples]), 
+        pheno = Factor_Koichi_response_methylation[Focus_samples], 
+        arraytype = "EPIC"
+)
+
+Block.GUI(Block = Block_Res_vs_NonRes_Koichi, 
+          beta = as.matrix(BMIQ_Koichi[,Focus_samples]), 
+          pheno = Factor_Koichi_response_methylation[Focus_samples], 
+          arraytype = "EPIC")

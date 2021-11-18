@@ -44,6 +44,8 @@ Notes about cell lines like HL60 and MOLM14 specificities
 
 * [**<span style="color:blue">Notes on Wet lab</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Notes)
 
+* [**<span style="color:blue">Experiments done on wet lab</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Experiments)
+
 ## Presentations {#presentations}
 
 * [**<span style="color:blue">Cell symposia CDRC</span>**](https://alexishucteau.github.io/PhD_project/Presentations/Cell_symposia_Poster_and_flash_talk)

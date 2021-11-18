@@ -49,6 +49,28 @@ plot.PCA(PCA_Verhaak)
 fviz_eig(PCA_Verhaak, addlabels = T)
 ```
 
+# Variability of gene expression
+
+## Koichi's cohort
+
+```{r}
+ggplot(Variability_in_Patients, aes(x= Pheno, y = Variability, fill = Pheno))+
+  geom_boxplot()+
+  geom_point(size = 0.5)+
+  xlab("Phenotypes")+
+  labs(title = "Gene expression variability depending IDHi response")
+```
+
+## Verhaak Cohort
+
+```{r}
+ggplot(Variability_in_Patients_Verhaak, aes(x= Pheno, y = Variability, fill = Pheno))+
+  geom_boxplot()+
+  geom_point(size = 0.5)+
+  xlab("Phenotypes")+
+  labs(title = "Gene expression variability depending overall survival")
+```
+
 
 # TF analysis
 

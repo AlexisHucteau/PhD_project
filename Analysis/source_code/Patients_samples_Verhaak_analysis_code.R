@@ -350,3 +350,8 @@ Do_cool_scatterplot <- function(Feature, title){
     ylab("Eigen Centrality (log)")+
     scale_colour_manual(values=c("#0000FF", "#FF0000"))
 }
+
+Variability_in_Patients_Verhaak <- data.frame(Variability = sapply(Verhaak_norm_data_SYMBOL, function(x){var(x)}),
+                                      Pheno = OS)
+
+gc()

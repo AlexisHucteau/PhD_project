@@ -8,7 +8,6 @@ library(dplyr)
 
 "%ni%" <- Negate("%in%")
 RNAseq_diff_gene_expression_analysis <- list()
-Gene_set_diff_analysis <- list()
 RNAseq <- read.csv("~/GitHub/Koichi_gene_expression_git/Koichi_gene_expression_analyses/DATA/RNAseq_parsed.csv", row.names = 1, header = T, check.names = F)
 Clinical_patient_data <- read.csv("~/GitHub/Koichi_gene_expression_git/Koichi_gene_expression_analyses/DATA/Clinical_patient_data.csv")
 
@@ -390,5 +389,13 @@ Do_cool_scatterplot <- function(Feature, title){
     ylab("Eigen Centrality (log)")+
     scale_colour_manual(values=c("#0000FF", "#FF0000"))
 }
+
+Variability_in_Patients <- data.frame(Variability = sapply(RNAseq, function(x){var(x)}),
+                                      Pheno = Factor_R_OR_NR_B)
+
+
+
+ggplot(Variability_in_Patients, aes(x= Pheno, y = Variability))+
+  geom_boxplot()
 
 gc()

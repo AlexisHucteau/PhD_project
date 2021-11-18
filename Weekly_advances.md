@@ -131,3 +131,20 @@
 ### 16.11.2021
 
 * Read-out the whole day
+
+### 17.11.2021
+
+* Redo figure 2 of deconv paper
+* Do some bioinfo & info stuff for team 18
+* Rerun Methylation analysis on Koichi patient
+* Add variability of gene expression through patient samples
+
+### 18.11.2021
+
+* Meeting "Programme mentorat"
+* Biblio on Wetlab experiment to prepare analysis of cytometry
+* Redo figure 2
+
+### 19.11.2021
+
+* Analysis of cytometric data

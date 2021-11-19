@@ -136,15 +136,15 @@
 
 * Redo figure 2 of deconv paper
 * Do some bioinfo & info stuff for team 18
-* Rerun Methylation analysis on Koichi patient
-* Add variability of gene expression through patient samples
+* [Rerun Methylation analysis on Koichi patient](https://alexishucteau.github.io/PhD_project/Analysis/Koichi_methylation_analysis)
+* [Add variability of gene expression through patient samples](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis#Variability_of_gene_expression)
 
 ### 18.11.2021
 
 * Meeting "Programme mentorat"
-* Biblio on Wetlab experiment to prepare analysis of cytometry
+* [Biblio on Wetlab experiment to prepare analysis of cytometry](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Experiments_on_56_11_and_MOLM14_R132_AGI)
 * Redo figure 2
 
 ### 19.11.2021
 
-* Analysis of cytometric data
+* [Analysis of cytometric data](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Results_of_56_11_and_MOLM14_R132_AGI_exp)

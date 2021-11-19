@@ -5,6 +5,8 @@
 * [Week 44](#week-44)
 * [week 45](#week-45)
 * [week 46](#week-46)
+* [week 47](#week-47)
+
 
 # **18.10.2021 - 22.10.2021** {#week-42}
 
@@ -172,33 +174,30 @@ Wednesday --> Subculture (5 samples)
 
 ## Team 18 Informatics
 
-* Buy some screens and stuff for the PC of the salle commune
-* Test PC commun and find out what happen to Thomas's computer
+* Buy some screens and stuff for the PC of the salle commune [**DONE**]
+* Test PC commun and find out what happen to Thomas's computer [**DONE**]
 
 ## Deconvolution
 
-* Redo figure 2 of the paper
+* Redo figure 2 of the paper [**DONE**]
 
 ## IDH PhD Project
 
 * Put tables of DEG, Mviper etc. on git .io
-
-* Redo DNA methylation analysis
-
-* From differences between Molm and HL60, make a signature to compare Good versus bad responders.
-
+* Redo DNA methylation analysis [**DONE**]
+* From differences between Molm and HL60 [**DONE**]
+* Make a signature to compare Good versus bad responders
 * Find datasets on glioma IDH
-
 * Continue Introduction
-
-* Check gene expression variability through cell lines & Patient response
+* Check gene expression variability through cell lines & Patient response [**DONE**]
 
 ## Wet lab
 
-* ATP
-* Scenith
-* Rhod2
-* Subcultures
+* ATP [**DONE**]
+* Scenith [**DONE**]
+* Rhod2 [**DONE**]
+* Subcultures [**DONE**]
+* Analysis of the data [**DONE**]
 
 ## Bibliography
 
@@ -209,4 +208,27 @@ Wednesday --> Subculture (5 samples)
 
 ## Formations
 
-* Thursday --> Programme mentorat
+* Thursday --> Programme mentorat  [**DONE**]
+
+# **22.11.2021 - 26.11.2021** {#week-47}
+
+## IDH PhD Project
+
+* Put tables of DEG, Mviper etc. on git .io
+* Make a signature to compare Good versus bad responders
+* Find datasets on glioma IDH
+* Continue Introduction
+
+## Wet lab
+
+* Continue biblio of the wetlab experiments
+* Western blot
+* RNA experiments
+* Analysis of the results
+
+## Bibliography
+
+* Find a paper on methods for analysis of DNA met and/or RNAseq data
+
+* Make a summary of a paper [0/1]  
+  * Non-genetic mechanisms of therapeutic resistance in cancer

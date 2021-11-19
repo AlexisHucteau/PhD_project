@@ -30,28 +30,49 @@ library(dplyr)
 load("~/DATA/Patients_data.RData")
 ```
 
+# Summary
 
-# Analysis of Patients samples Koichi's dataset
+* [PCA analysis](#pca)
+  * [Koichi](#pca-koichi)
+  * [Verhaak](#pca-verhaak)
+* [Variability of gene expression](#var)
+  * [Koichi](#var-koichi)
+  * [Verhaak](#var-verhaak)
+* [Transcription factor analysis](#tf)
+  * [Koichi](#tf-koichi)
+  * [Verhaak](#tf-verhaak)
+* [Eigenvalue cantrality analysis](#eigen)
+  * [Koichi](#eigen-koichi)
+  * [Verhaak](#eigen-verhaak)
+* [RELA and MYC expressions](#expressions)
+  * [RELA IDHi](#rela-idhi)
+  * [MYC IDHi](#myc-idhi)
+  * [RELA OS](#rela-os)
+  * [MYC OS](#myc-os)
+* [Networks](#networks)
+  * [IDHi](#network-idhi)
+  * [OS](#network-os)
+  
+  
+# PCA analysis {#pca}
 
-# PCA analysis
-
-## Koichi's dataset
+## Koichi's dataset {#pca-koichi}
 
 ```{r PCA plots}
 plot.PCA(PCA_rnaseq)
 fviz_eig(PCA_rnaseq, addlabels = T)
 ```
 
-## Verhaak's dataset
+## Verhaak's dataset {#pca-verhaak}
 
 ```{r}
 plot.PCA(PCA_Verhaak)
 fviz_eig(PCA_Verhaak, addlabels = T)
 ```
 
-# Variability of gene expression
+# Variability of gene expression {#var}
 
-## Koichi's cohort
+## Koichi's cohort {#var-koichi}
 
 ```{r}
 ggplot(Variability_in_Patients, aes(x= Pheno, y = Variability, fill = Pheno))+
@@ -61,7 +82,7 @@ ggplot(Variability_in_Patients, aes(x= Pheno, y = Variability, fill = Pheno))+
   labs(title = "Gene expression variability depending IDHi response")
 ```
 
-## Verhaak Cohort
+## Verhaak Cohort {#var-verhaak}
 
 ```{r}
 ggplot(Variability_in_Patients_Verhaak, aes(x= Pheno, y = Variability, fill = Pheno))+
@@ -72,9 +93,9 @@ ggplot(Variability_in_Patients_Verhaak, aes(x= Pheno, y = Variability, fill = Ph
 ```
 
 
-# TF analysis
+# TF analysis {#tf}
 
-## NR vs R IDHi
+## NR vs R IDHi {#tf-koichi}
 
 ```{r TF mviper plots}
 plot(R_NR_msviper$mrs)
@@ -82,62 +103,62 @@ plot(R_NR_msviper$mrs)
 
 
 
-## High OS vs Low OS
+## High OS vs Low OS {#tf-verhaak}
 
 ```{r}
 plot(High_OS_vs_Low_OS_msviper$mrs)
 ```
 
-# Eigen centrality analysis
+# Eigen centrality analysis {#eigen}
 
-## NR vs R
+## NR vs R {#eigen-koichi}
 
 ```{r}
 Do_cool_scatterplot(NR_R_network$features, "NR vs R")
 ```
 
-## High OS vs Low OS
+## High OS vs Low OS {#eigen-verhaak}
 
 ```{r}
 Do_cool_scatterplot(High_OS_vs_Low_OS_network$features, "High OS versus Low OS")
 ```
 
-# RELA and MYC expression Patients samples
+# RELA and MYC expression Patients samples {#expressions}
 
-## RELA in NR vs R Expression
+## RELA in NR vs R Expression {#rela-idhi}
 
 ```{r}
 Make_gene_expr_boxplots(RNAseq, "RELA", "NR.B", "Bad responder", "R.B", "Good responder", Factor_R_OR_NR_B)
 ```
 
-## MYC in NR vs R Expression
+## MYC in NR vs R Expression {#myc-idhi}
 
 ```{r}
 Make_gene_expr_boxplots(RNAseq, "MYC", "NR.B", "Bad responder", "R.B", "Good responder", Factor_R_OR_NR_B)
 ```
 
-## RELA in High OS vs Low OS
+## RELA in High OS vs Low OS {#rela-os}
 
 ```{r}
 Make_gene_expr_boxplots(Verhaak_norm_data_SYMBOL, "RELA", "High_OS", "High_OS", "Low_OS", "Low_OS", OS)
 ```
 
-## MYC in High OS vs Low OS
+## MYC in High OS vs Low OS {#myc-os}
 
 ```{r}
 Make_gene_expr_boxplots(Verhaak_norm_data_SYMBOL, "MYC", "High_OS", "High_OS", "Low_OS", "Low_OS", OS)
 ```
 
 
-# Network signatures
+# Network signatures {#networks}
 
-## NR vs R
+## NR vs R {#network-idhi}
 
 ![NR vs R](../Pictures/NR_R.png)
 
 
 
 
-## High OS vs Low OS
+## High OS vs Low OS {#network-os}
 
 ![High OS vs Low OS](../Pictures/High_low_OS.png)

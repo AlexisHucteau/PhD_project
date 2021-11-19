@@ -1,0 +1,127 @@
+---
+title: "Facs analysis"
+author: Alexis Hucteau
+date: "`r Sys.Date()`"
+output:
+    html_document:
+      toc: yes
+      toc_float: yes
+      theme: united
+editor_options:
+  markdown:
+    wrap: sentence
+---
+
+Back to [PhD Project](https://alexishucteau.github.io/PhD_project/)
+
+```{r, include=F}
+library(ggplot2)
+
+Diff_facs_analysis <- read.csv("Data/Diff_AGI.csv")
+Rhod2_facs_analysis <- read.csv("Data/Rhod2_AGI.csv")
+PpIX_facs_analysis <- read.csv("Data/PpIX_AGI_ALA_Basal.csv")
+Scenith_analysis <- read.csv("Data/Scenith.csv")
+```
+
+# Summary
+
+* [Rhod2](#rhod2)
+* [PpIX](#ppix)
+* [PPIX flux](#ppix-flux)
+* [Scenith](#scenith)
+  * [Glycolyse dependency](#glycolyse)
+  * [Mitochondria dependency](#mito)
+* [Differenciation](#diff)
+  * [CD11b](#cd11b)
+  * [CD14](#cd14)
+  * [CD15](#cd15)
+
+# Rhod2, calcium indicator {#rhod2}
+
+```{r}
+ggplot(data=Rhod2_facs_analysis, aes(x = Cell.line, y = Rhod2, color = factor(Treatment, levels = c("DMSO", "AGI")))) +
+  scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
+  geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
+  labs(color = "Treatment", title = "Calcium indicator")+
+  theme_minimal()
+```
+
+# PpIX {#ppix}
+
+```{r}
+ggplot(data=PpIX_facs_analysis, aes(x = Cell.line, y = MFI_PpIX, color = factor(Treatment, levels = c("DMSO", "AGI")))) + 
+  scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
+  geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
+  labs(color = "Treatment", title = "PpIX indicator")+
+  theme_minimal()
+```
+
+# PpIX flux (ALA/basal) {#ppix-flux}
+
+```{r}
+ggplot(data=PpIX_facs_analysis, aes(x = Cell.line, y = ALA.basal, color = factor(Treatment, levels = c("DMSO", "AGI")))) + 
+  scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
+  geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
+  labs(color = "Treatment", title = "PpIX ALA/basal")+
+  theme_minimal()
+```
+
+# Scenith {#scenith}
+
+PDF files:
+
+* [M14 + DMSO](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Data/Scenith - M14R132+ DMSO.pdf)
+* [M14 + AGI](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Data/Scenith - M14R132+ AGI.pdf)
+
+## Glycolyse dependency {#glycolyse}
+
+```{r}
+ggplot(data=Scenith_analysis, aes(x=factor(Treatment, levels = c("DMSO", "AGI")), y=Gly_dependency, color=factor(Treatment, levels = c("DMSO", "AGI"))))+
+  scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
+  geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
+  labs(color = "Treatment", title = "Glycolyse dependency", x = "Treatment")+
+  theme_minimal()
+```
+
+## Mitochondria dependency {#mito}
+
+```{r}
+ggplot(data=Scenith_analysis, aes(x=factor(Treatment, levels = c("DMSO", "AGI")), y=Mito_dependency, color=factor(Treatment, levels = c("DMSO", "AGI"))))+
+  scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
+  geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
+  labs(color = "Treatment", title = "Mitochondria dependency", x = "Treatment")+
+  theme_minimal()
+```
+
+# Differenciation markers {#diff}
+
+## CD11b {#cd11b}
+
+```{r}
+ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD11b_PE_A, color=factor(Treatment, levels = c("DMSO", "AGI"))))+
+  scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
+  geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
+  labs(color = "Treatment", title = "CD11b")+
+  theme_minimal()
+```
+
+## CD14 {#cd14}
+
+```{r}
+ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD14.APC__A700_A, color=factor(Treatment, levels = c("DMSO", "AGI"))))+
+  scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
+  geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
+  labs(color = "Treatment", title = "CD14")+
+  theme_minimal()
+```
+
+## CD15 {#cd15}
+
+```{r}
+ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD15_APC_A, color=factor(Treatment, levels = c("DMSO", "AGI"))))+
+  scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
+  geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
+  labs(color = "Treatment", title = "CD15")+
+  theme_minimal()
+```
+

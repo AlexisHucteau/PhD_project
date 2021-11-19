@@ -42,7 +42,7 @@ Scenith_analysis <- read.csv("Data/Scenith.csv")
 ggplot(data=Rhod2_facs_analysis, aes(x = Cell.line, y = Rhod2, color = factor(Treatment, levels = c("DMSO", "AGI")))) +
   scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
   geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
-  labs(color = "Treatment", title = "Calcium indicator")+
+  labs(color = "Treatment", title = "Calcium indicator", x = "Cell lines")+
   theme_minimal()
 ```
 
@@ -52,7 +52,7 @@ ggplot(data=Rhod2_facs_analysis, aes(x = Cell.line, y = Rhod2, color = factor(Tr
 ggplot(data=PpIX_facs_analysis, aes(x = Cell.line, y = MFI_PpIX, color = factor(Treatment, levels = c("DMSO", "AGI")))) + 
   scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
   geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
-  labs(color = "Treatment", title = "PpIX indicator")+
+  labs(color = "Treatment", title = "PpIX indicator", x = "Cell lines")+
   theme_minimal()
 ```
 
@@ -62,7 +62,7 @@ ggplot(data=PpIX_facs_analysis, aes(x = Cell.line, y = MFI_PpIX, color = factor(
 ggplot(data=PpIX_facs_analysis, aes(x = Cell.line, y = ALA.basal, color = factor(Treatment, levels = c("DMSO", "AGI")))) + 
   scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
   geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
-  labs(color = "Treatment", title = "PpIX ALA/basal")+
+  labs(color = "Treatment", title = "PpIX ALA/basal", x = "Cell lines")+
   theme_minimal()
 ```
 
@@ -101,7 +101,7 @@ ggplot(data=Scenith_analysis, aes(x=factor(Treatment, levels = c("DMSO", "AGI"))
 ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD11b_PE_A, color=factor(Treatment, levels = c("DMSO", "AGI"))))+
   scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
   geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
-  labs(color = "Treatment", title = "CD11b")+
+  labs(color = "Treatment", title = "CD11b", x = "Cell lines")+
   theme_minimal()
 ```
 
@@ -111,7 +111,7 @@ ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD11b_PE_A, color=fa
 ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD14.APC__A700_A, color=factor(Treatment, levels = c("DMSO", "AGI"))))+
   scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
   geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
-  labs(color = "Treatment", title = "CD14")+
+  labs(color = "Treatment", title = "CD14", x = "Cell lines")+
   theme_minimal()
 ```
 
@@ -121,7 +121,7 @@ ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD14.APC__A700_A, co
 ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD15_APC_A, color=factor(Treatment, levels = c("DMSO", "AGI"))))+
   scale_color_manual(values=c("#0000FF", "#FF0000"), limits=c("DMSO", "AGI")) +
   geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
-  labs(color = "Treatment", title = "CD15")+
+  labs(color = "Treatment", title = "CD15", x = "Cell lines")+
   theme_minimal()
 ```
 

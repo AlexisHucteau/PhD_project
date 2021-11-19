@@ -218,6 +218,7 @@ Wednesday --> Subculture (5 samples)
 * Make a signature to compare Good versus bad responders
 * Find datasets on glioma IDH
 * Continue Introduction
+* Add statistical comparisons on boxplots
 
 ## Wet lab
 

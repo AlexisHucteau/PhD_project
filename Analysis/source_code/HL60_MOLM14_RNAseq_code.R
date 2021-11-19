@@ -409,4 +409,8 @@ HL60_m_vs_M14_m_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp
 write.csv(HL60_m_agi_vs_M14_m_agi_network$features, "~/tmp/HL60_M14_IDHi_features.csv", quote = F, row.names = F)
 HL60_m_agi_vs_M14_m_agi_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_M14_IDHi_network.csv", quote = F)
 
+Variability_in_cell_lines <- data.frame(Variability = sapply(Transcriptomes, function(x){var(x)}),
+                                      Pheno = Phenotype)
+Variability_in_cell_lines <- dplyr::filter(Variability_in_cell_lines, Pheno %in% c("HL60.Mut.AGI5198", "HL60.Mut.DMF", "MOLM14.Mut.DMF", "MOLM14.Mut.AGI5198"))
+
 gc()

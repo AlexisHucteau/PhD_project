@@ -26,6 +26,7 @@ library(FactoMineR)
 library(factoextra)
 library(viper)
 library(dplyr)
+library(ggsignif)
 
 load("~/DATA/Patients_data.RData")
 ```
@@ -79,6 +80,7 @@ ggplot(Variability_in_Patients, aes(x= Pheno, y = Variability, fill = Pheno))+
   geom_boxplot()+
   geom_point(size = 0.5)+
   xlab("Phenotypes")+
+  geom_signif(comparisons = list(c("NR.B", "R.B"), c("R.B", "R.REL")))+
   labs(title = "Gene expression variability depending IDHi response")
 ```
 
@@ -89,6 +91,7 @@ ggplot(Variability_in_Patients_Verhaak, aes(x= Pheno, y = Variability, fill = Ph
   geom_boxplot()+
   geom_point(size = 0.5)+
   xlab("Phenotypes")+
+  geom_signif(comparisons = list(c("High_OS", "Low_OS")))+
   labs(title = "Gene expression variability depending overall survival")
 ```
 

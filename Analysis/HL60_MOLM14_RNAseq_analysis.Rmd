@@ -47,6 +47,17 @@ plot.PCA(PCA_analysis)
 fviz_eig(PCA_analysis, addlabels = T)
 ```
 
+## Variability of gene expression {#var}
+
+```{r}
+ggplot(Variability_in_cell_lines, aes(x= Pheno, y = Variability, fill = Pheno))+
+  geom_boxplot()+
+  geom_point(size = 0.5)+
+  xlab("Phenotypes")+
+  geom_signif(comparisons = list(c("HL60.Mut.AGI5198", "HL60.Mut.DMF"), c("MOLM14.Mut.AGI5198", "MOLM14.Mut.DMF")))+
+  labs(title = "Gene expression variability depending OS")
+```
+
 ## TF analysis
 
 ### HL60_Mut_IDHi_vs_no_treat

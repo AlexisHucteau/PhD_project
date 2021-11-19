@@ -70,8 +70,8 @@ ggplot(data=PpIX_facs_analysis, aes(x = Cell.line, y = ALA.basal, color = factor
 
 PDF files:
 
-* [M14 + DMSO](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Data/Scenith - M14R132+ DMSO.pdf)
-* [M14 + AGI](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Data/Scenith - M14R132+ AGI.pdf)
+* [M14 + DMSO](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Data/Scenith_M14R132_DMSO.pdf)
+* [M14 + AGI](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Data/Scenith_M14R132_AGI.pdf)
 
 ## Glycolyse dependency {#glycolyse}
 

@@ -145,7 +145,7 @@
 
 * Making a todo list
 * Do some informatic management for team 18
-* Jean-Pascal CAPP talk
+* [Jean-Pascal CAPP talk](https://alexishucteau.github.io/PhD_project/Conferences/CRCT_conf/Jean_Pascal_CAPP_talk)
 * Wet lab subculture
 * Preparation of read-out
 

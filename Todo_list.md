@@ -222,10 +222,14 @@ Wednesday --> Subculture (5 samples)
 
 ## Wet lab
 
-* Continue biblio of the wetlab experiments
-* Culture toredo experiments
-* Western blot
-* RNA experiments
+* [Continue biblio of the wetlab experiments](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Experiments_on_56_11_and_MOLM14_R132_AGI)
+* Culture to redo experiments
+* Monday afternoon:
+  * "Dosage protéines"
+* Tuesday morning:
+  * "dépôt des gels migration/transfert/saturation et incubation des Ac primaires"
+* Wednesday:
+  * "lavages/Ac secondaires/lavages/revélation"
 * Analysis of the results
 
 ## Bibliography
@@ -235,5 +239,5 @@ Wednesday --> Subculture (5 samples)
 * Make a summary of a paper [0/1]  
   * Non-genetic mechanisms of therapeutic resistance in cancer
 
-* Reread Lucille paper
+  * [Reread Lucille paper](https://rupress-org.proxy.insermbiblio.inist.fr/jem/article/218/5/e20200924/211914/Mitochondrial-metabolism-supports-resistance-to)
 * Look at wet lab results to confirm ours.

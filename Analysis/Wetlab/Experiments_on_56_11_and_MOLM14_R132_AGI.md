@@ -127,7 +127,7 @@ At baseline, 56-11 exhibits a higher rate of calcium compared to Molm14. The cal
 
 This table resume the preliminary results that may show the differences between the two cell lines 56-11 and molm14 in the response to IDHi.  
 Our analysis showed that IDHi increases CD15 in molm14, glycolysis dependency, calcium in mitochondria but a decreased of mitochondrial calcium in 56-11.  
-Previous results showed that IDHi increases OCR and PGC1a protein expression in 56-1 and a decreased in PGC1a and an increased Venetoclax sensitivity of molm14 after IDHi.
+Previous results showed that IDHi increases Oxygen Consumption Rate (OCR) and PGC1a protein expression in 56-1 and a decreased in PGC1a and an increased Venetoclax sensitivity of molm14 after IDHi.
 
 Our results on CD15, Rhod2 and metabolism dependency have to be done again to be confirmed and CD38 will also be measured additionally.
 

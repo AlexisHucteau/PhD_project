@@ -223,6 +223,7 @@ Wednesday --> Subculture (5 samples)
 ## Wet lab
 
 * Continue biblio of the wetlab experiments
+* Culture toredo experiments
 * Western blot
 * RNA experiments
 * Analysis of the results
@@ -233,3 +234,6 @@ Wednesday --> Subculture (5 samples)
 
 * Make a summary of a paper [0/1]  
   * Non-genetic mechanisms of therapeutic resistance in cancer
+
+* Reread Lucille paper
+* Look at wet lab results to confirm ours.

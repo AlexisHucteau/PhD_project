@@ -31,3 +31,25 @@ We therefore hypothesized that mitochondrial OxPHOS plays a crucial role in IDHi
 Mitochondrial oxidative metabolism is enhanced in IDHm cells in vitro and in vivo through the increase in methylation-driven CEBPa-induced FAO. IDHi reduce 2HG and CEBPa methylation but failed to reverse FAO and OxPHOS due to the enhanced activation of PGC1a.
 
 # Results
+
+## Fig S1
+
+* 2HG up in HL60 IDHm vs HL60 IDHwt
+* 2HG up in MOLM14 IDHm vs MOLM14 IDHwt
+* CD11b up HL60 IDHm vs HL60 IDHwt
+* CD11b up in MOLM14 IDHm vs MOLM14 IDHwt
+* Apoptose goes up with OxPHOSi and BCL2i but even higher in IDHm HL60.
+* TMRE up by IDHm in HL60
+* Mito OCR up in IDHm HL60
+* ATP linked respiration up in IDHm in 56-11, Molm14 and in PDX
+* OCR/ECAR energetic balance up in HL60, Molm14 but not significantly in PDX (0.06)
+* MDH & IDH3 activity goes up in HL60 IDHm
+* Unchanged
+  * Mitochondrial mass
+  * ETC Complex activities
+  * Extracellular acidification rate (ECAR)
+  * doubling time by IDHm (HL60 & Molm14)
+  * Citrate synthase
+  * Mitochondrial DNA
+
+## Fig 1

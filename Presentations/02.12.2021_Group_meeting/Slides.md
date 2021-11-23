@@ -1,3 +1,59 @@
+# Investigating resistance to IDH inhibitors in acute myeloid leukemia
+
+* [Slide 1](#1)
+* [Slide 2](#2)
+* [Slide 3](#3)
+* [Slide 4](#4)
+* [Slide 5](#5)
+* [Slide 6](#6)
+* [Slide 7](#7)
+* [Slide 8](#8)
+* [Slide 9](#9)
+* [Slide 10](#10)
+* [Slide 11](#11)
+* [Slide 12](#12)
+* [Slide 13](#13)
+* [Slide 14](#14)
+* [Slide 15](#15)
+* [Slide 16](#16)
+* [Slide 17](#17)
+* [Slide 18](#18)
+* [Slide 19](#19)
+* [Slide 20](#20)
+* [Slide 21](#21)
+* [Slide 22](#22)
+* [Slide 23](#23)
+
+
+# Slide 1 {#1}
+# Slide  2{#2}
+# Slide  3{#3}
+# Slide  4{#4}
+# Slide  5{#5}
+# Slide  6{#6}
+# Slide  7{#7}
+# Slide  8{#8}
+# Slide  9{#9}
+# Slide  10{#10}
+# Slide  11{#11}
+# Slide  12{#12}
+# Slide  13{#13}
+# Slide  14{#14}
+# Slide  15{#15}
+# Slide  16{#16}
+# Slide  17{#17}
+# Slide  18{#18}
+# Slide  19{#19}
+# Slide  20{#20}
+# Slide  21{#21}
+# Slide  22{#22}
+
+
+
+
+
+# Wet lab experiments
+
 # 56-11 and M14 R132 +/- AGI
 
 * [Scenith](#scenith)
@@ -33,12 +89,12 @@ The GFP from the cell line 56-11 makes this analysis impossible for this cell li
 
 ### Pathways dependencies
 
-![Glycolyse dependency](Pictures/Gly_dependency.png)
+![Glycolyse dependency](../../Analysis/Wetlab/Pictures/Gly_dependency.png)
 
 The production of the ATP in MOLM14 R132 is 70.1% glycolyse dependent.  
 But is going higher after the treatment with AGI120 to 90.7%.
 
-![OxPHOS dependency](Pictures/OxPHOS_dependency.png)
+![OxPHOS dependency](../../Analysis/Wetlab/Pictures/OxPHOS_dependency.png)
 
 The production of the ATP in MOLM14 R132 is 15% OxPHOS dependent but goes to 0% after the treatment with AGI120.
 
@@ -54,15 +110,15 @@ To investigate the OxPHOS state of cells, the amount of ATP is a good marker. In
 PpIX for Protoporphyrin IX serves as the substrate for ferrochelatase, the final enzyme in heme biosynthesis, and its homeostasis is tighly regulates during heme synthesis.  
 One of the project of the team and more particularly Estelle's project is looking at Iron and the synthesis of heme. Its synthesis is Alamine dependent.
 
-![PPIX pathway](Pictures/PPIX_pathway.png)
+![PPIX pathway](../../Analysis/Wetlab/Pictures/PPIX_pathway.png)
 
 ## Results {#ppix-results}
 
-![PpIX_basal](Pictures/PpIX_basal.png)
+![PpIX_basal](../../Analysis/Wetlab/Pictures/PpIX_basal.png)
 
 PpIX shows higher concentration in 56-11 than in Molm14. Inhibitors do not show modifications in PpIX concentration in 56-11 neither in Molm14.
 
-![PpIX_ratio](Pictures/PpIX_ratio.png)
+![PpIX_ratio](../../Analysis/Wetlab/Pictures/PpIX_ratio.png)
 
 As PpIX synthesis is Alamine dependent, the addition of Alamine in the middle increase the concentration if PpIX in both cell lines. IDHi shows different impact for the two cell lines with an increased ratio for 56-11 but a decreased ratio for Molm14.
 
@@ -72,7 +128,7 @@ As PpIX synthesis is Alamine dependent, the addition of Alamine in the middle in
 
 CD11b or ITGAM for Integrin alpha M is a cluster of differentiation molecule 11B used for identification of macrophages and microglia.
 
-![CD11b](Pictures/cd11b.png)
+![CD11b](../../Analysis/Wetlab/Pictures/cd11b.png)
 
 Molm14 show higher makers of CD11b than 56-11 but IDHi seems to increase the presence of the marker in both cell lines.
 
@@ -80,7 +136,7 @@ Molm14 show higher makers of CD11b than 56-11 but IDHi seems to increase the pre
 
 CD14 for cluster of differentiation 14 is also used for macrophages identification. CD14+ monocytes can differentiate into a host of different cells, including dendritic cells, a differentiation pathway encouraged by cytokines, including GM-CSF and IL-4.
 
-![CD14](Pictures/cd14.png)
+![CD14](../../Analysis/Wetlab/Pictures/cd14.png)
 
 The two cell lines show the same level of CD14 and a relative increased after IDHi treatments.
 
@@ -88,17 +144,17 @@ The two cell lines show the same level of CD14 and a relative increased after ID
 
 CD15 or Sialyl Lewis (sLeX) plays a vital role in cell-to-cell recognition processes. It is also constitutively expressed on granulocytes and monocytes and mediates inflammatory extravasation of these cells.
 
-![CD15](Pictures/cd15.png)
+![CD15](../../Analysis/Wetlab/Pictures/cd15.png)
 
 The two cell lines show the same level of CD15 before treatment but 56-11 shows a important increased by IDHi treatment.
 
 # Rhod2? {#rhod2}
 
-Rhod2 can be used as a mitochondrial calcium indicator. Rhod2 hibit large fluorescence intensity increases upon binding Ca2+ (>100-fold).
+Rhod2 can be used as a mitochondrial calcium indicator. Rhod2 exhibit large fluorescence intensity increases upon binding Ca2+ (>100-fold).
 
 ## Results {#rhod2-results}
 
-![Rhod2](Pictures/Rhod2.png)
+![Rhod2](../../Analysis/Wetlab/Pictures/Rhod2.png)
 
 At baseline, 56-11 exhibits a higher rate of calcium compared to Molm14. The calcium goes down after IDHi treatment in 56-11 but goes up in Molm14.
 
@@ -107,31 +163,6 @@ At baseline, 56-11 exhibits a higher rate of calcium compared to Molm14. The cal
 
 # Dosage protéines {#proteins}
 
-## Protéines totales {#protein-totales}
-
-**RAW DATA**
-
-||	1|	2|	3|	4|	5|	6|	7|	8|	9|	10|	11|	12|
-|--|--|--|--|--|--|--|--|--|--|--|--|--|
-|**E**| | | | | | | |	 	 |	525|	659|	381|	390|
-|**G**|	0|	75	|125|	250	|500|	1000|	2000|	56-11	|56-11|	M14|	M14|	Blc|
-|**H**|		||		|	||	|	|	DMSO	|AGI	|DMSO|	AGI|	|
-
-||	1|	2|	3|	4|	5|	6|	7|	8|	9|	10|	11|	12|
-|--|--|--|--|--|--|--|--|--|--|--|--|--|
-|**E**| | | | | | | |	 	 |	525|	659|	381|	390|
-|**G**|	96|	119	|162|	246	|384|	729|	1096|	386	|460|	415|	379|	184|
-|**H**|	90	|118|	153	|208	|344|	588|	*2503*|	396	|478	|396|	385|	191|
-
-**CALCULATIONS**												
-
-
-|	|1	|2	|3	|4	|5	|6	|7	|8	|9	|10|	11|	12|
-|--|--|--|--|--|--|--|--|--|--|--|--|--|
-|E	|||||||||	0,52|	0,66|	0,38|	0,39|
-|G	|0,10	|0,12|	0,16|	0,25	|0,38	|0,73	|1,10	|0,39|	0,46|	0,42|	0,38|	0,18|
-|H	|0,09|	0,12|	0,15|	0,21|	0,34|	0,59|	*2,50*|	0,40|	0,48|	0,40	|0,38|	0,19|
-
 ## Western blots {#western-blot}
 
 
@@ -139,7 +170,7 @@ At baseline, 56-11 exhibits a higher rate of calcium compared to Molm14. The cal
 
 # Resume
 
-![Tableau récap](Pictures/recap.png)
+![Tableau récap](../../Analysis/Wetlab/Pictures/recap.png)
 
 This table resume the preliminary results that may show the differences between the two cell lines 56-11 and molm14 in the response to IDHi.  
 Our analysis showed that IDHi increases CD15 in molm14, glycolysis dependency, calcium in mitochondria but a decreased of mitochondrial calcium in 56-11.  
@@ -148,3 +179,6 @@ Previous results showed that IDHi increases Oxygen Consumption Rate (OCR) and PG
 Our results on CD15, Rhod2 and metabolism dependency have to be done again to be confirmed and CD38 will also be measured additionally.
 
 The RELA, MYC, BCL2 and PGC1a will be measured in term of RNA and protein levels.  
+
+
+--------------------

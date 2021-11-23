@@ -241,3 +241,7 @@ Wednesday --> Subculture (5 samples)
 
   * [Reread Lucille paper](https://rupress-org.proxy.insermbiblio.inist.fr/jem/article/218/5/e20200924/211914/Mitochondrial-metabolism-supports-resistance-to)
 * Look at wet lab results to confirm ours.
+
+## Communication
+
+* [Prepare 02.12.2021 Groupe meeting project presentation](https://alexishucteau.github.io/PhD_project/Presentations/02.12.2021_Group_meeting/Slides)

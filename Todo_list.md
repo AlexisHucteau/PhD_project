@@ -245,3 +245,39 @@ Wednesday --> Subculture (5 samples)
 ## Communication
 
 * [Prepare 02.12.2021 Groupe meeting project presentation](https://alexishucteau.github.io/PhD_project/Presentations/02.12.2021_Group_meeting/Slides)
+
+# **29.11.2021 - 02.12.2021** {#week-48}
+
+## IDH PhD Project
+
+* Put tables of DEG, Mviper etc. on git .io
+* Make a signature to compare Good versus bad responders
+* Find datasets on glioma IDH
+* Continue Introduction
+* Add statistical comparisons on boxplots
+
+## Deconvolution
+
+* Finish empirical test
+
+## Wet lab
+
+* Continue subculture
+  * Monday: induction Dox in Molm14
+  * Wednesday: Subculture
+
+* Analysis of the results of WB
+
+## Bibliography
+
+* Find a paper on methods for analysis of DNA met and/or RNAseq data
+
+* Make a summary of a paper [0/1]  
+  * Non-genetic mechanisms of therapeutic resistance in cancer
+
+  * [Reread Lucille paper](https://rupress-org.proxy.insermbiblio.inist.fr/jem/article/218/5/e20200924/211914/Mitochondrial-metabolism-supports-resistance-to)
+* Look at wet lab results to confirm ours.
+
+## Communication
+
+* [Prepare 02.12.2021 Groupe meeting project presentation](https://alexishucteau.github.io/PhD_project/Presentations/02.12.2021_Group_meeting/Slides)

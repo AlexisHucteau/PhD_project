@@ -179,6 +179,22 @@
 * [Making a resume of wetlab experiments](https://alexishucteau.github.io/PhD_project/Analysis/Wetlab/Experiments_on_56_11_and_MOLM14_R132_AGI)
 * [Making a To do list](https://alexishucteau.github.io/PhD_project/Todo_list#week-47)
 
+### 23.11.2021
+
+* Wet lab WB the whole day
+
+### 24.11.2021
+
+*
+
+### 25.11.2021
+
+* Revelation WB
+* Meetings
+
+### 26.11.2021
+
+* Make a randomization algorithm for empirical test
 
 ---------
 
@@ -188,6 +204,7 @@
 ### 29.11.2021
 
 * [Making a To do list](https://alexishucteau.github.io/PhD_project/Todo_list#week-48)
+
 
 
 ---------

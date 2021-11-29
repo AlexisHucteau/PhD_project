@@ -250,15 +250,13 @@ Wednesday --> Subculture (5 samples)
 
 ## IDH PhD Project
 
-* Put tables of DEG, Mviper etc. on git .io
 * Make a signature to compare Good versus bad responders
 * Find datasets on glioma IDH
 * Continue Introduction
-* Add statistical comparisons on boxplots
 
 ## Deconvolution
 
-* Finish empirical test
+* **High priority** Finish empirical test
 
 ## Wet lab
 
@@ -280,4 +278,4 @@ Wednesday --> Subculture (5 samples)
 
 ## Communication
 
-* [Prepare 02.12.2021 Groupe meeting project presentation](https://alexishucteau.github.io/PhD_project/Presentations/02.12.2021_Group_meeting/Slides)
+* **High priority** [Prepare 02.12.2021 Groupe meeting project presentation](https://alexishucteau.github.io/PhD_project/Presentations/02.12.2021_Group_meeting/Slides)

@@ -256,7 +256,7 @@ Wednesday --> Subculture (5 samples)
 
 ## Deconvolution
 
-* **High priority** Finish empirical test
+* **High priority** Finish empirical test **DONE**
 
 ## Wet lab
 
@@ -278,4 +278,4 @@ Wednesday --> Subculture (5 samples)
 
 ## Communication
 
-* **High priority** [Prepare 02.12.2021 Groupe meeting project presentation](https://alexishucteau.github.io/PhD_project/Presentations/02.12.2021_Group_meeting/Slides)
+* **High priority** Prepare 02.12.2021 Groupe meeting project presentation

@@ -204,13 +204,27 @@
 ### 29.11.2021
 
 * [Making a To do list](https://alexishucteau.github.io/PhD_project/Todo_list#week-48)
+* Making a fast function for deconvolution empirical test *still not finished yet*
+
+## 30.11.2021
+
+* Finished the randomization function
+* Continuing group meeting presentation
+
+## 01.12.2021
 
 
+
+## 02.12.2021
+
+* Meeting day
 
 ---------
 
 
 ## 09.12.2021 - 10.12.2021 {#week-49}
+
+
 
 ---------
 

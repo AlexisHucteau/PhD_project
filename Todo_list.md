@@ -6,6 +6,8 @@
 * [week 45](#week-45)
 * [week 46](#week-46)
 * [week 47](#week-47)
+* [week 48](#week-48)
+* [week 49](#week-49)
 
 
 # **18.10.2021 - 22.10.2021** {#week-42}

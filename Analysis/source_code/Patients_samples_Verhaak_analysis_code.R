@@ -38,7 +38,7 @@ anno_palmieri <- AnnotationDbi::select(hgu133plus2.db,
 #   }) %>%
 #   rbindlist(.) %>%
 #   data.frame(.)
-# 
+#
 # rownames(Verhaak_norm_data_SYMBOL) <- anno_palmieri[!duplicated(anno_palmieri$SYMBOL),] %>% .$SYMBOL %>% .[-16]
 # write.csv(Verhaak_norm_data_SYMBOL, "~/tmp/Verhaak_norm_data_SYMBOL.csv")
 
@@ -62,18 +62,18 @@ Differential_analysis <- function(Focused_variable, DATA){
   }
   design <- model.matrix(~0 + Focused_variable)
   contr.matrix <- design.pairs(levels(factor(Focused_variable)))
-  colnames(design) <- rownames(contr.matrix)   
+  colnames(design) <- rownames(contr.matrix)
   Fit <- lmFit(DATA, design) %>%
     contrasts.fit(., contr.matrix) %>%
     eBayes(., trend = TRUE)
-  
+
   FitList <- list()
   for (i in 1:ncol(contr.matrix)) {
     FitList[[i]] <- topTable(Fit, coef = i, adjust.method = "BH", number = nrow(DATA)) %>%
       mutate(ID = rownames(.))
-    
+
     message(paste0(i, " done"))
-    
+
   }
   names(FitList) <- colnames(contr.matrix)
   return(FitList)
@@ -95,7 +95,7 @@ dorothea2viper_regulons <- function(df) {
     tfmode <- stats::setNames(regulon$mor, regulon$target)
     list(tfmode = tfmode, likelihood = rep(1, length(tfmode)))
   })
-  
+
   return(viper_regulons)
 }
 
@@ -148,18 +148,18 @@ run_msviper <- function(exprs_m, dorothea, use_aracne, ref, treat, ref_name, tre
   conditions[treat] <- treat_name
   names(conditions) <- colnames(exprs_m)
   conditions <- conditions[which(conditions != "NA")]
-  
+
   phenotype <- data.frame(condition = factor(conditions))
   rownames(phenotype) <- names(conditions)
-  
+
   phenoData <- new("AnnotatedDataFrame", data = phenotype)
-  
+
   exprs_m <- exprs_m[,which(colnames(exprs_m) %in% rownames(phenotype))] %>% as.matrix()
-  
+
   # Create Expression set from phenotyble table and expression matrix
   dset_viper <- ExpressionSet(assayData = exprs_m, phenoData = phenoData)
   dset_viper$sampleID <- factor(colnames(exprs_m))
-  
+
   # Aracne can be used to estimate the mor instead using the -1, 1 from dorothea
   regulons <- NULL
   if (use_aracne) {
@@ -167,7 +167,7 @@ run_msviper <- function(exprs_m, dorothea, use_aracne, ref, treat, ref_name, tre
   } else {
     regulons <- dorothea2viper_regulons(dorothea)
   }
-  
+
   # We need to create the statistics signature from the conditions
   signature <- rowTtest(dset_viper, "condition", treat_name, ref_name)
   statistics_signature <- (qnorm(signature$p.value / 2, lower.tail = FALSE) * sign(signature$statistic))[, 1]
@@ -180,7 +180,7 @@ run_msviper <- function(exprs_m, dorothea, use_aracne, ref, treat, ref_name, tre
     mutate(state = ifelse(mor > 0, "activation", "inhibition"))
   # Generate a table with the TFs, the regulon size, the NES score, the pval and the pval.fdr
   mrs_table <- tibble(TF = names(mrs$es$p.value), size = mrs$es$size, nes = mrs$es$nes, pval = mrs$es$p.value, pval.fdr = p.adjust(mrs$es$p.value, method = "fdr")) %>% arrange(pval)
-  
+
   list(mrs_table = mrs_table, mrs = mrs, regulons = dorothea_mrs_regulons)
 }
 
@@ -189,7 +189,7 @@ run_msviper <- function(exprs_m, dorothea, use_aracne, ref, treat, ref_name, tre
 
 
 mrs2cytoscape <- function(mrs,full.path) {
-  
+
   all_nodes <- unique(c(mrs$regulons$tf, mrs$regulons$target))
   tnodes <- tibble(TF = all_nodes)
   all_nodes_metadata <- right_join(mrs$mrs_table, tnodes, by = "TF")
@@ -198,33 +198,33 @@ mrs2cytoscape <- function(mrs,full.path) {
   createNetworkFromIgraph(regulons_network, "regulons_network")
   # setVisualStyle(cytoscape_id_network, 'default')
   # setVisualStyle("default")
-  
+
   my_style <- "my_style"
-  
-  
-  
-  
-  
+
+
+
+
+
   createVisualStyle(my_style, list())
   setNodeColorDefault("#D3D3D3", style.name = my_style)
   blue_white_red <- c("#0000FF", "#FFFFFF", "#FF0000")
   setNodeColorMapping("nes", c(min(V(regulons_network)$nes, na.rm = T), mean(V(regulons_network)$nes, na.rm = T), max(V(regulons_network)$nes, na.rm = T)), blue_white_red, style.name = my_style)
-  
+
   setEdgeTargetArrowShapeMapping("state", c("activation", "inhibition"), c("DELTA", "T"), style.name = my_style)
-  
+
   setEdgeColorMapping("mor", c(min(E(regulons_network)$mor, na.rm = T), mean(E(regulons_network)$mor, na.rm = T), max(E(regulons_network)$mor, na.rm = T)), blue_white_red, style.name = my_style)
   setNodeLabelMapping('id'
   )
   setVisualStyle("my_style")
-  
+
   createColumnFilter(filter.name='null', column='pval', 0.05, 'GREATER_THAN', network = regulons_network)
   applyFilter('null', hide=T, network = regulons_network)
-  
-  exportImage(full.path, 'SVG', zoom=200) 
-  
+
+  exportImage(full.path, 'SVG', zoom=200)
+
 }
 
-data(dorothea_hs, package = "dorothea") 
+data(dorothea_hs, package = "dorothea")
 regulons = dorothea_hs %>%
   filter(confidence %in% c("A", "B"))
 
@@ -239,7 +239,7 @@ Focus_on_one_gene_not_TF <- function(RNAseq, Gene, Comparison_A, Comparison_A_na
   pheno <- ifelse(phenotype == Comparison_A, Comparison_A_name, Comparison_B_name)
   df <- t(df) %>% as.data.frame()
   df$Phenotype <- pheno
-  
+
   df[,1] <- as.numeric(df[,1])
   colnames(df)[1] <- "Gene"
   df
@@ -247,7 +247,7 @@ Focus_on_one_gene_not_TF <- function(RNAseq, Gene, Comparison_A, Comparison_A_na
 
 Make_gene_expr_boxplots <- function(RNAseq, Gene_name, Comparison_A, Comparison_A_name, Comparison_B, Comparison_B_name, Phenotype){
   Phenotype_of_interest <- Phenotype
-  
+
   Data_on_the_gene <- Focus_on_one_gene_not_TF(RNAseq, Gene_name, Comparison_A, Comparison_A_name, Comparison_B, Comparison_B_name, Phenotype)
   ggplot(Data_on_the_gene, aes(x=Phenotype, y = Gene, fill=Phenotype))+
     geom_boxplot() +
@@ -271,55 +271,55 @@ Prepare_features <- function(feature_data_frame, column_of_interest, type_of_dat
 
 Find_most_importants_genes <- function(network){
   res <- list()
-  
+
   ranked_eigen_gene <- network$features[order(-network$features$Eigen_centrality),] %>% head(15) %>% .$Gene
   ranked_page_rank_gene <- network$features[order(-network$features$Page_rank),] %>% head(15) %>% .$Gene
-  
+
   res$ranked_eigen_gene <- ranked_eigen_gene
   res$ranked_page_rank_gene <- ranked_page_rank_gene
-  
+
   V_of_interest <- V(network$network) %>% .[which(names(.) %in% intersect(ranked_eigen_gene, ranked_page_rank_gene))]
   E_of_interest <- E(network$network)[from(V_of_interest) | to(V_of_interest)]
-  
+
   filtered_graph <- subgraph.edges(network$network, E_of_interest)
-  
+
   res$network <- filtered_graph
-  
+
   return(res)
 }
 
 Prepare_Cytoscape_network <- function(Big_Network = igraph_PPI_TF_target_Network, DEG_analysis, TF_analysis, logFC_treshold = 0.75, P.Value_treshold = 0.1){
   DEG_of_interest <- DEG_analysis %>% dplyr::filter(abs(logFC) > logFC_treshold & P.Value < P.Value_treshold) %>% .$Gene
   TF_of_interest <- TF_analysis %>% dplyr::filter(pval < 0.1) %>% .$Gene
-  
-  V_of_interest <- V(Big_Network) %>% .[which(names(.) %in% unique(c(DEG_of_interest, TF_of_interest)))] 
-  
+
+  V_of_interest <- V(Big_Network) %>% .[which(names(.) %in% unique(c(DEG_of_interest, TF_of_interest)))]
+
   filtered_graph <- induced_subgraph(Big_Network, V_of_interest)
-  
-  
+
+
   eigen_centrality_result <- eigen_centrality(filtered_graph, directed = F)$vector
-  
+
   page_rank_result <- igraph::page.rank(filtered_graph, directed = F)$vector
-  
+
   features <- merge(DEG_analysis, TF_analysis, by = "Gene", all = T)
   features <- merge(features, eigen_centrality_result, by.x = "Gene", by.y = 0, all = T)
   colnames(features)[ncol(features)] <- "Eigen_centrality"
   features <- merge(features, page_rank_result, by.x = "Gene", by.y = 0, all = T)
   colnames(features)[ncol(features)] <- "Page_rank"
-  
+
   set(features,which(is.na(features[["nes"]])),"nes",0)
   set(features,which(is.na(features[["pval"]])),"pval",1)
   set(features,which(is.na(features[["Eigen_centrality"]])),"Eigen_centrality",0)
   set(features,which(is.na(features[["Page_rank"]])),"Page_rank",0)
-  
+
   features$TF <- ifelse(features$nes == 0, F, T)
-  
+
   clustering_eigen <- cluster_leading_eigen(filtered_graph) %>% membership() %>% print() %>% data.frame()
-  
+
   features <- merge(features, clustering_eigen, by.x = "Gene", by.y = 0, all = T)
   set(features,which(is.na(features[["."]])),".",999)
   colnames(features)[ncol(features)] <- "Cluster"
-  
+
   res <- list("features" = features,
               "network" = filtered_graph
   )
@@ -350,8 +350,5 @@ Do_cool_scatterplot <- function(Feature, title){
     ylab("Eigen Centrality (log)")+
     scale_colour_manual(values=c("#0000FF", "#FF0000"))
 }
-
-Variability_in_Patients_Verhaak <- data.frame(Variability = sapply(Verhaak_norm_data_SYMBOL, function(x){var(x)}),
-                                      Pheno = OS)
 
 gc()

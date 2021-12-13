@@ -281,3 +281,27 @@ Wednesday --> Subculture (5 samples)
 ## Communication
 
 * **High priority** Prepare 02.12.2021 Groupe meeting project presentation
+
+# **13.12.2021 - 17.12.2021** {#week-49}
+
+## IDH PhD Project
+
+* Test expression variability
+* Download Koichi fastq/bam for rMATS analysis
+
+## Wet lab
+
+* Monday: Subculture
+* Tuesday: Extractions-cytometry
+
+## Bibliography
+
+* Add biblio on Introduction
+* Reading
+  * Non-genetic mechanisms of therapeutic resistance in cancer
+  * A darwinian and physical look at stem cell biology helps understanding the role of Stochasticity in development
+
+## Others
+
+* Wednesday: Marie's thesis
+* Thursday: Mentorat

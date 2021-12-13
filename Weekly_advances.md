@@ -211,25 +211,17 @@
 * Finished the randomization function
 * Continuing group meeting presentation
 
-## 01.12.2021
-
-
-
-## 02.12.2021
-
-* Meeting day
-
----------
-
-
-## 09.12.2021 - 10.12.2021 {#week-49}
-
-
-
 ---------
 
 
 ## 13.12.2021 - 17.12.2021 {#week-50}
+
+* Find 1To data storage in the computer
+* Downloading PDXRNAseq for Margherita's project
+  * Doing a fastqc analysis
+* Downloading Koichi's fastq for splicing analysis
+* Look at Expression variability
+* Subculture
 
 
 

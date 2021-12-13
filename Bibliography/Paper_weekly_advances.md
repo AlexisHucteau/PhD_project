@@ -3,6 +3,7 @@
 [Week 42](#week-42)  
 [Week 43](#week-43)  
 [Week 46](#week-46)
+[Week 49](#week-49)
 
 ## 18.10.2021 - 22.10.2021 {#week-42}
 
@@ -62,8 +63,7 @@ Area covered: This review describes the mechanisms of action, the pharmacodynami
 This review will focus on the underlying biological mechanism and clinical relevance of IDH mutations in cancer.   
 \-\> Not urgent
 
-* [Targeting IDH1 and IDH2 Mutations in Acute Myeloid Leukemia: Emerging Options and Pending Questions
-](https://journals.lww.com/hemasphere/Fulltext/2021/06000/Targeting_IDH1_and_IDH2_Mutations_in_Acute_Myeloid.14.aspx)  
+* [Targeting IDH1 and IDH2 Mutations in Acute Myeloid Leukemia: Emerging Options and Pending Questions](https://journals.lww.com/hemasphere/Fulltext/2021/06000/Targeting_IDH1_and_IDH2_Mutations_in_Acute_Myeloid.14.aspx)  
 PERSPECTIVE: an update on targeting IDH-mutated AML is provided    
 \-\> Not urgent
 
@@ -180,3 +180,9 @@ AML displayed **eIF2** scarcity promoting **ATF4** upregulation that activates I
 
 []()
 [Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/)
+
+
+## 13.12.2021 - 17.12.2021 {#week-49}
+
+[Non_genetic_mechanisms_of_therapeutic_resistance_in_cancer](https://www-nature-com.proxy.insermbiblio.inist.fr/articles/s41568-020-00302-4)  
+[Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/Non_genetic_mechanisms_of_therapeutic_resistance_in_cancer)

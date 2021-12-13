@@ -16,7 +16,7 @@ Resistance is:
 | Intrinsic | Acquired |
 | lack of clinical response after therapy | local or distant reccurence of the malignancy after therapy |
 
-
+![Figure_1](pictures/Non_genetic_fig1.png)
 
 Secondary resistance:
 * Genetic evolution

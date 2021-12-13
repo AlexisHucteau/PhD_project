@@ -9,10 +9,14 @@ Cancer relapse from minimal residual disease (MRD)
 ## Therapeutic resistance in cancer
 
 Resistance is:
-* Primary
-* Secondary
+
 
 | Primary | Secondary |
 | ---- | ---- |
 | Intrinsic | Acquired |
 | lack of clinical response after therapy | local or distant reccurence of the malignancy after therapy |
+
+
+
+Secondary resistance:
+* Genetic evolution

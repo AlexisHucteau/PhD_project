@@ -34,6 +34,7 @@ Notes about cell lines like HL60 and MOLM14 specificities
 * [**<span style="color:blue">Patients samples analysis on Koichi and Verhaak dataset RNAseq & affymetrix</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Patients_samples_Koichi_and_Verhaak_analysis)
 * [**<span style="color:blue">Methylation analysis on Koichi's cohort Patient sample</span>**](https://alexishucteau.github.io/PhD_project/Analysis/Koichi_methylation_analysis)
 * [**<span style="color:blue">RNA splicing analysis</span>**](https://alexishucteau.github.io/PhD_project/Analysis/In_silico/Splicing_Project/Splicing_analysis)
+* [**<span style="color:blue">Notes on sequencing</span>**](https://alexishucteau.github.io/PhD_project/Analysis/In_silico/Sequencing)
 
 
 ### In vitro analysis {#vitro}

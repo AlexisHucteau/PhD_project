@@ -1,5 +1,10 @@
 # Splicing analysis
 
+# Koichi dataset Splicing analysis
+
+[Git-pages project](https://alexishucteau.github.io/IDHm_Splicing_analysis/)
+
+
 Data from RNAseq fastq:
 
 * [IM07_S4_L002_R1_001.fastq.gz (336.4 MB)](https://alexishucteau.github.io/PhD_project/Analysis/In_silico/Splicing_Project/IM07_S4_L002_R1_001_fastqc.html)

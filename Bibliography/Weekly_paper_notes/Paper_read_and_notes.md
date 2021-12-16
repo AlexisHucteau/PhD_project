@@ -44,3 +44,11 @@
 
 
 ------------------------------------------------------------------
+
+# 13.12.2021 - 18.12.2021 {week-50}
+
+## [Focal disruption of DNA methylation dynamics at enhancers in IDH-mutant AML cells](https://www.nature.com/articles/s41375-021-01476-y?elqTrackId=3e609587e4e248578ce8c3b49a38407d&elq=b38b193a24164fd2b30c0575adce62eb&elqaid=32698&elqat=1&elqCampaignId=14566)  
+* [Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/Focal_disruption_of_DNA_methylation)
+
+## [Higher gene expression variability in the more aggressive subtype of chronic lymphocytic leukemia](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-014-0125-z)  
+* [Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/Higher_gene_expression_variability)

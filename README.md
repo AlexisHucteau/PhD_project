@@ -50,7 +50,7 @@ Notes about cell lines like HL60 and MOLM14 specificities
 
 * [**<span style="color:blue">CRCT conferences</span>**](https://alexishucteau.github.io/PhD_project/Conferences/CRCT_conf/Main)
 
-## Bibliography {#biblio}
+## [Bibliography](https://alexishucteau.github.io/PhD_bibliography/) {#biblio}
 
 * [**<span style="color:blue">Weekly biblio</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/Paper_weekly_advances)
 * [**<span style="color:blue">Papers read and notes</span>**](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/Paper_read_and_notes)

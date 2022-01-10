@@ -18,6 +18,12 @@ Back to [PhD Project](https://alexishucteau.github.io/PhD_project/)
 
 [Cell lines analysis](https://alexishucteau.github.io/PhD_project/Analysis/HL60_MOLM14_RNAseq_analysis)
 
+DNA methylation analysis of AML IDHm Patient samples that received IDHm inhibitor.
+
+Either at Baseline (before the treatment) or after.
+Either Good responder or Bad responder to IDHm inhibitor.
+
+DNA methylation of CD34+ hematopoietic stem cells.
 
 ```{r, include=F}
 library(ChAMP)

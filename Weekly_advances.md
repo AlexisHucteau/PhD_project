@@ -224,8 +224,13 @@
 * Subculture
 
 
-
 ---------
 ---------
 
 ## 10.01.2022 - 14.01.2022 {#week-2}
+
+### 10.01.2022
+
+* Rescue the 1To data storage with all the data downloaded
+* Create Project in cahier de laboratoire électronique
+* Start reading [Universal annotation of the human genome through integration of over a thousand epigenomic datasets](https://alexishucteau.github.io/PhD_bibliography/Universal_annotation_of_the_human_genome_through_integration_of_over_a_thousand_epigenomic_datasets)

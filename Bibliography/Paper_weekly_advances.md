@@ -1,9 +1,16 @@
 # Paper Weekly advances
 
+# 2021
+
 [Week 42](#week-42)  
 [Week 43](#week-43)  
 [Week 46](#week-46)
 [Week 49](#week-49)
+
+# 2022
+
+[Week 01](#week-01)
+[Week 02](#week-02)
 
 ## 18.10.2021 - 22.10.2021 {#week-42}
 
@@ -181,8 +188,21 @@ AML displayed **eIF2** scarcity promoting **ATF4** upregulation that activates I
 []()
 [Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/)
 
+----------------
 
 ## 13.12.2021 - 17.12.2021 {#week-49}
 
 [Non_genetic_mechanisms_of_therapeutic_resistance_in_cancer](https://www-nature-com.proxy.insermbiblio.inist.fr/articles/s41568-020-00302-4)  
 [Notes](https://alexishucteau.github.io/PhD_project/Bibliography/Weekly_paper_notes/Non_genetic_mechanisms_of_therapeutic_resistance_in_cancer)
+
+--------------
+
+# 2022
+
+## 03.01.2022 - 07.01.2022 {#week-01}
+
+[Focal disruption of DNA methylation](https://alexishucteau.github.io/PhD_bibliography/Focal_disruption_of_DNA_methylation)
+
+## 10.01.2022 - 14.01.2022 {#week-02}
+
+[Universal annotation of the human genome through integration of over a thousand epigenomic datasets](https://alexishucteau.github.io/PhD_bibliography/Universal_annotation_of_the_human_genome_through_integration_of_over_a_thousand_epigenomic_datasets)

@@ -1,5 +1,7 @@
 # Weekly Todo list
 
+# 2021
+
 * [Week 42](#week-42)
 * [Week 43](#week-43)
 * [Week 44](#week-44)
@@ -9,6 +11,10 @@
 * [week 48](#week-48)
 * [week 49](#week-49)
 
+# 2022
+
+* [Week 02](#week-02)
+* [Week 03](#week-03)
 
 # **18.10.2021 - 22.10.2021** {#week-42}
 
@@ -305,3 +311,29 @@ Wednesday --> Subculture (5 samples)
 
 * Wednesday: Marie's thesis
 * Thursday: Mentorat
+
+--------------------
+
+# 2022
+
+# **10.01.2022 - 14.01.2022** {#week-02}
+
+## IDH Project
+
+* Analyse DNA methylation from Koichi data with the Focal_disruption_of_DNA_methylation approach
+  * Compare Good and Bad responder at Baseline -> DMR_Response
+  * Compare Baseline and CD34+ -> DMR IDH
+  * Response specific DMR
+  * Compare Good and Bad responder at post treatment -> DMR residuel
+  * Compare Post and Baseline -> DMR treatment
+  * (DMR residuel - DMR traitement) union with Response specific DMR
+  * Compare Response specific DMR with IDH specific DMR from Focal_disruption_of_DNA_methylation WGBS.
+
+## Wet lab
+
+* Monday: Subculture
+* Wednesday: Subculture
+* Friday: Subculture
+* Prepare experiments protocol for next week
+
+-----------

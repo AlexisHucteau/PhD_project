@@ -25,16 +25,30 @@ Scenith_analysis <- read.csv("Data/Scenith.csv")
 
 # Summary
 
-* [Rhod2](#rhod2)
-* [PpIX](#ppix)
-* [PPIX flux](#ppix-flux)
-* [Scenith](#scenith)
-  * [Glycolyse dependency](#glycolyse)
-  * [Mitochondria dependency](#mito)
-* [Differenciation](#diff)
-  * [CD11b](#cd11b)
-  * [CD14](#cd14)
-  * [CD15](#cd15)
+* [23.11.2021](#replicat-1)
+  * [Rhod2](#rhod2)
+  * [PpIX](#ppix)
+  * [PPIX flux](#ppix-flux)
+  * [Scenith](#scenith)
+    * [Glycolyse dependency](#glycolyse)
+    * [Mitochondria dependency](#mito)
+  * [Differenciation](#diff)
+    * [CD11b](#cd11b)
+    * [CD14](#cd14)
+    * [CD15](#cd15)
+* [14.01.2022](#replicat-2)
+  * [Rhod2](#rhod2-2)
+  * [PpIX](#ppix-2)
+  * [PPIX flux](#ppix-flux-2)
+  * [Scenith](#scenith-2)
+    * [Glycolyse dependency](#glycolyse-2)
+    * [Mitochondria dependency](#mito-2)
+  * [Differenciation](#diff-2)
+    * [CD11b](#cd11b-2)
+    * [CD14](#cd14-2)
+    * [CD15](#cd15-2)
+
+# First replicat {#replicat-1}
 
 # Rhod2, calcium indicator {#rhod2}
 
@@ -123,5 +137,13 @@ ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD15_APC_A, color=fa
   geom_bar(stat = "identity", fill = "white", position = position_dodge()) + 
   labs(color = "Treatment", title = "CD15", x = "Cell lines")+
   theme_minimal()
+```
+
+
+
+# Replicat 2 {#replicat-2}
+
+```{r}
+Replicat2 <- read.csv("")
 ```
 

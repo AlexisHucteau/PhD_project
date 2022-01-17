@@ -337,3 +337,29 @@ Wednesday --> Subculture (5 samples)
 * Prepare experiments protocol for next week
 
 -----------
+
+# **17.01.2022 - 21.01.2022** {#week-03}
+
+## IDH project
+
+* Change DMRs threshold
+* Change overlap parameters
+* Associate genes and DMRs from both analysis
+* Analyse IDH1 & IDH2 mutation separately
+* Investigate DMRs location and compare to their DMR WGBS analysis
+
+## Wet lab
+
+* Monday: Subculture [**DONE**]
+* Tuesday: +/- AGI
+* Wednesday: Subculture
+* Thursday: Subculture +/- AGI
+
+## Biblio
+
+* Continue reading ["Experimantal and bioinformatic Approaches to Studying DNA methylation in Cancer"](https://alexishucteau.github.io/PhD_bibliography/Experimental_and_bioinfo_DNA_met)
+
+
+## Communication
+
+* **Prepare 20.01.2022 presentation**

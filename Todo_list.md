@@ -372,15 +372,17 @@ Wednesday --> Subculture (5 samples)
 * Biblio on specific genes like:
   * RELA / NFkB
   * MYC
-* Write some introduction of my preliminary results into the introduction page (French first then in English)
 * Biblio on how to analyse WGBS data
-  * Experimental and Bioinformatic Approaches to Studying DNA Methylation in Cancer
+  * Experimental and Bioinformatic Approaches to Studying DNA Methylation in Cancer and relative papers
+* Look at WGBS data
 
 ## Wet lab
 
 * Write clear protocols
   * facs preparation
   * Western blot
+
+* Read Scenith paper
 
 * Monday: Subculture
 * Thursday: Cell seeding

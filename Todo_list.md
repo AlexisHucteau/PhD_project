@@ -15,6 +15,7 @@
 
 * [Week 02](#week-02)
 * [Week 03](#week-03)
+* [Week 04](#week-04)
 
 # **18.10.2021 - 22.10.2021** {#week-42}
 
@@ -353,7 +354,7 @@ Wednesday --> Subculture (5 samples)
 * Monday: Subculture [**DONE**]
 * Tuesday: +/- AGI
 * Wednesday: Subculture
-* Thursday: Subculture +/- AGI
+* Friday: Subculture +/- AGI
 
 ## Biblio
 
@@ -363,3 +364,30 @@ Wednesday --> Subculture (5 samples)
 ## Communication
 
 * **Prepare 20.01.2022 presentation**
+
+# **24.01.2022 - 28.01.2022**
+
+## IDH project
+
+* Biblio on specific genes like:
+  * RELA / NFkB
+  * MYC
+* Write some introduction of my preliminary results into the introduction page (French first then in English)
+* Biblio on how to analyse WGBS data
+  * Experimental and Bioinformatic Approaches to Studying DNA Methylation in Cancer
+
+## Wet lab
+
+* Write clear protocols
+  * facs preparation
+  * Western blot
+
+* Monday: Subculture
+* Thursday: Cell seeding
+* Friday (The whole day):
+  * Facs preparation
+  * Protein pellet preparation
+
+## Others
+
+* Setting date up ave les membres du Comité de thèse

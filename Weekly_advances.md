@@ -13,6 +13,7 @@
 
 # 2022
 * [Week 2](#week-2)
+* [Week 4](#week-4)
 
 
 ---------
@@ -234,3 +235,24 @@
 * Rescue the 1To data storage with all the data downloaded
 * Create Project in cahier de laboratoire électronique
 * Start reading [Universal annotation of the human genome through integration of over a thousand epigenomic datasets](https://alexishucteau.github.io/PhD_bibliography/Universal_annotation_of_the_human_genome_through_integration_of_over_a_thousand_epigenomic_datasets)
+
+---------
+---------
+
+## 24.01.2022 - 28.01.2022 {#week-4}
+
+### 24.01.2022
+
+* In vitro subculture
+* Making a todo and dbd list
+* Reading Experimental_and_bioinfo_DNA_met paper
+* Reparing thunderbird to send mail
+* Look at DSS package tuto
+* Look at RELA
+* Downloading Coverage Methylation data
+* Converting into bed files [**In progress**]
+
+### 25.01.2022
+
+* Finishing in vitro protocols
+* 

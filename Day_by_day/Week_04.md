@@ -12,7 +12,7 @@
 * 9h - 10h30 : Finish facs / western blot protocoles
 * 10h30 - 12h : Mails (si les mails marchent) & prepare Comitee dates
 * 12h - 13h : Pause lunch
-* 13h30 - 14h : Tuesday Axis Seminar
+* 13h - 14h : Look at Care program
 * 14h - 15h30 : Look at WGBS data
 * 15h30 - 17h : Myc simple meaning
 * 17h - 18h : Read Experimental and Bioinformatic Approaches to Studying DNA Methylation in Cancer and other relative papers

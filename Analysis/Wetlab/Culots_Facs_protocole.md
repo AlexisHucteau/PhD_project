@@ -1,5 +1,19 @@
 # Protocoles Culots protéique et préparation Facs
 
+## Solution de départ
+
+* PBS 1x Froid
+* HBSS
+* ABB 1x
+* Anticorps/Marqueurs
+  * CD45 APC (~ 3µL)
+  * CD15 APC (~ 15µL)
+  * CD38 PC7 (~ 12µL)
+  * Rhod2 (~ 7µL)
+  * AnnexinV - BV421 (~ 2µL)
+* billes
+* Flasques cells
+
 ## Culots
 
 2M de cells @ 0.4M/mL -> environ 5mL (dépend de la concentration réelle qui doit être supérieur à 0.4)
@@ -65,14 +79,16 @@ II - Preparation des tubes (+comps) :
   * 100 µL ABB 1x + 1µL Anx - BV421
   * Cytomètre
 
-# Question
+Volumes finaux : 2ml par tube environ
+
+# Questions
 
 * Quel volume billes ?
 * Quel volume cellules mortes avec DMSO ?
 
 # Notes :
 
-HBSS : Hanks' Balanced Salt Solution, Permet de maintenir des cellules exposées à un milieu exposé à des conditions atmosphériques. (Buffer system)
+HBSS : Hanks' Balanced Salt Solution, Permet de maintenir des cellules exposées à un milieu exposé à des conditions atmosphériques. (Buffer system)  
 ABB : Antibody Binding Buffer
 
 > Pour les culots westerns c'est 2 à 5 Millions. 2 Millions suffisent pour ce que tu fais.

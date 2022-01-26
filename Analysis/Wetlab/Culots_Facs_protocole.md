@@ -33,7 +33,6 @@ Attention ! Toujours être dans la glace
   * Tube comp 1 = Rhod2 (PE)
     * 100µL HBSS
     * Rhod2 = 1/100 = 1µL
-    * billes (bleus + blanches)
 
   * Tube comp 2 = CD15 - APC (CD45-APC)
     * 100µL HBSS

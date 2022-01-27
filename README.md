@@ -21,29 +21,20 @@ The weekly to-do lists updated every days if needed.
 * [**<span style="color:blue">Weekly advances</span>**](./Weekly_advances)  
 The weekly advances updated day by day.
 
-
 ## Analysis {#analysis}
 
 ### In silico analysis {#silico}
 
 * [**<span style="color:blue">Tutorial rMATS</span>**](./Analysis/In_silico/rMATS_tuto)  
-
 * [**<span style="color:blue">Meeting notes</span>**](./Analysis/In_silico/Meeting_notes)  
 Notes for and about meetings
-
 * [**<span style="color:blue">Cell lines notes</span>**](./Analysis/In_silico/Cell_lines_notes)  
 Notes about cell lines like HL60 and MOLM14 specificities
-
 * [**<span style="color:blue">Cell line analysis on HL60 and MOLM14 IDHm +/- IDHi Affymetrix</span>**](./Analysis/HL60_MOLM14_RNAseq_analysis)
-
 * [**<span style="color:blue">Patients samples analysis on Koichi and Verhaak dataset RNAseq & affymetrix</span>**](./Analysis/Patients_samples_Koichi_and_Verhaak_analysis)
-
 * [**<span style="color:blue">Methylation analysis on Koichi's cohort Patient sample + CD34+ samples</span>**](https://alexishucteau.github.io/Koichi_Methylation_analysis/)
-
 * [**<span style="color:blue">RNA splicing analysis</span>**](./Analysis/In_silico/Splicing_Project/Splicing_analysis)
-
 * [**<span style="color:blue">Notes on sequencing</span>**](./Analysis/In_silico/Sequencing)
-
 
 ### In vitro analysis {#vitro}
 

@@ -35,10 +35,10 @@
 * 9h - 10h30 In vitro cell seeding
 * 10h30 - 11h Mails (si les mails marchent) & Git management
 * 11h - 12h30 : Group meeting
-* 12h30 - 13h30 : Pause
-* 13h30 - 14h : idk
-* 14h - 16h : Group meeting
-* 16h - 17h : Look at WGBS data
+* 13h0 - 14h00 : Pause
+* 14h00 - 15h00 : Look at NF-kB
+* 15h00 - 16h30 : Look at WGBS data
+* 16h30 - 18h : Culture
 
 ## Friday
 

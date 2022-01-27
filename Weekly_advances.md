@@ -255,4 +255,4 @@
 ### 25.01.2022
 
 * Finishing in vitro protocols
-* 
+* Organize thesis Commitee.

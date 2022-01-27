@@ -1,6 +1,6 @@
 # Protocoles Culots protéique et préparation Facs
 
-## Solution de départ
+## Solutions de départ
 
 * PBS 1x Froid
 * HBSS
@@ -11,12 +11,12 @@
   * CD38 PC7 (~ 12µL)
   * Rhod2 (~ 7µL)
   * AnnexinV - BV421 (~ 2µL)
-* billes
+* Billes de compensation
 * Flasques cells
 
 ## Culots
 
-2M de cells @ 0.4M/mL -> environ 5mL (dépend de la concentration réelle qui doit être supérieur à 0.4)
+2M de cells @ 0.4M/mL -> environ 5mL (dépend de la concentration réelle qui doit être supérieure à 0.4)
 
 * 5 minutes @ 1200 RPM 4°C
 * Lavage PBS froid 1x 1mL
@@ -25,28 +25,37 @@
 * 5 minutes @ 1200 RPM 4°C
 * Congélation -20°C culot
 
+Attention ! Toujours être dans la glace
+
 ## FACS
 
 * Préparer les cubes comps
   * Tube comp 1 = Rhod2 (PE)
     * 100µL HBSS
-    * Rhod2 = 1/100 = 2µL
-    * billes (bleus + blanches)
+    * Rhod2 = 1/100 = 1µL
 
   * Tube comp 2 = CD15 - APC (CD45-APC)
     * 100µL HBSS
-    * 3µL CD45 APC
+    * 1µL CD45 APC
     * billes (bleus + blanches)
 
   * Tube comp 3 = CD38 - PC7
     * 100µL HBSS
-    * 2µL CD38 PC7
+    * 1µL CD38 PC7
     * billes (bleus + blanches)
 
   * Tube comp 4 = AnnexinV
     * 100µL HBSS
     * 1µL AnX - BV421
-    * Cellules mortes (DMSO)
+    * 200µL Cellules mortes (M14+DMSO)
+
+  * Tube comp 5 = GFP
+    * 100µL HBSS
+    * 200µL 56-11
+
+  * Tube comp 6 = non marqués
+    * 100µL HBSS
+    * 200µL M14
 
 * 20 minutes de marquage
 
@@ -66,9 +75,10 @@ Mix marqueurs :
 
 I - Préparation des tubes :
   * Récupérer 250µL de Cell par tube
-  * centri 1200 4 minutes
+  * centri 1200 RPM 4 minutes
   * lavage avec 2mL de HBSS
   * 100µL de mix
+  * Vortex
   * Incubation 20minutes à 37°C  
 
 II - Preparation des tubes (+comps) :
@@ -76,20 +86,24 @@ II - Preparation des tubes (+comps) :
   * lavage avec 2mL de HBSS
   * centri 1200 4 minutes
   * lavage avec 2mL de HBSS
+  * centri 1200 4 minutes
+  * Eliminer surnageant
   * 100 µL ABB 1x + 1µL Anx - BV421
   * Cytomètre
 
-Volumes finaux : 2ml par tube environ
+Volumes finaux : 100µl par tube environ
 
 # Questions
 
-* Quel volume billes ?
-* Quel volume cellules mortes avec DMSO ?
+* Quel volume billes ? 1 goutte de chaque
+* Quel volume cellules mortes avec DMSO ? 200µL
 
 # Notes :
 
 HBSS : Hanks' Balanced Salt Solution, Permet de maintenir des cellules exposées à un milieu exposé à des conditions atmosphériques. (Buffer system)  
 ABB : Antibody Binding Buffer
+
+Ac anti CD15 n'est pas IgGkappa -> Ne fonctionne pas avec les billes.
 
 > Pour les culots westerns c'est 2 à 5 Millions. 2 Millions suffisent pour ce que tu fais.
 

@@ -393,3 +393,25 @@ Wednesday --> Subculture (5 samples)
 ## Others
 
 * Setting date up ave les membres du Comité de thèse
+
+# **01.02.2022 - 04.02.2022** {#week-05}
+
+## IDH project
+
+* Biblio:
+  * Continue looking at RelA and MYC
+* Continue managing WGBS data.
+  * Compute with DSS package the input data made
+
+## In vitro experiments
+
+* Analyse data with FlowJo
+* Finish preparing Western blot for Tuesday
+* Analyse results of Western blots
+* Help Emeline with mice experiments
+
+## Thesis committee
+
+* End of the week: ask news about the doodle
+* Prepare some presentation plan
+* List biblio to read for thesis committee.

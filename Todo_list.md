@@ -394,7 +394,7 @@ Wednesday --> Subculture (5 samples)
 
 * Setting date up ave les membres du Comité de thèse
 
-# **01.02.2022 - 04.02.2022** {#week-05}
+# **31.01.2022 - 04.02.2022** {#week-05}
 
 ## IDH project
 

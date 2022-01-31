@@ -12,22 +12,22 @@
 
 ## Tuesday
 
-* 8h30 - 10h : Aider Emeline en broyant des os de souris
-* 10h15 - 11h30 : Continuer de regarder RelA
+* 8h30 - 12h : Aider Émeline en broyant des os de souris
 * 11h30 - 12h30 : Pause
-* 12h45 - 14h : Continuer d'analyser les données WGBS
-* 14h - 16h : Western blot
-* 16h - 17h : Préparer des figures
+* 13h30 - 14h : CRCT Axe Seminar
+* 14h - 15h : Dosage Protéines
+* 15h - 18h : Western blot
 
 ## Wednesday
 
-* 9h - 10h30 : Préparer un plan de présentation
-* 10h45 - 11h30 : Continuer de regarder RelA ou Myc
+* 9h - 11h : AC secondaire et révélation
+* 11h15 - 11h30 : faire des figures
 * 11h30 - 12h30 : Pause
 * 12h30 - 14h : Continuer d'analyser les données WGBS
 * 14h - 15h : Back to home
 * 15h - 16h : Prepare meeting
 * 16h - 17h : Meeting with JE
+* 17h - 18h : Piscine
 
 ## Thursday
 

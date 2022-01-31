@@ -2,13 +2,13 @@
 
 ## Monday
 
-9h30 - 10h : Organisation de la semaine
-10h - 11h : Continue Looking at RELA
-11h - 12h : Bioinfo Seminar
-12h - 13h : Pause
-13h - 14h : Préparer Western blots
-14h15 - 15h30 : Continue analyzing WGBS data
-15h45 - 17h : Analyse Data with FlowJo
+* 9h30 - 10h : Organisation de la semaine
+* 10h - 11h : Continue Looking at RELA
+* 11h - 12h : Bioinfo Seminar
+* 12h - 13h : Pause
+* 13h - 14h : Préparer Western blots
+* 14h15 - 15h30 : Continue analyzing WGBS data
+* 15h45 - 17h : Analyse Data with FlowJo
 
 ## Tuesday
 

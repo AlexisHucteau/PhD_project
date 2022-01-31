@@ -6,9 +6,8 @@
 * 10h - 11h : Continue Looking at RELA
 * 11h - 12h : Bioinfo Seminar
 * 12h - 13h : Pause
-* 13h - 14h : Préparer Western blots
-* 14h15 - 15h30 : Continue analyzing WGBS data
-* 15h45 - 17h : Analyse Data with FlowJo
+* 13h - 15h45 : Préparer Western blots
+* 16h - 17h : WGBS data
 
 ## Tuesday
 
@@ -16,11 +15,12 @@
 * 11h30 - 12h30 : Pause
 * 13h30 - 14h : CRCT Axe Seminar
 * 14h - 15h : Dosage Protéines
-* 15h - 18h : Western blot
+* 15h15 - 16h : Calculer quantité de prot
+* 16h - 17h : Continue analyzing WGBS data
 
 ## Wednesday
 
-* 9h - 11h : AC secondaire et révélation
+* 9h - 11h : FlowJO analysis
 * 11h15 - 11h30 : faire des figures
 * 11h30 - 12h30 : Pause
 * 12h30 - 14h : Continuer d'analyser les données WGBS

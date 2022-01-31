@@ -1,0 +1,63 @@
+Date: 22/11/2021 15:36:22
+ ============= MPR Method ==============
+Title: BCA
+File: C:\Users\mo-eq18.crct\Documents\Methodes Absorbance\BCA 562nm.mmp
+Use Starting Assay Dialog: no
+Plate Geometry:
+	CORNING
+	Length: 127,76 mm
+	Width: 85,47 mm
+	Column Count: 12
+	Row Count: 8
+	Well center to well center spacing: 9 mm
+	A1 Column Offset: 14,37 mm A1 Row Offset: 11,23 mm
+
+Plate Partition - Samples:
+	1	2	3	4	5	6	7	8	9	10	11	12	
+A													
+B													
+C													
+D													
+E									E9 (Unnamed)	E10 (Unnamed)	E11 (Unnamed)	E12 (Unnamed)	
+F													
+G	G1 (Unnamed)	G2 (Unnamed)	G3 (Unnamed)	G4 (Unnamed)	G5 (Unnamed)	G6 (Unnamed)	G7 (Unnamed)	G8 (Unnamed)	G9 (Unnamed)	G10 (Unnamed)	G11 (Unnamed)	G12 (Unnamed)	
+H	H1 (Unnamed)	H2 (Unnamed)	H3 (Unnamed)	H4 (Unnamed)	H5 (Unnamed)	H6 (Unnamed)	H7 (Unnamed)	H8 (Unnamed)	H9 (Unnamed)	H10 (Unnamed)	H11 (Unnamed)	H12 (Unnamed)	
+
+Set of Parameters:
+	Set #1 (BCA):
+		Measuring method: Single Point
+		Analysis: Absorption
+		Wavelength: 562,0 nm
+		Bandwidth: 2,0 nm
+		Calculations:
+			Stage #1: Formula: R1 = R0
+			Stage #2 not used
+			Stage #3 not used
+
+ =========== End of MPR Method ==========
+
+Assay Date: 22/11/2021 15:32:48
+
+*** RAW DATA ***
+	1	2	3	4	5	6	7	8	9	10	11	12	
+A	 	 	 	 	 	 	 	 	 	 	 	 	
+B	 	 	 	 	 	 	 	 	 	 	 	 	
+C	 	 	 	 	 	 	 	 	 	 	 	 	
+D	 	 	 	 	 	 	 	 	 	 	 	 	
+E	 	 	 	 	 	 	 	 	0,525	0,659	0,381	0,390	
+F	 	 	 	 	 	 	 	 	 	 	 	 	
+G	0,096	0,119	0,162	0,246	0,384	0,729	1,096	0,386	0,460	0,415	0,379	0,184	
+H	0,090	0,118	0,153	0,208	0,344	0,588	2,503	0,396	0,478	0,396	0,385	0,191	
+
+*** CALCULATIONS ***
+			Stage #1: Formula: R1 = R0
+			Stage #2 not used
+			Stage #3 not used
+
+STAGE #1
+	1	2	3	4	5	6	7	8	9	10	11	12	
+E									0,52	0,66	0,38	0,39	
+F													
+G	0,10	0,12	0,16	0,25	0,38	0,73	1,10	0,39	0,46	0,42	0,38	0,18	
+H	0,09	0,12	0,15	0,21	0,34	0,59	2,50	0,40	0,48	0,40	0,38	0,19	
+

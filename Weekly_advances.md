@@ -256,3 +256,16 @@
 
 * Finishing in vitro protocols
 * Organize thesis Commitee.
+
+## 31.01.2022 - 04.02.2022 {#week-5}
+
+### 31.01.2022
+
+* Biblio on Rela
+* Prepare Western blot experiments
+* Continuing managing WGBS data
+
+### 01.02.2022
+
+* Helping Emeline with her mice experiments
+* Protein quantification

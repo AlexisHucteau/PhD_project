@@ -436,3 +436,4 @@ Wednesday --> Subculture (5 samples)
 * Prepare some presentation plan
 * List biblio to read for thesis committee
 * Start using Prism
+* List figures done 

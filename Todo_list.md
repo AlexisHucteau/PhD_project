@@ -416,3 +416,23 @@ Wednesday --> Subculture (5 samples)
 * End of the week: ask news about the doodle
 * Prepare some presentation plan
 * List biblio to read for thesis committee.
+
+# **07.02.2022 - 11.02.2022** {#week-06}
+
+## IDH project
+
+* Biblio:
+  * Continue looking at RelA and Myc
+* Continue managing WGBS data
+  * Compute WGBS data
+
+## Wet lab manips
+
+* Look at last week results
+* Redo secondary AA on NF-kB prots
+
+## Thesis committee
+
+* Prepare some presentation plan
+* List biblio to read for thesis committee
+* Start using Prism

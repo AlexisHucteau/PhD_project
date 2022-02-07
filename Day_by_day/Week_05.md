@@ -1,4 +1,4 @@
-cd # Day by Day
+# Day by Day
 
 ## Monday
 

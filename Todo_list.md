@@ -436,4 +436,27 @@ Wednesday --> Subculture (5 samples)
 * Prepare some presentation plan
 * List biblio to read for thesis committee
 * Start using Prism
-* List figures done 
+* List figures done
+
+# **14.02.2022 - 18.02.2022**
+
+## Committee presentation
+
+* Make the presentation
+  * Have a clear plan (not too long not too short)
+* Redo some figures with Prism (if it takes not too long time)
+* Make a summary of DNA methylation analysis
+
+## Bibliography
+
+* Read paper on Scenith
+* Reread paper on viper and MSviper
+* Reread paper on ChAMP
+* Reread Lucille Paper
+* Continue biblio on Myc and its targets, CREB1, STAT3, HIF1a, SREBP1, BCL2
+* Make back-up slides
+
+## Others
+
+* Formation k-mers
+* Do some literature on k-mers

@@ -8,6 +8,8 @@
 * [Week 03](#week-03)
 * [Week 04](#week-04)
 * [Week 05](#week-05)
+* [Week 06](#week-06)
+* [Week 07](#week-07)
 
 # **<span style="color:red">10.01.2022 - 14.01.2022</span>** {#week-02}
 

@@ -28,7 +28,7 @@ library(viper)
 library(dplyr)
 library(ggsignif)
 
-load("~/DATA/Patients_data.RData")
+load("~/DATA/Patients_data2.RData")
 ```
 
 # Summary
@@ -123,7 +123,7 @@ Do_cool_scatterplot(NR_R_network$features, "NR vs R")
 ## High OS vs Low OS {#eigen-verhaak}
 
 ```{r}
-Do_cool_scatterplot(High_OS_vs_Low_OS_network$features, "High OS versus Low OS")
+Do_cool_scatterplot_Ver(High_OS_vs_Low_OS_network$features, "High OS versus Low OS")
 ```
 
 # RELA and MYC expression Patients samples {#expressions}

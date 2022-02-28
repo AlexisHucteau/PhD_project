@@ -34,7 +34,7 @@ library(stringr)
 library(igraph)
 library(ggplot2)
 
-load("~/DATA/Cell_lines_analysis.RData")
+load("~/DATA/Cell_lines_analysis2.RData")
 ```
 
 
@@ -172,7 +172,7 @@ plot(HL60_m_agi_vs_M14_m_agi$mrs)
 ### HL60 IDHm vs M14 +Dox (IDHm)
 
 ```{r}
-Do_cool_scatterplot(HL60_m_vs_M14_m_network$features, "HL60 IDHm vs M14 IDHm")
+Do_cool_scatterplot(HL60_m_vs_M14_m_network$features, "HL60 vs Molm14")
 ```
 
 ### HL60 IDHm +AGI vs M14 +Dox +AGI

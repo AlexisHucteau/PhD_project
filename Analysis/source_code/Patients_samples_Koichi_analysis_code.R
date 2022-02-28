@@ -379,10 +379,22 @@ NR_R_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/NR_R_netwo
 
 
 Do_cool_scatterplot <- function(Feature, title){
-  Feature <- dplyr::filter(Feature, Eigen_centrality > 0.0005 & Page_rank != 0)
+  Feature <- dplyr::filter(Feature, Eigen_centrality > 0.0005 & Page_rank != 0 & ((P.Value < 0.05 & abs(logFC) > 1.5) | pval < 0.05))
   DEG <- ifelse(Feature$logFC < 0, "DOWN", "UP")
   ggplot(Feature, aes(x = log(Page_rank), y = log(Eigen_centrality), label = Gene, colour = DEG))+
-    geom_text(check_overlap = F, size = 2, nudge_x = 0.05, hjust = 0, outlier.size = 0)+
+    geom_text(check_overlap = T, size = 2, nudge_x = 0.05, hjust = 0, outlier.size = 0)+
+    geom_point(size = 0.5)+
+    labs(title = paste0("Network-based node prioritization ", title))+
+    xlab("Page Rank (log)")+
+    ylab("Eigen Centrality (log)")+
+    scale_colour_manual(values=c("#0000FF", "#FF0000"))
+}
+
+Do_cool_scatterplot_Ver <- function(Feature, title){
+  Feature <- dplyr::filter(Feature, Eigen_centrality > 0.0005 & Page_rank != 0 & (P.Value < 0.05 | pval < 0.05))
+  DEG <- ifelse(Feature$logFC < 0, "DOWN", "UP")
+  ggplot(Feature, aes(x = log(Page_rank), y = log(Eigen_centrality), label = Gene, colour = DEG))+
+    geom_text(check_overlap = T, size = 2, nudge_x = 0.05, hjust = 0, outlier.size = 0)+
     geom_point(size = 0.5)+
     labs(title = paste0("Network-based node prioritization ", title))+
     xlab("Page Rank (log)")+

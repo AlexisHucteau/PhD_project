@@ -2,6 +2,7 @@
 In silico, epigenomic and functional investigations of resistance to IDH inhibitors in acute myeloid leukemia
 
 * [2nd year plan](#year2)
+* [Points meetings](#meetings)
 * [Introduction](#intro)
 * [Organisation](#orga)
 * [Analysis](#analysis)
@@ -13,6 +14,7 @@ In silico, epigenomic and functional investigations of resistance to IDH inhibit
 
 ## [<span style="color:blue">2nd year plan and ideas</span>](./2nd_year/main) {#year2}
 
+## [<span style="color:blue">Points meeting</span>](./Points_meetings/Main) {#meetings}
 
 
 ## [<span style="color:blue">Introduction</span>](./Bibliography/Introduction) {#intro}

@@ -14,7 +14,6 @@
 * [Stem cells and RAS pathways](#Ras-stem)
 * [Look at other cancer](#other)
 
-
 ## In vitro replicates {#replicates}
 
 Rhod2, CD15, CD38, western blot (myc, nfkb, Bcl2)

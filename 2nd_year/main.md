@@ -10,7 +10,7 @@
 * [Look at other transcriptional datasets even if they are not IDH treatments](#transcri-no-treated)
 * [Look at enrichment of monocytes granulocytes in the different datasets](#diff-enrichments)
 * [Gradient diff patients](#gradient-diff-patients)
-* [Dédiff](#dediff)
+* [Dediff](#dediff)
 * [Stem cells and RAS pathways](#Ras-stem)
 * [Look at other cancer](#other)
 
@@ -44,7 +44,7 @@ Look at our patients cohort with k-mers.
 
 ## Test other TF activity methods {#tfs}
 
-Hi C targets
+i-cisTargets
 
 ### Aracn {#aracn}
 

@@ -1,5 +1,56 @@
 # Introduction
 
+* [AML](#aml)
+* [IDH](#IDH)
+  * Where is IDHm in AML cases?
+  * Effects of IDHm in AML?
+    * Transcriptomic
+    * DNA Methylation
+    * Histone modifications
+* [IDHm inhibitor](#IDHmi)
+  * What are the actual knowledge about the inhibitor?
+  * About the resistance
+* [TF activities](#tfs)
+  * Different methods to infer it
+    * Dorothea
+    * i-cis Targets
+  * How to make it more precise?
+    * ATAC-seq
+* [Networks](#networks)
+  * Inferring regulatory network?
+  * Different metrics
+* [DNA methylation](#dna-meth)
+  * What is it?
+  * What are there effects?
+  * How to have access to those modifications?
+* [Chromatin structure](#chromatin-structure)
+  * Differents states of the chromatin
+  * When is it modified?
+  * How?
+  * How to have access to that information?
+* [Single cell](#single-cell)
+  * What are single cell analysis?
+  * To study what?
+* [Differentiation](#diff)
+  * What is differentiation?
+  * Why is it involved in AML?
+  * How?
+  * Why is it involved in IDHm AML?
+  * How?
+* [Dedifferentiation](#dediff)
+  * What is differentiation?
+  * Why is it involved in AML?
+  * How?
+  * Why is it involved in IDHm AML?
+  * How?
+* [Stress response](#Stress)
+  * What is a cellular Stress?
+  * What is a Stress Response?
+  * How is it connected to AML?
+  * How is it connected to IDHm AML?
+  * Is it connected to the resistance?
+
+
 The main topic of the thesis is in silico, epigenomic and functional investigations of resistance to IDH inhibitors in acute myeloid leukemia.
 
 Acute myeloid leukemia (AML) is a deadly disease associated with poor outcomes. The median age of patients harbouring AML is around 70 years old and the prognoses decline with the age. For decades, intensive chemotherapies were the only treatments available. The combination of Cytarabine (AraC) and daunorubicin shows good results but not all the patients are eligible for intensive therapy. Hypomethylating agents are the current alternative therapy but only 16% of patients achieve complete remission with a median overall survival about 21 months.

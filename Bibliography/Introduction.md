@@ -53,12 +53,21 @@
 
 # AML {#aml}
 
-# IDH {#IDH}
+# IDH {#IDHm}
+
+[Mitochondrial metabolism supports resistance to IDH mutant inhibitors in acute myeloid leukemia](https://rupress.org/jem/article/218/5/e20200924/211914/Mitochondrial-metabolism-supports-resistance-to)
 
 # IDHm inhibitor {#IDHmi}
 
 # IDHm inhibitor resistance {#idhmi-res}
 
+## Résistance Intrinsèque
+
+
+
+## Résistance acquise
+
+[Mitochondrial metabolism supports resistance to IDH mutant inhibitors in acute myeloid leukemia](https://rupress.org/jem/article/218/5/e20200924/211914/Mitochondrial-metabolism-supports-resistance-to) décrit un métabolisme mmitochondrial oxidatif exacerbé. Il serait dû l'hyperméthylation d'histones
 
 
 # TF activities {#tfs}

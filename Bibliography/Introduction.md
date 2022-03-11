@@ -9,6 +9,7 @@
     * Histone modifications
 * [IDHm inhibitor](#IDHmi)
   * What are the actual knowledge about the inhibitor?
+* [IDHm inhibitor resistance](#idhmi-res)
   * About the resistance
 * [TF activities](#tfs)
   * Different methods to infer it
@@ -49,6 +50,33 @@
   * How is it connected to AML?
   * How is it connected to IDHm AML?
   * Is it connected to the resistance?
+
+# AML {#aml}
+
+# IDH {#IDH}
+
+# IDHm inhibitor {#IDHmi}
+
+# IDHm inhibitor resistance {#idhmi-res}
+
+
+
+# TF activities {#tfs}
+
+# Networks {#networks}
+
+# DNA methylation {#dna-meth}
+
+# Chromatin structure {#chromatin-structure}
+
+# Single cell {#single-cell}
+
+# Differentiation {#diff}
+
+# Dedifferentiation {#dediff}
+
+# Stress response {#Stress}
+
 
 The main topic of the thesis is in silico, epigenomic and functional investigations of resistance to IDH inhibitors in acute myeloid leukemia.
 

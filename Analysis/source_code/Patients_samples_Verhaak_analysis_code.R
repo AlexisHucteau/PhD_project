@@ -138,7 +138,6 @@ dorothea2aracne2viper_regulons <- function(dorothea, exprs_m) {
   return(aracne_regulons)
 }
 
-
 # Main function to run msviper
 
 run_msviper <- function(exprs_m, dorothea, use_aracne, ref, treat, ref_name, treat_name, minsize, ges.filter) {
@@ -184,9 +183,7 @@ run_msviper <- function(exprs_m, dorothea, use_aracne, ref, treat, ref_name, tre
   list(mrs_table = mrs_table, mrs = mrs, regulons = dorothea_mrs_regulons)
 }
 
-
 # Extra function to generate the cytoscape networok from msviper result
-
 
 mrs2cytoscape <- function(mrs,full.path) {
 
@@ -200,10 +197,6 @@ mrs2cytoscape <- function(mrs,full.path) {
   # setVisualStyle("default")
 
   my_style <- "my_style"
-
-
-
-
 
   createVisualStyle(my_style, list())
   setNodeColorDefault("#D3D3D3", style.name = my_style)
@@ -227,9 +220,6 @@ mrs2cytoscape <- function(mrs,full.path) {
 data(dorothea_hs, package = "dorothea")
 regulons = dorothea_hs %>%
   filter(confidence %in% c("A", "B"))
-
-
-
 
 High_OS_vs_Low_OS_msviper <- run_msviper(Verhaak_norm_data_SYMBOL, regulons, use_aracne = T, OS == "High_OS", OS == "Low_OS",  "High_OS", "Low_OS", minsize = 4, ges.filter=T)
 

@@ -57,18 +57,85 @@
 
 [Mitochondrial metabolism supports resistance to IDH mutant inhibitors in acute myeloid leukemia](https://rupress.org/jem/article/218/5/e20200924/211914/Mitochondrial-metabolism-supports-resistance-to)
 
+IDH1m conferred a higher sensitivity to metformin in a transformed mammary epithelial cell line.[Cuyàs et al, 2015](https://doi.org/10.18632/oncotarget.3733) resulted in increased oxidative TCA metabolism under hypoxia in HCT116 colon cancer cells [Grassian et al., 2014](https://doi.org/10.1158/0008-5472.CAN-14-0772-T), and led to enhanced expression of genes involved in mitochondrial structure and function in cholangiocarcinoma [Farshidfar et al., 2017](https://doi.org/10.1016/j.celrep.2017.06.008). However, IDH1m glioma cells had reduced ATP content and respiration due to inhibition of ATP synthase or hypersuccinylation by 2-HG [Fu et al., 2015](https://doi.org/10.1016/j.cmet.2015.06.009); [Li et al., 2015](https://doi.org/10.1016/j.molcel.2015.10.017) and increased NADH-coupled proline biosynthesis, resulting in a ‘‘metabolic bypass’’ of ETC complex I [Hollinshead et al., 2018](https://doi.org/10.1016/j.celrep.2018.02.084).
+
+IDH1m AML cells displayed a higher OxPHOS phenotype than WT cells without changes in mitochondrial biogenesis.
+
 # IDHm inhibitor {#IDHmi}
 
 # IDHm inhibitor resistance {#idhmi-res}
 
-## Résistance Intrinsèque
+[Resistance to mutant IDH inhibitors in acute myeloid leukemia: Molecular mechanisms and therapeutic strategies](https://www.sciencedirect.com/science/article/abs/pii/S0304383522000787?via%3Dihub)
+
+## Résistance Intrinsèque or primary resistance
+
+mIDH1 inhibitor [...] no significant effects were observed on altering the epigenetic state or suppression of the growth of mIDH1-containing glioma cells. [x](https://www.sciencedirect.com/science/article/abs/pii/S0304383522000787?via%3Dihub)
+
+### Receptor tyrosine kinase (RTK) pathway mutations
+
+* RTK pathway mutation (for IDH1m)
+  * NRAS, KRAS, PTPN11, KIT, and FLT3
+
+* NRAS subclone? (IDH2m)
+
+### Mitogen-activated protein kinase (MAPK) signaling pathway activation
+
+### Epigenetic regulation, stemness and differentiation
+
+* primary resistance due to leukemia stemness  [x](https://doi.org/10.1038/s41467-021-22874-x)
+
+* JAK2 mutation (Good prognosis) --> inactive la protéine
+  * Jak2 inhibition combinaison therapy with IDHm inhibitor
+
+## Résistance acquise Acquired resistance
+
+### Secondary IDH mutations
+
+
+### Isoform switching
+
+### RTK pathway mutations
+
+### Clonal evolution and selection
+
+### Mitochondrial metabolism
 
 
 
-## Résistance acquise
 
-[Mitochondrial metabolism supports resistance to IDH mutant inhibitors in acute myeloid leukemia](https://rupress.org/jem/article/218/5/e20200924/211914/Mitochondrial-metabolism-supports-resistance-to) décrit un métabolisme mmitochondrial oxidatif exacerbé. Il serait dû l'hyperméthylation d'histones
 
+
+
+
+
+
+
+* Maintien des activités mito
+* Co-occuring mutations NRAS MAPK pathway effectors
+  * no patients with mPTPN11
+  * mKRAS was not associated with response
+  * RUNX1 and FLT3
+  * IDHm isoform switches
+  * IDH2 second-site mutations
+
+
+--------------
+
+* In CR, IDHm2 leukemia cells -> Neutrophils
+  * may explain the lower frequency of infections in patients achieving CR with enasidenib treatment
+
+[Mitochondrial metabolism supports resistance to IDH mutant inhibitors in acute myeloid leukemia](https://rupress.org/jem/article/218/5/e20200924/211914/Mitochondrial-metabolism-supports-resistance-to) décrit un métabolisme mitochondrial oxydatif exacerbé. Il serait dû à une augmentation de l'expression de CPT1a via CEBPa. Malgré une réduction de l'oncométabolite 2HG via IDHmi, l'activité particulière du métabolisme est maintenue. Ce maintien serait dû à la réactivation de l'activité de TET2 et ainsi, l'expression de PTEN qui va entraîner l'inactivation d'AKT et préserver PGC1a.
+
+Co-occurring mutations in NRAS and other MAPK pathway effectors were enriched in nonresponding patients, consistent with RAS signaling contributing to primary therapeutic resistance (https://ashpublications.org/blood/article/130/6/732/36815/Enasidenib-induces-acute-myeloid-leukemia-cell)
+
+(https://ashpublications.org/bloodadvances/article/4/9/1894/454778/Molecular-mechanisms-mediating-relapse-following)
+
+
+
+IDH switch isoform
+
+
+Differentiation biais.
 
 # TF activities {#tfs}
 
@@ -86,6 +153,10 @@
 
 # Stress response {#Stress}
 
+
+
+
+--------------
 
 The main topic of the thesis is in silico, epigenomic and functional investigations of resistance to IDH inhibitors in acute myeloid leukemia.
 

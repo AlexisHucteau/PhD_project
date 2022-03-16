@@ -75,22 +75,27 @@ mIDH1 inhibitor [...] no significant effects were observed on altering the epige
 
 * RTK pathway mutation (for IDH1m)
   * NRAS, KRAS, PTPN11, KIT, and FLT3
+* JAK2 mutation (Good prognosis) --> inactive la protéine
+* Jak2 inhibition combinaison therapy with IDHm inhibitor
 
 * NRAS subclone? (IDH2m)
 
 ### Mitogen-activated protein kinase (MAPK) signaling pathway activation
 
+* Activation MAPK signaling pathway associated with primary resistance to IDHm Inhibition
+  * NRAS, PTPN11, SRSF2, ASXL1 enriched in NR
+
 ### Epigenetic regulation, stemness and differentiation
 
-* primary resistance due to leukemia stemness  [x](https://doi.org/10.1038/s41467-021-22874-x)
+* primary resistance due to leukemia stemness [Leukemia stemness and co-occurring mutations drive resistance to IDH inhibitors in acute myeloid leukemia](https://doi.org/10.1038/s41467-021-22874-x)
+  * Mutations in RUNX family transcription factor 1 (RUNX1), CCAAT/enhancer-binding protein-alpha (CEBPA), and GATA binding protein 2 (GATA2) associated with NR
+  * Hypermethylated phenotype (FPXC1, CD99 and DNMT3A)
 
-* JAK2 mutation (Good prognosis) --> inactive la protéine
-  * Jak2 inhibition combinaison therapy with IDHm inhibitor
+* increasing stemness, which block cell differentiation and leads to the development of drug resistance.
 
 ## Résistance acquise Acquired resistance
 
 ### Secondary IDH mutations
-
 
 ### Isoform switching
 
@@ -105,10 +110,31 @@ mIDH1 inhibitor [...] no significant effects were observed on altering the epige
 
 
 
+## Autres papiers
 
+[The Hematopoietic Oxidase NOX2 Regulates Self-Renewal of Leukemic Stem Cells](https://www.cell.com/cell-reports/fulltext/S2211-1247(19)30316-X?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS221112471930316X%3Fshowall%3Dtrue)
 
+![The Hematopoietic Oxidase NOX2 Regulates Self-Renewal of Leukemic Stem Cells](../Pictures/The_Hematopoietic_Oxidase_NOX2_Regulates_Self_Renewal_of_Leukemic_Stem_Cells.jpg)
 
+*acute myeloid leukemia -- leukemia stem cells -- differentiation -- self-renewal --glycolysis -- fatty acid oxidation -- NOX2 -- p22Phox -- ROS -- FOXC1 -- CEBPε -- NF-κB*
 
+* Depletion of NOX2 reduces basal ROS levels and impairs core metabolism
+* NOX2 regulates self-renewal- and differentiation-associated transcriptional programs
+* Downstream of NOX2, FOXC1 controls part of the differentiation program
+* Depletion of FOXC1 or NOX2 impairs leukemogenesis in murine models and xenografts
+
+NOX2:
+* Immune cell function
+* Leukemia initiating stem cell population
+* NOX2 KO --> core metabolism impaired
+* NOX2 KO -->
+  * self-renewal program decrease
+  * activates inflammatory
+  * activates myeloid-differentiation-associated programs
+
+forkhead transcription factor FOXC1 targets of NOX2
+
+------------------
 
 * Maintien des activités mito
 * Co-occuring mutations NRAS MAPK pathway effectors

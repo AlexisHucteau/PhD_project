@@ -9,6 +9,7 @@ library(data.table)
 library(stringr)
 library(igraph)
 library(ggplot2)
+library(RCy3)
 
 # Preparation of transcriptomes
 Annotations <- data.frame(ACCNUM = sapply(contents(hugene20sttranscriptclusterACCNUM), paste, collapse = ", "), 
@@ -125,7 +126,7 @@ viper_regulons2dorothea <- function(r) {
 # Finally use it in aracne2regulon function from viper package
 dorothea2aracne2viper_regulons <- function(dorothea, exprs_m) {
   dorothea_aggregation_tf <- dorothea %>%
-    select(tf, target) %>%
+    dplyr::select(tf, target) %>%
     group_by(tf) %>%
     summarise(targets = str_c(target, collapse = ";"))
   tmp_file <- tempfile()
@@ -225,30 +226,34 @@ data(dorothea_hs, package = "dorothea")
 regulons = dorothea_hs %>%
   filter(confidence %in% c("A", "B"))
 
-Transcriptomes_SYMBOL <- merge(Transcriptomes, Annot, by.x = 0, by.y = 0, all = T) %>%
-  dplyr::filter(., SYMBOL != "NA") %>%
-  split(., .$SYMBOL) %>% 
-  lapply(., function(x){
-    l <- length(x[1,])-3
-    cnames <- colnames(x)[c(2:l)]
-    df <- x[,c(2:l)] %>%
-      as.matrix(.) %>%
-      colMeans(.) %>% 
-      data.frame(.) %>%
-      t(.) %>%
-      data.frame(.)
-    colnames(df) <- cnames
-    df
-  }) %>%
-  rbindlist(.) %>% 
-  data.frame(.)
+# Transcriptomes_SYMBOL <- merge(Transcriptomes, Annot, by.x = 0, by.y = 0, all = T) %>%
+#   dplyr::filter(., SYMBOL != "NA") %>%
+#   split(., .$SYMBOL) %>% 
+#   lapply(., function(x){
+#     l <- length(x[1,])-3
+#     cnames <- colnames(x)[c(2:l)]
+#     df <- x[,c(2:l)] %>%
+#       as.matrix(.) %>%
+#       colMeans(.) %>% 
+#       data.frame(.) %>%
+#       t(.) %>%
+#       data.frame(.)
+#     colnames(df) <- cnames
+#     df
+#   }) %>%
+#   rbindlist(.) %>% 
+#   data.frame(.)
+# 
+# rownames(Transcriptomes_SYMBOL) <- unique(Annot$SYMBOL)[-1]
+# colnames(Transcriptomes_SYMBOL) <- str_remove_all(colnames(Transcriptomes_SYMBOL), "X")
 
-rownames(Transcriptomes_SYMBOL) <- unique(Annot$SYMBOL)[-1]
-colnames(Transcriptomes_SYMBOL) <- str_remove_all(colnames(Transcriptomes_SYMBOL), "X")
+Transcriptomes_SYMBOL <- read.csv("GitHub/Koichi_gene_expression_analyses_git/Koichi_gene_expression_analyses/DATA/Cell_line_Transcriptomes_symbol.csv", check.names = F, row.names = 1)
 
-HL60_Mut_IDHi_vs_no_treat <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne = T, Phenotype == "HL60.Mut.AGI5198", Phenotype == "HL60.Mut.DMF",  "HL60_IDHi", "HL60_DMF", minsize = 4, ges.filter=T)
-HL60_Mut_vs_HL60_WT <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne = T, Phenotype == "HL60.Mut.None", Phenotype == "HL60.WT.None",  "HL60_Mut", "HL60_WT", minsize = 4, ges.filter=T)
-MOLM14_Mut_IDHi_vs_no_treat <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne = T, Phenotype == "MOLM14.Mut.AGI5198", Phenotype == "MOLM14.Mut.DMF",  "MOLM14_IDHi", "MOLM14_DMF", minsize = 4, ges.filter=T)
+HL60_Mut_IDHi_vs_no_treat <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne = T, Phenotype == "HL60.Mut.DMF", Phenotype == "HL60.Mut.AGI5198", "HL60_DMF", "HL60_IDHi", minsize = 4, ges.filter=T)
+HL60_Mut_vs_HL60_WT <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne = T, Phenotype == "HL60.WT.None", Phenotype == "HL60.Mut.None", "HL60_WT", "HL60_Mut", minsize = 4, ges.filter=T)
+MOLM14_Mut_IDHi_vs_no_treat <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne = T, Phenotype == "MOLM14.Mut.DMF", Phenotype == "MOLM14.Mut.AGI5198", "MOLM14_DMF", "MOLM14_IDHi", minsize = 4, ges.filter=T)
+HL60_Mut_IDHi_vs_Molm14_mut_IDHi <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne = T, Phenotype == "MOLM14.Mut.AGI5198", Phenotype == "HL60.Mut.AGI5198", "MOLM14_IDHi", "HL60_IDHi", minsize = 4, ges.filter=T)
+HL60_Mut_vs_Molm14_mut <- run_msviper(Transcriptomes_SYMBOL, regulons, use_aracne = T, Phenotype == "MOLM14.Mut.DMF", Phenotype == "HL60.Mut.DMF", "MOLM14_DMF", "HL60_DMF", minsize = 4, ges.filter=T)
 
 Focus_on_one_gene_not_TF <- function(RNAseq, Gene, Comparison_A, Comparison_A_name, Comparison_B, Comparison_B_name, phenotype){
   df <- RNAseq[rownames(RNAseq) == Gene, phenotype %in% c(Comparison_A, Comparison_B)]
@@ -282,6 +287,7 @@ Prepare_features <- function(feature_data_frame, column_of_interest, type_of_dat
   if(type_of_data == "DEG"){
     res <- feature_data_frame[,column_of_interest]
     colnames(res)[1:3] <- c("Gene", "logFC", "P.Value")
+    res <- res[res$Gene != "NA",]
   }else{
     res <- feature_data_frame[,column_of_interest]
     colnames(res)[1:3] <- c("Gene", "nes", "pval")
@@ -312,16 +318,16 @@ Prepare_Cytoscape_network <- function(Big_Network = igraph_PPI_TF_target_Network
   DEG_of_interest <- DEG_analysis %>% dplyr::filter(abs(logFC) > logFC_treshold & P.Value < 0.1) %>% .$Gene
   TF_of_interest <- TF_analysis %>% dplyr::filter(pval < 0.1) %>% .$Gene
   
-  V_of_interest <- V(Big_Network) %>% .[which(names(.) %in% unique(c(DEG_of_interest, TF_of_interest)))] 
+  V_of_interest <- V(Big_Network) %>% .[which(names(.) %in% c(DEG_of_interest, TF_of_interest))]
   
   filtered_graph <- induced_subgraph(Big_Network, V_of_interest)
-  
   
   eigen_centrality_result <- eigen_centrality(filtered_graph, directed = F)$vector
   
   page_rank_result <- igraph::page.rank(filtered_graph, directed = F)$vector
   
   features <- merge(DEG_analysis, TF_analysis, by = "Gene", all = T)
+  features <- dplyr::filter(features, (abs(logFC) > logFC_treshold & P.Value < 0.1) | (pval < 0.1))
   features <- merge(features, eigen_centrality_result, by.x = "Gene", by.y = 0, all = T)
   colnames(features)[ncol(features)] <- "Eigen_centrality"
   features <- merge(features, page_rank_result, by.x = "Gene", by.y = 0, all = T)
@@ -334,12 +340,6 @@ Prepare_Cytoscape_network <- function(Big_Network = igraph_PPI_TF_target_Network
   
   features$TF <- ifelse(features$nes == 0, F, T)
   
-  clustering_eigen <- cluster_leading_eigen(filtered_graph) %>% membership() %>% print() %>% data.frame()
-  
-  features <- merge(features, clustering_eigen, by.x = "Gene", by.y = 0, all = T)
-  set(features,which(is.na(features[["."]])),".",999)
-  colnames(features)[ncol(features)] <- "Cluster"
-  
   res <- list("features" = features,
               "network" = filtered_graph
   )
@@ -347,29 +347,263 @@ Prepare_Cytoscape_network <- function(Big_Network = igraph_PPI_TF_target_Network
   return(res)
 }
 
-All_workflow <- function(feature_DEG_df, column_DEG, feature_tf_df, column_TF, NET = igraph_PPI_TF_target_Network, logFC_treshold = 0.75){
+FIsInGene_020720_with_annotations <- read.csv("Documents/List_genes_from_transcriptome/FIsInGene_020720_with_annotations.tsv", sep = "\t")
+
+build_network_from_aracn <- function(PPI_net = FIsInGene_020720_with_annotations, aracn_regulon){
+  aracn_regulon$merging <- paste(aracn_regulon$tf, aracn_regulon$target, sep = ",")
+  PPI_net$merging <- paste(PPI_net$Gene1, PPI_net$Gene2, sep = ",")
+  merged <- merge(aracn_regulon, PPI_net, by = "merging", all.x = T, all.y = T)
+  merged$mor <- ifelse(is.na(merged$mor), 0, merged$mor)
+  merged$tf <- ifelse(is.na(merged$tf), "", merged$tf)
+  merged$target <- ifelse(is.na(merged$target), "", merged$target)
+  merged$state <- ifelse(is.na(merged$state), "", merged$state)
+  merged$likelihood <- ifelse(is.na(merged$likelihood), "", merged$likelihood)
+  merged
+}
+
+All_workflow <- function(feature_DEG_df, column_DEG, feature_tf_df, column_TF, Aracn_net, PPI_net = FIsInGene_020720_with_annotations, logFC_treshold = 0.75){
   DEG <- Prepare_features(feature_DEG_df, column_DEG, "DEG")
   TF <- Prepare_features(feature_tf_df, column_TF, "TF")
-  res <- Prepare_Cytoscape_network(NET, DEG, TF, logFC_treshold)
+  NET <- build_network_from_aracn(PPI_net, Aracn_net)[,c(7,8,2:6,9:11)]
+  igraph_net <- graph_from_data_frame(NET, directed = T)
+  res <- Prepare_Cytoscape_network(igraph_net, DEG, TF, logFC_treshold)
   return(res)
 }
 
-Combined_network <- read.csv("~/GitHub/Koichi_gene_expression_git/Koichi_gene_expression_analyses/Results/Tables/Combined_Networks.tsv", sep = "\t")
-PPI_TF_target_Network <- graph_from_data_frame(Combined_network, directed = T)
+Stylish_the_network <- function(PPI = T, TF = T, network_features, network_edges_features, title){
+  defaults <- list(NODE_SHAPE="diamond",
+                   NODE_SIZE=30,
+                   EDGE_TRANSPARENCY=120,
+                   NODE_LABEL_POSITION="c,c,c,0.00,0.00")
+  nodeLabels <- mapVisualProperty(visual.prop = 'node label', table.column = 'name', mapping.type = 'p')
+  createVisualStyle(title, defaults, list(nodeLabels))
+  setVisualStyle(title)
+  setNodeShapeMapping(table.column = 'TF', 
+                      table.column.values = c(T, F), 
+                      shapes = c('ELLIPSE', "RECTANGLE"), 
+                      style.name = title)
+  
+  setNodeColorMapping(table.column = 'logFC', 
+                      table.column.values = c(min(network_features$logFC), 0.0, max(network_features$logFC)), 
+                      colors = c ('#0000FF', '#FFFFFF', '#FF0000'), 
+                      style.name = title)
+  
+  setNodeFillOpacityMapping(table.column = 'P.Value', 
+                            table.column.values = c(0, 0.1, 1), 
+                            opacities = c(255, 200, 100), 
+                            style.name = title)
+  
+  setNodeSizeMapping (table.column = 'Eigen_centrality', 
+                      table.column.values = c(0, 1), 
+                      sizes = c(20, 200), 
+                      style.name = title)
+  
+  setNodeFontSizeMapping(table.column = 'Eigen_centrality', 
+                         table.column.values = c(0, 1), 
+                         sizes = c(10, 75), 
+                         style.name = title)
+  
+  if (TF){
+    setEdgeLineWidthMapping(table.column = 'mor',
+                            table.column.values = c(min(network_edges_features$mor), 0.0, max(network_edges_features$mor)),
+                            widths = c(10, 2, 10), 
+                            style.name = title)
+    
+    setEdgeColorMapping(table.column = 'mor',
+                        table.column.values = c(min(network_edges_features$mor), 0.0, max(network_edges_features$mor)),
+                        colors = c('#0000FF', "#555555", '#FF0000'), 
+                        style.name = title)
+    
+    setEdgeOpacityMapping(table.column = 'mor',
+                          table.column.values = c(min(network_edges_features$mor), 0.0, max(network_edges_features$mor)),
+                          opacities = c(255, 100, 255), 
+                          style.name = title)
+  }
+  if(PPI){
+    setEdgeTargetArrowShapeMapping(table.column = 'Direction',
+                                   table.column.values = names(table(network_edges_features$Direction)),
+                                   shapes = c('NONE', 'ARROW', 'T', 'NONE', 'ARROW', 'T', 'NONE', 'ARROW'), 
+                                   style.name = title)
+  }else{
+    createColumnFilter(filter.name = "Activation", column = "mor", criterion = 0, type = "edges", predicate = "GREATER_THAN")
+    setEdgeTargetArrowShapeBypass(getSelectedEdges(), "ARROW")
+    
+    createColumnFilter(filter.name = "Inhibition", column = "mor", criterion = 0, type = "edges", predicate = "LESS_THAN")
+    setEdgeTargetArrowShapeBypass(getSelectedEdges(), "T")
+  }
+  
+  createDegreeFilter(filter.name = "single", criterion = c(0,0))
+  getSelectedNodes()
+  deleteSelectedNodes()
+  
+  createColumnFilter(filter.name = "NES_DOWN", column = "nes", criterion = 0, type = "nodes", predicate = "LESS_THAN")
+  setNodeColorBypass(getSelectedNodes(), new.colors = "#C411FF")
+  createColumnFilter(filter.name = "NES_UP", column = "nes", criterion = 0, type = "nodes", predicate = "GREATER_THAN")
+  setNodeColorBypass(getSelectedNodes(), new.colors = "#5AFF00")  
+  createColumnFilter(filter.name = "TF_activity_pval", column = "pval", criterion = c(0.1,0.99), type = "nodes", predicate = "BETWEEN")
+  setNodeColorBypass(getSelectedNodes(), new.colors = "#BBBBBB")
+}
 
-HL60_Mut_IDHi_vs_no_treat_network <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-HL60.Mut.DMF`, c(10, 2, 5), HL60_Mut_IDHi_vs_no_treat$mrs_table, c(1,2,3), PPI_TF_target_Network)
-HL60_Mut_vs_HL60_WT_network  <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.None-HL60.WT.None`, c(10, 2, 5), HL60_Mut_vs_HL60_WT$mrs_table, c(1,2,3), PPI_TF_target_Network)
-MOLM14_Mut_IDHi_vs_no_treat_network <- All_workflow(Differential_Cell_lines_analysis$`MOLM14.Mut.AGI5198-MOLM14.Mut.DMF`, c(10, 2, 5), MOLM14_Mut_IDHi_vs_no_treat$mrs_table, c(1,2,3), PPI_TF_target_Network)
+df2cytos_cell_lines <- function(Aracn_network = T, Aracn_net, DEGs, TFs, PPI_network = FIsInGene_020720_with_annotations, PPI = T, Network_title, Networks_collection){
+  DEG <- Prepare_features(DEGs, c(10, 2, 5), "DEG")
+  TF <- Prepare_features(TFs, c(1, 3, 4), "TF")
+  if (PPI & Aracn_network){
+    message("Both")
+    NET <- build_network_from_aracn(PPI_network, Aracn_net)[,c(7,8,2:6,9:11)]
+  }else if(PPI){
+    message("Only PPI")
+    NET <- PPI_network
+  }else{
+    message("only TFs")
+    NET <- Aracn_net
+  }
+  iNet <- graph_from_data_frame(NET, directed = T)
+  res <- Prepare_Cytoscape_network(iNet, DEG, TF)
+  
+  NET <- igraph::as_data_frame(res$network)
+  colnames(NET)[c(1,2)] <- c("source","target")
+  colnames(res$features)[1] <- "id"
+  createNetworkFromDataFrames(edges = NET, nodes = res$features, title = Network_title, collection = Networks_collection)
+  Stylish_the_network(PPI, Aracn_network, res$features, NET, title = Network_title)
+  return(res)
+}
 
-write.csv(HL60_Mut_IDHi_vs_no_treat_network$features, "~/tmp/HL60_IDHi.tsv", quote = F)
-HL60_Mut_IDHi_vs_no_treat_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_IDHi_net.csv", quote = F)
 
-write.csv(HL60_Mut_vs_HL60_WT_network$features, "~/tmp/HL60_Mut_vs_HL60_WT_features.csv", quote = F)
-HL60_Mut_vs_HL60_WT_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_Mut_vs_HL60_WT_network.csv", quote = F)
+HL60_Mut_IDHi_vs_no_treat_only_TFs <- df2cytos_cell_lines(Aracn_network = T, 
+                                               HL60_Mut_IDHi_vs_no_treat$regulons, 
+                                               Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-HL60.Mut.None`, 
+                                               HL60_Mut_IDHi_vs_no_treat$mrs_table, 
+                                               FIsInGene_020720_with_annotations, 
+                                               F, 
+                                               "HL60_Mut_IDHi_vs_no_treat_only_TFs", 
+                                               "Cell line collection")
 
+HL60_Mut_IDHi_vs_no_treat_Only_PPI <- df2cytos_cell_lines(Aracn_network = F, 
+                                     HL60_Mut_IDHi_vs_no_treat$regulons, 
+                                     Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-HL60.Mut.None`, 
+                                     HL60_Mut_IDHi_vs_no_treat$mrs_table, 
+                                     FIsInGene_020720_with_annotations, 
+                                     T, 
+                                     "HL60_Mut_IDHi_vs_no_treat_Only_PPI", 
+                                     "Cell line collection")
 
-write.csv(MOLM14_Mut_IDHi_vs_no_treat_network$features, "~/tmp/MOLM14_Mut_IDHi_vs_no_treat_features.csv", quote = F)
-MOLM14_Mut_IDHi_vs_no_treat_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/MOLM14_Mut_IDHi_vs_no_treat_network.csv", quote = F)
+HL60_Mut_IDHi_vs_no_treat_Both_net <- df2cytos_cell_lines(Aracn_network = T, 
+                                      HL60_Mut_IDHi_vs_no_treat$regulons, 
+                                      Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-HL60.Mut.None`, 
+                                      HL60_Mut_IDHi_vs_no_treat$mrs_table, 
+                                      FIsInGene_020720_with_annotations, 
+                                      T, 
+                                      "HL60_Mut_IDHi_vs_no_treat_both_net", 
+                                      "Cell line collection")
+
+HL60_Mut_vs_HL60_WT_only_TFs <- df2cytos_cell_lines(Aracn_network = T, 
+                                         HL60_Mut_vs_HL60_WT$regulons, 
+                                         Differential_Cell_lines_analysis$`HL60.Mut.DMF-HL60.WT.None`, 
+                                         HL60_Mut_vs_HL60_WT$mrs_table, 
+                                         FIsInGene_020720_with_annotations, 
+                                         F, 
+                                         "HL60_Mut_vs_HL60_WT_only_TFs", 
+                                         "Cell line collection")
+
+HL60_Mut_vs_HL60_WT_Only_PPI <-df2cytos_cell_lines(Aracn_network = F, 
+                               HL60_Mut_vs_HL60_WT$regulons, 
+                               Differential_Cell_lines_analysis$`HL60.Mut.DMF-HL60.WT.None`, 
+                               HL60_Mut_vs_HL60_WT$mrs_table, 
+                               FIsInGene_020720_with_annotations, 
+                               T, 
+                               "HL60_Mut_vs_HL60_WT", 
+                               "Cell line collection")
+
+HL60_Mut_vs_HL60_WT_Both_net <-df2cytos_cell_lines(Aracn_network = T, 
+                               HL60_Mut_vs_HL60_WT$regulons, 
+                               Differential_Cell_lines_analysis$`HL60.Mut.DMF-HL60.WT.None`, 
+                               HL60_Mut_vs_HL60_WT$mrs_table, 
+                               FIsInGene_020720_with_annotations, 
+                               T, 
+                               "HL60_Mut_vs_HL60_WT_Both_net", 
+                               "Cell line collection")
+
+MOLM14_Mut_IDHi_vs_no_treat_only_TFs <- df2cytos_cell_lines(Aracn_network = T, 
+                                                 MOLM14_Mut_IDHi_vs_no_treat$regulons, 
+                                                 Differential_Cell_lines_analysis$`MOLM14.Mut.AGI5198-MOLM14.Mut.DMF`, 
+                                                 MOLM14_Mut_IDHi_vs_no_treat$mrs_table, 
+                                                 FIsInGene_020720_with_annotations, 
+                                                 F, 
+                                                 "MOLM14_Mut_IDHi_vs_no_treat_only_TFs", 
+                                                 "Cell line collection")
+
+MOLM14_Mut_IDHi_vs_no_treat_Only_PPI <-df2cytos_cell_lines(Aracn_network = F, 
+                                       MOLM14_Mut_IDHi_vs_no_treat$regulons, 
+                                       Differential_Cell_lines_analysis$`MOLM14.Mut.AGI5198-MOLM14.Mut.DMF`, 
+                                       MOLM14_Mut_IDHi_vs_no_treat$mrs_table, 
+                                       FIsInGene_020720_with_annotations, 
+                                       T, 
+                                       "MOLM14_Mut_IDHi_vs_no_treat_Only_PPI", 
+                                       "Cell line collection")
+
+MOLM14_Mut_IDHi_vs_no_treat_Both_net <- df2cytos_cell_lines(Aracn_network = T, 
+                                       MOLM14_Mut_IDHi_vs_no_treat$regulons, 
+                                       Differential_Cell_lines_analysis$`MOLM14.Mut.AGI5198-MOLM14.Mut.DMF`, 
+                                       MOLM14_Mut_IDHi_vs_no_treat$mrs_table, 
+                                       FIsInGene_020720_with_annotations, 
+                                       T, 
+                                       "MOLM14_Mut_IDHi_vs_no_treat_Both_net", 
+                                       "Cell line collection")
+
+HL60_Mut_IDHi_vs_Molm14_mut_IDHi_only_TFs <- df2cytos_cell_lines(Aracn_network = T, 
+                                                      HL60_Mut_IDHi_vs_Molm14_mut_IDHi$regulons, 
+                                                      Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-MOLM14.Mut.AGI5198`, 
+                                                      HL60_Mut_IDHi_vs_Molm14_mut_IDHi$mrs_table, 
+                                                      FIsInGene_020720_with_annotations, 
+                                                      F, 
+                                                      "HL60_Mut_IDHi_vs_Molm14_mut_IDHi_only_TFs", 
+                                                      "Cell line collection")
+
+HL60_Mut_IDHi_vs_Molm14_mut_IDHi_Only_PPI <-df2cytos_cell_lines(Aracn_network = F, 
+                                            HL60_Mut_IDHi_vs_Molm14_mut_IDHi$regulons, 
+                                            Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-MOLM14.Mut.AGI5198`, 
+                                            HL60_Mut_IDHi_vs_Molm14_mut_IDHi$mrs_table, 
+                                            FIsInGene_020720_with_annotations,
+                                            T, 
+                                            "HL60_Mut_IDHi_vs_Molm14_mut_IDHi_Only_PPI", 
+                                            "Cell line collection")
+
+HL60_Mut_IDHi_vs_Molm14_mut_IDHi_Both_net <-df2cytos_cell_lines(Aracn_network = T, 
+                                            HL60_Mut_IDHi_vs_Molm14_mut_IDHi$regulons, 
+                                            Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-MOLM14.Mut.AGI5198`, 
+                                            HL60_Mut_IDHi_vs_Molm14_mut_IDHi$mrs_table, 
+                                            FIsInGene_020720_with_annotations, 
+                                            T, 
+                                            "HL60_Mut_IDHi_vs_Molm14_mut_IDHi_Both_net", 
+                                            "Cell line collection")
+
+HL60_Mut_vs_Molm14_mut_only_TFs <- df2cytos_cell_lines(Aracn_network = T, 
+                                            HL60_Mut_vs_Molm14_mut$regulons, 
+                                            Differential_Cell_lines_analysis$`HL60.Mut.DMF-MOLM14.Mut.DMF`, 
+                                            HL60_Mut_vs_Molm14_mut$mrs_table, 
+                                            FIsInGene_020720_with_annotations, 
+                                            F, 
+                                            "HL60_Mut_vs_Molm14_mut_only_TFs", 
+                                            "Cell line collection")
+
+HL60_Mut_vs_Molm14_mut_Only_PPI <- df2cytos_cell_lines(Aracn_network = F, 
+                                  HL60_Mut_vs_Molm14_mut$regulons, 
+                                  Differential_Cell_lines_analysis$`HL60.Mut.DMF-MOLM14.Mut.DMF`, 
+                                  HL60_Mut_vs_Molm14_mut$mrs_table, 
+                                  FIsInGene_020720_with_annotations, 
+                                  T, 
+                                  "HL60_Mut_vs_Molm14_mut_Only_PPI", 
+                                  "Cell line collection")
+
+HL60_Mut_vs_Molm14_mut_Both_net <- df2cytos_cell_lines(Aracn_network = T, 
+                                   HL60_Mut_vs_Molm14_mut$regulons, 
+                                   Differential_Cell_lines_analysis$`HL60.Mut.DMF-MOLM14.Mut.DMF`, 
+                                   HL60_Mut_vs_Molm14_mut$mrs_table, 
+                                   FIsInGene_020720_with_annotations, 
+                                   T, 
+                                   "HL60_Mut_vs_Molm14_mut_Both_net", 
+                                   "Cell line collection")
+
 
 Do_cool_scatterplot <- function(Feature, title){
   Feature <- dplyr::filter(Feature, Eigen_centrality > 0.0005 & Page_rank != 0 & ((P.Value < 0.05 & abs(logFC) > 1.5) | pval < 0.05))
@@ -383,34 +617,5 @@ Do_cool_scatterplot <- function(Feature, title){
     scale_colour_manual(values=c("#0000FF", "#FF0000"))
 }
 
-HL60_m_vs_M14_m <- run_msviper(Transcriptomes_SYMBOL, 
-                                   regulons, use_aracne = T, 
-                                   Phenotype == "HL60.Mut.DMF", Phenotype == "MOLM14.Mut.DMF",  
-                                   "HL60_Mut", "M14_Mut", 
-                                   minsize = 4, ges.filter=T)
-
-HL60_m_agi_vs_M14_m_agi <- run_msviper(Transcriptomes_SYMBOL, 
-                                           regulons, use_aracne = T, 
-                                           Phenotype == "HL60.Mut.AGI5198", Phenotype == "MOLM14.Mut.AGI5198",  
-                                           "HL60_IDHi", "M14_IDHi", 
-                                           minsize = 4, ges.filter=T)
-
-HL60_m_vs_M14_m_network <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.DMF-MOLM14.Mut.DMF`, c(10, 2, 5),
-                                        HL60_m_vs_M14_m$mrs_table, c(1,2,3), 
-                                                  PPI_TF_target_Network)
-
-HL60_m_agi_vs_M14_m_agi_network  <- All_workflow(Differential_Cell_lines_analysis$`HL60.Mut.AGI5198-MOLM14.Mut.AGI5198`, c(10, 2, 5), 
-                                                 HL60_m_agi_vs_M14_m_agi$mrs_table, c(1,2,3), 
-                                             PPI_TF_target_Network)
-
-write.csv(HL60_m_vs_M14_m_network$features, "~/tmp/HL60_M14_IDHm_features.csv", quote = F, row.names = F)
-HL60_m_vs_M14_m_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_M14_IDHm_net.csv", quote = F, row.names = F)
-
-write.csv(HL60_m_agi_vs_M14_m_agi_network$features, "~/tmp/HL60_M14_IDHi_features.csv", quote = F, row.names = F)
-HL60_m_agi_vs_M14_m_agi_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/HL60_M14_IDHi_network.csv", quote = F)
-
-Variability_in_cell_lines <- data.frame(Variability = sapply(Transcriptomes, function(x){var(x)}),
-                                      Pheno = Phenotype)
-Variability_in_cell_lines <- dplyr::filter(Variability_in_cell_lines, Pheno %in% c("HL60.Mut.AGI5198", "HL60.Mut.DMF", "MOLM14.Mut.DMF", "MOLM14.Mut.AGI5198"))
 
 gc()

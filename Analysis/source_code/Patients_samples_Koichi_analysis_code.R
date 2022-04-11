@@ -5,11 +5,13 @@ library(viper)
 library(stringr)
 library(data.table)
 library(dplyr)
+library(RCy3)
 
 "%ni%" <- Negate("%in%")
 RNAseq_diff_gene_expression_analysis <- list()
-RNAseq <- read.csv("~/GitHub/Koichi_gene_expression_git/Koichi_gene_expression_analyses/DATA/RNAseq_parsed.csv", row.names = 1, header = T, check.names = F)
-Clinical_patient_data <- read.csv("~/GitHub/Koichi_gene_expression_git/Koichi_gene_expression_analyses/DATA/Clinical_patient_data.csv")
+RNAseq <- read.csv("~/GitHub/Koichi_gene_expression_analyses_git/Koichi_gene_expression_analyses/DATA/RNAseq_parsed.csv", row.names = 1, header = T, check.names = F)
+Clinical_patient_data <- read.csv("~/GitHub/Koichi_gene_expression_analyses_git/Koichi_gene_expression_analyses/DATA/Clinical_patient_data.csv") %>%
+  .[!duplicated(.),]
 
 
 PCA_rnaseq <- PCA(t(RNAseq))
@@ -79,7 +81,6 @@ Factor_R_OR_NR_B <- Make_factor(Clinical_patient_data,
                                 "OR",
                                 c("SD", "PD"),
                                 "NR")
-
 
 Differential_analysis <- function(Focused_variable, DATA){
   design.pairs <- function(levels) {
@@ -159,7 +160,7 @@ viper_regulons2dorothea <- function(r) {
 # Finally use it in aracne2regulon function from viper package
 dorothea2aracne2viper_regulons <- function(dorothea, exprs_m) {
   dorothea_aggregation_tf <- dorothea %>%
-    select(tf, target) %>%
+    dplyr::select(tf, target) %>%
     group_by(tf) %>%
     summarise(targets = str_c(target, collapse = ";"))
   tmp_file <- tempfile()
@@ -261,12 +262,23 @@ mrs2cytoscape <- function(mrs,full.path) {
 
 data(dorothea_hs, package = "dorothea")
 regulons = dorothea_hs %>%
-  filter(confidence %in% c("A", "B"))
+  filter(confidence %in% c("A", "B", "C"))
 
 ref_R_B <- Factor_R_OR_NR_B == "R.B"
 ref_NR_B <- Factor_R_OR_NR_B == "NR.B"
 
-R_NR_msviper <- run_msviper(RNAseq, regulons, use_aracne = T, ref_NR_B, ref_R_B,  "NR", "R", minsize = 4, ges.filter=T)
+ref_REL_POST <- Factor_R_OR_NR_B == "OR.REL" | Factor_R_OR_NR_B == "R.REL"
+
+regulonaml_msviper <- regulonaml_SYMBOL
+colnames(regulonaml_msviper) <- c("tf", "target", "mor", "likelihood")
+
+NR_R_C_confidence_msviper <- run_msviper(RNAseq, regulons, use_aracne = T, ref_R_B, ref_NR_B,  "R", "NR", minsize = 4, ges.filter=T)
+saveRDS(NR_R_C_confidence_msviper, "~/GitHub/Koichi_gene_expression_analyses_git/Koichi_gene_expression_analyses/Results/Tables/NR_R_C_confidence_msviper.rds")
+
+NR_R_AML_msviper <- run_msviper(RNAseq, regulonaml_msviper, use_aracne = T, ref_R_B, ref_NR_B,  "R", "NR", minsize = 4, ges.filter=T)
+saveRDS(NR_R_AML_msviper, "~/GitHub/Koichi_gene_expression_analyses_git/Koichi_gene_expression_analyses/Results/Tables/NR_R_AML_msviper.rds")
+REL_R_msviper <- run_msviper(RNAseq, regulons, use_aracne = T, ref_R_B, ref_REL_POST, "R", "REL", minsize = 4, ges.filter = T)
+saveRDS(REL_R_msviper, "~/GitHub/Koichi_gene_expression_analyses_git/Koichi_gene_expression_analyses/Results/Tables/REL_R_msviper.rds")
 
 Focus_on_one_gene_not_TF <- function(RNAseq, Gene, Comparison_A, Comparison_A_name, Comparison_B, Comparison_B_name, phenotype){
   df <- RNAseq[rownames(RNAseq) == Gene, phenotype %in% c(Comparison_A, Comparison_B)]
@@ -327,16 +339,16 @@ Prepare_Cytoscape_network <- function(Big_Network = igraph_PPI_TF_target_Network
   DEG_of_interest <- DEG_analysis %>% dplyr::filter(abs(logFC) > logFC_treshold & P.Value < 0.1) %>% .$Gene
   TF_of_interest <- TF_analysis %>% dplyr::filter(pval < 0.1) %>% .$Gene
 
-  V_of_interest <- V(Big_Network) %>% .[which(names(.) %in% unique(c(DEG_of_interest, TF_of_interest)))]
+  V_of_interest <- V(Big_Network) %>% .[which(names(.) %in% c(DEG_of_interest, TF_of_interest))]
 
   filtered_graph <- induced_subgraph(Big_Network, V_of_interest)
-
 
   eigen_centrality_result <- eigen_centrality(filtered_graph, directed = F)$vector
 
   page_rank_result <- igraph::page.rank(filtered_graph, directed = F)$vector
 
   features <- merge(DEG_analysis, TF_analysis, by = "Gene", all = T)
+  features <- dplyr::filter(features, (abs(logFC) > logFC_treshold & P.Value < 0.1) | (pval < 0.1))
   features <- merge(features, eigen_centrality_result, by.x = "Gene", by.y = 0, all = T)
   colnames(features)[ncol(features)] <- "Eigen_centrality"
   features <- merge(features, page_rank_result, by.x = "Gene", by.y = 0, all = T)
@@ -349,12 +361,6 @@ Prepare_Cytoscape_network <- function(Big_Network = igraph_PPI_TF_target_Network
 
   features$TF <- ifelse(features$nes == 0, F, T)
 
-  clustering_eigen <- cluster_leading_eigen(filtered_graph) %>% membership() %>% print() %>% data.frame()
-
-  features <- merge(features, clustering_eigen, by.x = "Gene", by.y = 0, all = T)
-  set(features,which(is.na(features[["."]])),".",999)
-  colnames(features)[ncol(features)] <- "Cluster"
-
   res <- list("features" = features,
               "network" = filtered_graph
   )
@@ -362,21 +368,178 @@ Prepare_Cytoscape_network <- function(Big_Network = igraph_PPI_TF_target_Network
   return(res)
 }
 
-All_workflow <- function(feature_DEG_df, column_DEG, feature_tf_df, column_TF, NET = igraph_PPI_TF_target_Network, logFC_treshold = 0.75){
+FIsInGene_020720_with_annotations <- read.csv("Documents/List_genes_from_transcriptome/FIsInGene_020720_with_annotations.tsv", sep = "\t")
+
+build_network_from_aracn <- function(PPI_net = FIsInGene_020720_with_annotations, aracn_regulon){
+  aracn_regulon$merging <- paste(aracn_regulon$tf, aracn_regulon$target, sep = ",")
+  PPI_net$merging <- paste(PPI_net$Gene1, PPI_net$Gene2, sep = ",")
+  merged <- merge(aracn_regulon, PPI_net, by = "merging", all.x = T, all.y = T)
+  merged$mor <- ifelse(is.na(merged$mor), 0, merged$mor)
+  merged$tf <- ifelse(is.na(merged$tf), "", merged$tf)
+  merged$target <- ifelse(is.na(merged$target), "", merged$target)
+  merged$state <- ifelse(is.na(merged$state), "", merged$state)
+  merged$likelihood <- ifelse(is.na(merged$likelihood), "", merged$likelihood)
+  merged
+}
+
+All_workflow <- function(feature_DEG_df, column_DEG, feature_tf_df, column_TF, Aracn_net, PPI_net = FIsInGene_020720_with_annotations, logFC_treshold = 0.75){
   DEG <- Prepare_features(feature_DEG_df, column_DEG, "DEG")
   TF <- Prepare_features(feature_tf_df, column_TF, "TF")
-  res <- Prepare_Cytoscape_network(NET, DEG, TF, logFC_treshold)
+  NET <- build_network_from_aracn(PPI_net, Aracn_net)[,c(7,8,2:6,9:11)]
+  igraph_net <- graph_from_data_frame(NET, directed = T)
+  res <- Prepare_Cytoscape_network(igraph_net, DEG, TF, logFC_treshold)
   return(res)
 }
 
-Combined_network <- read.csv("~/GitHub/Koichi_gene_expression_git/Koichi_gene_expression_analyses/Results/Tables/Combined_Networks.tsv", sep = "\t")
-PPI_TF_target_Network <- graph_from_data_frame(Combined_network, directed = T)
+Stylish_the_network <- function(PPI = T, TF = T, network_features, network_edges_features, title){
+  defaults <- list(NODE_SHAPE="diamond",
+                   NODE_SIZE=30,
+                   EDGE_TRANSPARENCY=120,
+                   NODE_LABEL_POSITION="c,c,c,0.00,0.00")
+  nodeLabels <- mapVisualProperty(visual.prop = 'node label', table.column = 'name', mapping.type = 'p')
+  createVisualStyle(title, defaults, list(nodeLabels))
+  setVisualStyle(title)
+  setNodeShapeMapping(table.column = 'TF', 
+                      table.column.values = c(T, F), 
+                      shapes = c('ELLIPSE', "RECTANGLE"), 
+                      style.name = title)
+  
+  setNodeColorMapping(table.column = 'logFC', 
+                      table.column.values = c(min(network_features$logFC), 0.0, max(network_features$logFC)), 
+                      colors = c ('#0000FF', '#FFFFFF', '#FF0000'), 
+                      style.name = title)
+  
+  setNodeFillOpacityMapping(table.column = 'P.Value', 
+                            table.column.values = c(0, 0.1, 1), 
+                            opacities = c(255, 200, 100), 
+                            style.name = title)
+  
+  setNodeSizeMapping (table.column = 'Eigen_centrality', 
+                      table.column.values = c(0, 1), 
+                      sizes = c(20, 200), 
+                      style.name = title)
+  
+  setNodeFontSizeMapping(table.column = 'Eigen_centrality', 
+                         table.column.values = c(0, 1), 
+                         sizes = c(10, 75), 
+                         style.name = title)
+  
+  if (TF){
+    setEdgeLineWidthMapping(table.column = 'mor',
+                            table.column.values = c(min(network_edges_features$mor), 0.0, max(network_edges_features$mor)),
+                            widths = c(10, 2, 10), 
+                            style.name = title)
+    
+    setEdgeColorMapping(table.column = 'mor',
+                        table.column.values = c(min(network_edges_features$mor), 0.0, max(network_edges_features$mor)),
+                        colors = c('#0000FF', "#555555", '#FF0000'), 
+                        style.name = title)
+    
+    setEdgeOpacityMapping(table.column = 'mor',
+                          table.column.values = c(min(network_edges_features$mor), 0.0, max(network_edges_features$mor)),
+                          opacities = c(255, 100, 255), 
+                          style.name = title)
+  }
+  if(PPI){
+    setEdgeTargetArrowShapeMapping(table.column = 'Direction',
+                                   table.column.values = names(table(network_edges_features$Direction)),
+                                   shapes = c('NONE', 'ARROW', 'T', 'NONE', 'ARROW', 'T', 'NONE', 'ARROW'), 
+                                   style.name = title)
+  }else{
+    createColumnFilter(filter.name = "Activation", column = "mor", criterion = 0, type = "edges", predicate = "GREATER_THAN")
+    setEdgeTargetArrowShapeBypass(getSelectedEdges(), "ARROW")
+    
+    createColumnFilter(filter.name = "Inhibition", column = "mor", criterion = 0, type = "edges", predicate = "LESS_THAN")
+    setEdgeTargetArrowShapeBypass(getSelectedEdges(), "T")
+  }
+  
+  createDegreeFilter(filter.name = "single", criterion = c(0,0))
+  getSelectedNodes()
+  deleteSelectedNodes()
+  
+  createColumnFilter(filter.name = "NES_DOWN", column = "nes", criterion = 0, type = "nodes", predicate = "LESS_THAN")
+  setNodeColorBypass(getSelectedNodes(), new.colors = "#C411FF")
+  createColumnFilter(filter.name = "NES_UP", column = "nes", criterion = 0, type = "nodes", predicate = "GREATER_THAN")
+  setNodeColorBypass(getSelectedNodes(), new.colors = "#5AFF00")  
+  createColumnFilter(filter.name = "TF_activity_pval", column = "pval", criterion = c(0.1,0.99), type = "nodes", predicate = "BETWEEN")
+  setNodeColorBypass(getSelectedNodes(), new.colors = "#BBBBBB")
+}
 
-NR_R_network <- All_workflow(RNAseq_diff_gene_expression_analysis$R_OR_NR_B$`NR.B-R.B`, c(7, 1, 4), R_NR_msviper$mrs_table, c(1,3,4), PPI_TF_target_Network)
+df2cytos <- function(Aracn_network = T, Aracn_net, DEGs, TFs, PPI_network = FIsInGene_020720_with_annotations, PPI = T, Network_title, Networks_collection){
+  DEG <- Prepare_features(DEGs, c(7, 1, 4), "DEG")
+  TF <- Prepare_features(TFs, c(1, 3, 4), "TF")
+  if (PPI & Aracn_network){
+    message("Both")
+    NET <- build_network_from_aracn(PPI_network, Aracn_net)[,c(7,8,2:6,9:11)]
+  }else if(PPI){
+    message("Only PPI")
+    NET <- PPI_network
+  }else{
+    message("only TFs")
+    NET <- Aracn_net
+  }
+  iNet <- graph_from_data_frame(NET, directed = T)
+  res <- Prepare_Cytoscape_network(iNet, DEG, TF)
+  
+  NET <- igraph::as_data_frame(res$network)
+  colnames(NET)[c(1,2)] <- c("source","target")
+  colnames(res$features)[1] <- "id"
+  createNetworkFromDataFrames(edges = NET, nodes = res$features, title = Network_title, collection = Networks_collection)
+  Stylish_the_network(PPI, Aracn_network, res$features, NET, title = Network_title)
+  return(res)
+}
 
-write.csv(NR_R_network$features, "~/tmp/NR_R_network_features.csv", quote = F)
-NR_R_network$network %>% igraph::as_data_frame() %>% write.csv("~/tmp/NR_R_network_network.csv", quote = F)
+Only_TF_NR_R_network <- df2cytos(T, 
+                                 NR_R_msviper$regulons, 
+                                 RNAseq_diff_gene_expression_analysis$R_OR_NR_B$`NR.B-R.B`, 
+                                 NR_R_msviper$mrs_table, 
+                                 PPI = F, 
+                                 Network_title = "TF network", 
+                                 Networks_collection = "NR_R_network")
 
+All_network_NR_R_network <- df2cytos(T, 
+                                 NR_R_msviper$regulons, 
+                                 RNAseq_diff_gene_expression_analysis$R_OR_NR_B$`NR.B-R.B`, 
+                                 NR_R_msviper$mrs_table, 
+                                 PPI = T, 
+                                 Network_title = "Combined network", 
+                                 Networks_collection = "NR_R_network")
+
+PPI_NR_R_network <- df2cytos(F, 
+                             NR_R_msviper$regulons, 
+                             RNAseq_diff_gene_expression_analysis$R_OR_NR_B$`NR.B-R.B`, 
+                             NR_R_msviper$mrs_table, 
+                             PPI = T, 
+                             Network_title = "PPI network", 
+                             Networks_collection = "NR_R_network")
+
+RNAseq_diff_gene_expression_analysis$R_OR_NR_B[["R.REL-R.B"]] <- RNAseq_diff_gene_expression_analysis$R_OR_NR_B$`R.B-R.REL`
+RNAseq_diff_gene_expression_analysis$R_OR_NR_B[["R.REL-R.B"]]$logFC <- - RNAseq_diff_gene_expression_analysis$R_OR_NR_B[["R.REL-R.B"]]$logFC
+saveRDS(RNAseq_diff_gene_expression_analysis, "~/GitHub/Koichi_gene_expression_analyses_git/Koichi_gene_expression_analyses/Results/Tables/RNAseq_diff_gene_expression_analysis.rds")
+
+Only_TF_REL_R_network <- df2cytos(T, 
+                                 REL_R_msviper$regulons, 
+                                 RNAseq_diff_gene_expression_analysis$R_OR_NR_B$`R.REL-R.B`, 
+                                 REL_R_msviper$mrs_table, 
+                                 PPI = F, 
+                                 Network_title = "TF network", 
+                                 Networks_collection = "REL_R_network")
+
+All_network_REL_R_network <- df2cytos(T, 
+                                     REL_R_msviper$regulons, 
+                                     RNAseq_diff_gene_expression_analysis$R_OR_NR_B$`R.REL-R.B`, 
+                                     REL_R_msviper$mrs_table, 
+                                     PPI = T, 
+                                     Network_title = "Combined network", 
+                                     Networks_collection = "REL_R_network")
+
+PPI_REL_R_network <- df2cytos(F, 
+                             REL_R_msviper$regulons, 
+                             RNAseq_diff_gene_expression_analysis$R_OR_NR_B$`R.REL-R.B`, 
+                             REL_R_msviper$mrs_table, 
+                             PPI = T, 
+                             Network_title = "PPI network", 
+                             Networks_collection = "REL_R_network")
 
 Do_cool_scatterplot <- function(Feature, title){
   Feature <- dplyr::filter(Feature, Eigen_centrality > 0.0005 & Page_rank != 0 & ((P.Value < 0.05 & abs(logFC) > 1.5) | pval < 0.05))
@@ -401,71 +564,5 @@ Do_cool_scatterplot_Ver <- function(Feature, title){
     ylab("Eigen Centrality (log)")+
     scale_colour_manual(values=c("#0000FF", "#FF0000"))
 }
-
-Variability_in_Patients <- data.frame(Variability = sapply(RNAseq, function(x){var(x)}),
-                                      Pheno = Factor_R_OR_NR_B)
-
-
-
-library("locfit")
-getEV <- function(x, cutoff=NULL, plot=FALSE, ...) {
-  if (!is.matrix(x) || !is.numeric(x)) {
-    stop("argument 'x' must be a numeric matrix")
-  }
-  if (!is.null(cutoff)) {
-    if (!is.numeric(cutoff)) {
-      stop("argument 'cutoff' must be numeric")
-    }
-    x[x<cutoff] <- NA
-  }
-  mns <- rowMeans(x, na.rm=TRUE)
-  sds <- matrixStats::rowSds(x, na.rm=TRUE)
-  drop <- is.na(sds) & is.na(mns)
-  mns <- mns[!drop]
-  sds <- sds[!drop]
-  fit <- locfit(sds^2 ~ lp(mns), family="gamma", maxk =500)
-  expSd <- sqrt(predict(fit, mns))
-  ev <- rep(NA, nrow(x))
-  ev[!drop] <- log2(sds) - log2(expSd)
-  if (plot) {
-    smoothScatter(mns, sds, xlab="mean expression", ylab="std. dev. expression", ...)
-    f1 <- function(x) sqrt(predict(fit,x))
-    curve(f1, from=min(mns), to=max(mns), col="red", add=TRUE)
-  }
-  ev
-}
-
-Raw_count <- read.csv("GitHub/Koichi_gene_expression_git/Koichi_gene_expression_analyses/DATA/GSE153348_IDH_RNA_Seq_matrix_submission.txt", sep = "\t", check.names = F) %>% t() %>% as.matrix()
-
-
-test <- getEV(x = Raw_count, plot = T)
-
-
-
-#
-# #We need the expression values in a matrix
-# nlc=read.table("/Volumes/Maxtor_Fla/CRCT/MicroArrays/Vera_table/CLL_Genes_Expression_Table.txt",header = T)[,c(1,13:31)]
-# rownames(nlc)=nlc[,1]
-# nlc=as.matrix(nlc[,2:ncol(nlc)])
-# tmp <- getEV(nlc)
-# nlc=as.data.frame(nlc)
-# nlc$ev_nlc <- tmp
-# mono <- as.matrix(exprs_mono)
-# neut <- as.matrix(exprs_neut)
-# tcel <- as.matrix(exprs_tcel)
-# #We need all groups (here, three) in one matrix so that EVs are comparable across them
-# #Create unique rownames to be able to bind rows
-# rownames(mono) <- paste("mono", rownames(mono), sep="_")
-# rownames(neut) <- paste("neut", rownames(neut), sep="_")
-# rownames(tcel) <- paste("tcel", rownames(tcel), sep="_")
-# #Create one big matrix containing all data, EV will be calculated per row
-# exprs_joined <- rbind(mono, rbind(neut, tcel))
-# #Calculate EV using the above defined function
-# tmp <- getEV(exprs_joined)
-# #Now separate the results again into the three groups we had initially
-# result$ev_mono <- tmp[1:(dim(exprs_joined)[1]/3)]
-# result$ev_neut <- tmp[((dim(exprs_joined)[1]/3)+1):((dim(exprs_joined)[1]/3)*2)]
-# result$ev_tcel <- tmp[(((dim(exprs_joined)[1]/3)*2)+1):dim(exprs_joined)[1]]
-
 
 gc()

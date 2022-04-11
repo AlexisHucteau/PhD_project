@@ -1,6 +1,7 @@
 # Points meeting
 
 * [09.03.2022 Post CDT](#week-10)
+* [23.03.2022 PFR](#week-12)
 
 ## 09.03.2022 Post CDT {#week-10}
 
@@ -25,7 +26,27 @@ Différents points abordés :
 * AGIOS peut fournir data
 * Regarder signature TF Response IDHi dans autre data (high vs low arac etc.)
 * Présentation mécanismes resitance IDHi
-* Futur post docorat / 3/4ème année de thèse?
+* Futur post doctorat / 3/4ème année de thèse?
 * Patient de Toulouse
   * Traitement IDHi ou non quand info mutation
   * Tester retrouver groupe réponse IDHi etc.
+
+## 23.03.2022 PFR {#week-12}
+
+* Make Network
+  * Pchic only
+  * PPI only
+  * aracn only
+  * regulonaml
+
+* Look at pchic aml
+* ChIPseq IDHm/IDHwt AML from AGIOS --> Not for the moment
+* Eric Salamé ATAC-seq
+* Look at Cut-n-run
+* BP Steven Watt
+* BCAT1
+* RECON3D
+* Où faire ATACseq
+* Randomizer les réseaux
+* Protocoles méthylomes et ATACseq
+* Senith

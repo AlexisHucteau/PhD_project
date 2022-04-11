@@ -125,7 +125,7 @@ ggplot(Variability_in_Patients_Verhaak, aes(x= Pheno, y = Variability, fill = Ph
 ## NR vs R IDHi {#tf-koichi}
 
 ```{r TF mviper plots}
-plot(R_NR_msviper$mrs)
+plot(NR_R_msviper$mrs)
 ```
 
 
@@ -189,3 +189,5 @@ Make_gene_expr_boxplots(Verhaak_norm_data_SYMBOL, "MYC", "High_OS", "High_OS", "
 ## High OS vs Low OS {#network-os}
 
 ![High OS vs Low OS](../Pictures/High_low_OS.png)
+
+

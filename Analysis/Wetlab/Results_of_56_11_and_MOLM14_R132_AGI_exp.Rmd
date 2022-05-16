@@ -21,6 +21,10 @@ Diff_facs_analysis <- read.csv("Data/Diff_AGI.csv")
 Rhod2_facs_analysis <- read.csv("Data/Rhod2_AGI.csv")
 PpIX_facs_analysis <- read.csv("Data/PpIX_AGI_ALA_Basal.csv")
 Scenith_analysis <- read.csv("Data/Scenith.csv")
+
+Diff_facs_analysis_15_03 <- read.csv("Data/Diff_AGI_15_03.csv", sep = "\t")
+colnames(Diff_facs_analysis_15_03) <- c("Sample", "Cell.line", "Treatment", "GFP", "CD15_APC", "CD38_PC7", "Rhod2")
+Diff_facs_analysis_04_05 <- read.csv("Data/Diff_AGI_04_05.csv", sep = "\t")
 ```
 
 # Summary
@@ -139,11 +143,16 @@ ggplot(data=Diff_facs_analysis[c(1:4),], aes(x=Cell.line, y=CD15_APC_A, color=fa
   theme_minimal()
 ```
 
+```{r}
+p <- ggplot(Diff_facs_analysis_15_03, aes(x = Cell.line, y = CD15_APC, color = factor(Treatment, levels = c("DMSO", "AGI")))) +
+  geom_jitter() +
+  labs(color = "Treatment", title = "CD15", x = "Cell lines")
+p
+```
 
 
 # Replicat 2 {#replicat-2}
 
 ```{r}
-Replicat2 <- read.csv("")
 ```
 

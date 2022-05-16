@@ -10,7 +10,7 @@
   * CD15 APC (~ 15µL)
   * CD38 PC7 (~ 12µL)
   * Rhod2 (~ 7µL)
-  * AnnexinV - BV421 (~ 2µL)
+  * Annexin V - BV421 (~ 2µL)
 * Billes de compensation
 * Flasques cells
 
@@ -74,7 +74,7 @@ Mix marqueurs :
  * HBSS : 500µL
 
 I - Préparation des tubes :
-  * Récupérer 250µL de Cell par tube
+  * Récupérer 200µL de Cell par tube
   * centri 1200 RPM 4 minutes
   * lavage avec 2mL de HBSS
   * 100µL de mix

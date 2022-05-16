@@ -190,4 +190,19 @@ Make_gene_expr_boxplots(Verhaak_norm_data_SYMBOL, "MYC", "High_OS", "High_OS", "
 
 ![High OS vs Low OS](../Pictures/High_low_OS.png)
 
+```{r}
+png("./ASNS expression Response to IDHi.png")
+Make_gene_expr_boxplots(RNAseq, "ASNS", "NR.B", "Bad responder", "R.B", "Good responder", Factor_R_OR_NR_B)
+dev.off()
+```
+
+
+
+```{r}
+Pheno_chas <- lapply(levels(Factor_R_OR_NR_B), function(pheno){
+  ref <- Factor_R_OR_NR_B == pheno
+  chas_for_selected_pheno(pheno = ref, title = pheno, cells = all_cell_lines)
+})
+names(Pheno_chas) <- levels(Factor_R_OR_NR_B)
+```
 

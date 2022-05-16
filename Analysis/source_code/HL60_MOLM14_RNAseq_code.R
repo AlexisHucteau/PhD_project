@@ -15,8 +15,8 @@ library(RCy3)
 Annotations <- data.frame(ACCNUM = sapply(contents(hugene20sttranscriptclusterACCNUM), paste, collapse = ", "), 
                           SYMBOL = sapply(contents(hugene20sttranscriptclusterSYMBOL), paste, collapse = ", "), 
                           DESC = sapply(contents(hugene20sttranscriptclusterGENENAME), paste, collapse = ", "))
-SDRF <- read.csv("~/GitHub/Epigenomic_integration/Epigenomic_integration/DATA_RNAseq_Lucille/Samplesheet.sdrf.csv")
-celFiles <- list.celfiles("~/GitHub/Epigenomic_integration/Epigenomic_integration/DATA_RNAseq_Lucille", full.names = T)
+SDRF <- read.csv("~/GitHub/Epigenomic_integration/DATA_RNAseq_Lucille/Samplesheet.sdrf.csv")
+celFiles <- list.celfiles("~/GitHub/Epigenomic_integration/DATA_RNAseq_Lucille", full.names = T)
 Transcriptomes <- read.celfiles(celFiles) %>% rma() %>% oligo::exprs() %>% as.matrix()
 Transcriptomes <- merge(Annotations, Transcriptomes, by.x = 0, by.y = 0, all.y = T)
 Transcriptomes <- tibble::column_to_rownames(Transcriptomes, var = "Row.names")

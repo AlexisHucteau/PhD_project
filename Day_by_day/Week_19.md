@@ -14,7 +14,7 @@
 
 ## **Chromatine**
 
-Démarche : L'assortativité est une propriété des réseaux utilisée dans les sciences sociales pour identifier les facteurs expliquand comment les gens établissent des liens sociaux entre eux.
+Démarche : L'assortativité est une propriété des réseaux utilisée dans les sciences sociales pour identifier les facteurs expliquant comment les gens établissent des liens sociaux entre eux.
 
 En d'autres termes elle permet de mesurer si des nœuds dans un réseau partagent les mêmes propriétés. Elle reflète le fait que des noeuds interconnectés ont tendance à partager les mêmes propriétés.
 

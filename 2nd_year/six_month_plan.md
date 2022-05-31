@@ -1,41 +1,74 @@
-# 6 month plan
+# Plan sur 6 mois
 
-## Individual Network part
+* Collaborations
+  * Papier Déconvolution ?
+  * Papier Lucille ?
+  * Papier Margherita/RNA splicing ?
 
-### Gene regulatory Network
 
-1. Find GRN algorithm
-2. Test them
-3. Compare results
-4. Choose the best one
-5. Do TF activity analysis.
+# Projet de thèse
+* **Supervision** : Faire des réunions toutes les deux semaines en gardant la flexibilité de communiquer en direct ou par email
+* **Objectif** : créer un multiplex network de la réponse aux IDHi
+* **Plan pour les 6 prochains mois**
 
-### Chromatin structure Network
+## I. Gene regulatory network  
+* Travailler sur les algorithmes de gene regulatory network  
+* Les comparer en utilisant notamment la prédiction de l'activité des TFs.
+  * + Analyses de réseau (Eigenvalue, Pagerank etc.)
 
-1. Investigate on the chas depending on cell line
-2. Define which cell line pchic network is the best to fit the patients data
-3. Maybe cluster patients based on cell line best chas.
-4. Add CD34+ pchic network (Make it with chicago algorithm if needed)
+## II. Réseau 3D de chromatine
+* Générer le réseau de chromatine des données CD34+ avec l'algo chicago. (Les data sont en cours de téléchargement).
+* Continuer mes analyses d'assortativité de la chromatine pour définir quel réseau de chromatine utiliser pour mes analyses (un réseau par groupe de patient).
+  * Selon les résultats, faire des analyses non supervisées en formant des groupes de patients en fonction des résultats d'assortativité/score leukemia stemness.
+* Faire des réseaux avec la méthylation en feature et des réseaux avec l'expression des gènes + activité TF en feature.
+  * + Analyses de réseau (Eigenvalue, Pagerank etc.)
 
-### Metabolism Network
+## III. Réseau réactions métaboliques
+* Prédire l'état des réactions sur le jeu de données d'expressions génique (en cours)
+* Calculer les réactions significativement différentes entre les différents groupes de patients.
+  * Selon les résultats, faire des analyses non supervisées en formant des groupes de patients en fonction des profiles de réaction (les comparer avec des analyses de clustering d'expression de gène brute)
+* Faire un réseau de ces réactions en ne gardant que celles différemment actives
+  * + Analyses de réseau (Eigenvalue, Pagerank etc.)
 
-1. Run COMPASS (Nathaniel part)
-2. t.test on reactions
-3. Maybe clustering reaction data
-4. Compare to GE clustering
-5. Make RECON3D network with igraph
-6. Filter for enriched reactions
+## IV. Open chromatin access
+* Analyser les ATAC-seq
+* Tester l'assortativité et voir si ça se rapproche avec les résultats d'assortativité de l'expression des gènes et de la méthylation des données de lignées cellulaires
+* Affiner le Gene regulatory network au niveau des TFs
 
-### PPI Network
+## V. Multiplex Network Analysis
+* Faire la biblio des analyses de multiplex possible
+* Analyser le / les différents multiplex
 
-1. Find another filtering method or just TF and Gene based on Gene expression and TF activity
+# In vitro
 
-### ATAC-seq Network
+## Mai/juin 2022
+* Summary all biological data and define additional in vitro experiments (ATACseq, proteomics, CYTOF with IDH cell lines +/-IDHi treatment)
 
-1. Analyse ATAC-seq data
-2. Make pchic of Open chromatin
+* Poster pour Jobim
 
-## Multiplex Network Analysis
+* Identifier tous les IDH mutants avec les kmer dans beataml, Verhaak, TCGA : approches nathaniel et GSEA sur les stem cells ?
+* Etudier le papier de John Dick sur les stem cell et voir comment construire cet aspects dans les IDHmut versus wt et boucler avec le papier de Koichi Nature Comm
+* MYC-STAT1-3-RELA : Correlation avec LSC17 score ?
+* Lister tous les databases DNA methylome de patients LAM IDHmt et mutant : TCGA, Koichi, Figueroa
+* deconvolution: blastes versus normales ?
 
-1. Talk to Kaustav
-2. Make Multiplex Network analysis
+## Juillet/Aout 2022
+* Travailler sur nos data RNAseq de nos 200 patients avec données IDH
+* Les TF en commun et différents entres les différents algo/models testés par Alexis
+* Analysis cell type trajectory/psuedotime en methylation with prediction to IDHi response?
+
+## Septembre/Octobre 2022
+* Faire les figures rassemblant toutes les data (in silico et biological) en format article
+* puis les légendes
+* puis travailler sur les take-home messages à mettre en avant !
+* définir le journal
+
+## Novembre 2022 
+* Comité de thèse à planifier
+
+# Question/partie bio pour le papier à réfléchir
+* validation epitranscriptomics coupled to CYTOF avec Lucille et Montpellier
+* cell line regulatory network; est ce que nous faisons un ATACseq et methylome ?
+* Definition de la leukemic stem cell des IDH mutants (lien avec le papier de Koichi et Dick)
+* TET2/vitC: stem cell (lien avec le papier de Koichi et possible approche therapeutique et validation in vivo du papier d’alexis)
+* epigenetic drives metabolic/catabolic flexibility: challenges galactose, glutamine starvation (lien avec nouveau papier Lucille sur la catabolic flexibility)

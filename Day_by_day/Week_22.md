@@ -20,6 +20,7 @@
 # In biblio
 * [ ] Lire "A cellular hierarchy framework for understanding heterogeneity and predicting drug response in AML"
 * [ ] Lire le papier sur les différents algo de GRN
+* [ ] Regarder la conf de Andrea Reu
 
 # Lundi 30 mai
 
@@ -41,6 +42,7 @@
 ## Aprèm
 
 * [ ] Lire "A cellular hierarchy framework for understanding heterogeneity and predicting drug response in AML"
+* [ ] Regarder la conf de Andrea Reu
 
 # Mercredi 01 juin
 

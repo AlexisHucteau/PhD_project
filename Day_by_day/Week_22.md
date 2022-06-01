@@ -18,7 +18,7 @@
 * [ ] Faire le résumé des résultats in vitro et définir les expérimentations in vitro futures (ATACseq, protéomique, CYTOF avec des lignées IDH +/- mIDHi)
 
 # In biblio
-* [ ] Lire "A cellular hierarchy framework for understanding heterogeneity and predicting drug response in AML"
+* [x] Lire "A cellular hierarchy framework for understanding heterogeneity and predicting drug response in AML"
 * [ ] Lire le papier sur les différents algo de GRN
 * [ ] Regarder la conf de Andrea Reu
 
@@ -37,11 +37,11 @@
 
 ## Matin
 
-* [ ] Faire le résumé des résultats in vitro
+* [x] Faire le résumé des résultats in vitro
 
 ## Aprèm
 
-* [ ] Lire "A cellular hierarchy framework for understanding heterogeneity and predicting drug response in AML"
+* [x] Lire "A cellular hierarchy framework for understanding heterogeneity and predicting drug response in AML"
 * [ ] Regarder la conf de Andrea Reu
 
 # Mercredi 01 juin
@@ -49,7 +49,7 @@
 ## Matin
 
 * [ ] Travailler sur les algorithmes de gene regulatory network
-* [ ] Réunion ATAC-seq
+* [x] Réunion ATAC-seq
 
 ## Aprèm
 

@@ -12,7 +12,7 @@
 # In vitro
 
 * [x] Manip ATAC-seq
-* [1/3] Passage
+* [3/3] Passage
 
 ## Mai/juin 2022
 * [ ] Faire le résumé des résultats in vitro et définir les expérimentations in vitro futures (ATACseq, protéomique, CYTOF avec des lignées IDH +/- mIDHi)

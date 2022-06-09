@@ -6,7 +6,9 @@
 
 ## Margherita Project
 
-* [ ] Look at Manuel DIAZ-MUNOZ mail
+* [x] Look at Manuel DIAZ-MUNOZ mail
+* [ ] Find overlaps iClip and rMATS
+* [ ] find BAM files
 
 ## I. Gene regulatory network
 
@@ -33,6 +35,16 @@
 * [ ] Lire le papier sur les différents algo de GRN
 * [ ] Regarder la conf de Andrea Reu
 
+## Réflexions
+
+* convertir les gènes ENSEMBL Human-GEM -> Hgcn gene names
+* Faire un réseau en connectant les réactions via leurs métabolites communs
+* Ou faire un réseau en utilisant CopraPy
+
+## In Progress
+
+* FlankingXlinks2AS.rmd
+
 # Mardi 07 juin
 
 ## Matin
@@ -40,19 +52,13 @@
 * [x] Compass Meeting
 * [x] Planifier la semaine
 * [x] Mails
-* [ ] Look at Human GEM
+* [x] Look at Human GEM
 
 ## Aprem
 
-* [ ] L1/L2 Nettoyage
+* [x] L1/L2 Nettoyage
 * [ ] Look at Manuel DIAZ-MUNOZ mail
 
-## DONE
-
-* Compass Meeting
-* Réflexion : convertir les gènes ENSEMBL Human-GEM -> Hgcn gene names
-* Faire un réseau en connectant les réactions via leurs métabolites communs
-* Ou faire un réseau en utilisant CopraPy
 
 # Mercredi 08 juin
 

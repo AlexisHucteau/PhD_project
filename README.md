@@ -42,6 +42,7 @@ Notes about cell lines like HL60 and MOLM14 specificities
 * [**<span style="color:blue">Methylation analysis on Koichi's cohort Patient sample + CD34+ samples</span>**](https://alexishucteau.github.io/Koichi_Methylation_analysis/)
 * [**<span style="color:blue">RNA splicing analysis</span>**](./Analysis/In_silico/Splicing_Project/Splicing_analysis)
 * [**<span style="color:blue">Notes on sequencing</span>**](./Analysis/In_silico/Sequencing)
+* [**<span style="color:blue">Side projects</span>**](./Analysis/Side_project/Main)
 
 ### In vitro analysis {#vitro}
 

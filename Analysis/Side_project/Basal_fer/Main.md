@@ -42,6 +42,7 @@ Transcripto:
 * TFR2[^8] présent
 * TRF2 non régulé par les IRP --> moins d'affinité pour le fer que TRF1. EPO permet stabilité de TRF2 à la membrane.
 
+
 [^1]: Ferritine mitochondriale
 [^2]: mitoferrin 1
 [^3]: aminolevulinic acid synthase 2

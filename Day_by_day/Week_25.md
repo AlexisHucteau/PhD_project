@@ -53,3 +53,4 @@
 * [x] Début de poster
   * [x] Sommaire
   * [x] Introduction
+  * [x] Materials and Methods

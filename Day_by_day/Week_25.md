@@ -7,7 +7,7 @@
 ## Margherita Project
 
 * [x] Find overlaps iClip and rMATS
-* [x] Re-run rMATS pipeline
+  * [ ] Re-analysis of the rMATS data
 * [ ] find BAM files
 * [ ] Gene expression PCA on Molm14
 * [ ] DEG on Molm14 / sh 1
@@ -23,10 +23,15 @@
 * [x] Reconstruct Metabolic network
 * [x] Redo Metabolic reaction analysis
 
+## Presentation
+
+* [ ] Faire le poster pour JOBIM pour le 22.06
+  * [ ] Faire un plan du poster
+  * [ ] Faire les réseaux / Multiplex
+
 # In vitro
 
-* [1/3] Passage
-* [x] ATAC-seq experiment second test observation
+* [1/3] Passage + traitement
 
 ## Mai/juin 2022
 
@@ -34,8 +39,17 @@
 * [ ] Faire le résumé des résultats in silico (network etc.)
 * [ ] Identifier tous les IDH mutants avec les kmer dans beataml, Verhaak, TCGA : approches nathaniel et GSEA sur les stem cells ?
 
-
 # In biblio
 
 * [ ] Lire le papier sur les différents algo de GRN
 * [ ] Regarder la conf de Andrea Reu
+
+## DONE
+
+* [x] Reconstruct Metabolic network
+* [x] Redo Metabolic reaction analysis
+* [x] Importation et mise en forme cytoscape des réseaux métaboliques
+* [x] Analyses des nouveaux résultats rMATS (à repousser pour faire le poster)
+* [x] Début de poster
+  * [x] Sommaire
+  * [x] Introduction

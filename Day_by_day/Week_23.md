@@ -18,12 +18,12 @@
 
 ## III. Réseau réactions métaboliques
 
-* [ ] Look at CobraPy to reconstruct Network
+* [ ] Reconstruct Metabolic network
+* [ ] Redo Metabolic reaction analysis
 
 # In vitro
 
-* [ ] Passage
-* [ ] ATAC-seq experiment second test observation
+* [x] Passage
 
 ## Mai/juin 2022
 
@@ -37,59 +37,23 @@
 
 ## Réflexions
 
-* convertir les gènes ENSEMBL Human-GEM -> Hgcn gene names
-* Faire un réseau en connectant les réactions via leurs métabolites communs
-* Ou faire un réseau en utilisant CopraPy
+* [x] Convertir les gènes ENSEMBL Human-GEM -> Hgcn gene names
+* [x] Faire un réseau en connectant les réactions via leurs métabolites communs
+* [!x] Ou faire un réseau en utilisant CopraPy
 
 ## In Progress
 
 * FlankingXlinks2AS.rmd
 
-# Mardi 07 juin
-
-## Matin
-
 * [x] Compass Meeting
 * [x] Planifier la semaine
 * [x] Mails
 * [x] Look at Human GEM
-
-## Aprem
-
 * [x] L1/L2 Nettoyage
-* [ ] Look at Manuel DIAZ-MUNOZ mail
-
-
-# Mercredi 08 juin
-
-## Matin
-
-* [ ] Look at Human GEM
-* [ ] Meeting RNAseq Margherita
-
-## Aprem
-
-* [ ] Faire le résumé des résultats in silico (network etc.)
-* [ ] Définir les expérimentations in vitro futures (ATACseq, protéomique, CYTOF avec des lignées IDH +/- mIDHi)
-
-# Jeudi 09 juin
-
-## Matin
-
+* [x] Look at Manuel DIAZ-MUNOZ mail
+* [x] Look at Human GEM
+* [x] Meeting RNAseq Margherita
 * [ ] Lire le papier sur les différents algo de GRN
-* [ ] Meeting
-
-## Aprem
-
-* [ ] Meeting
 * [ ] Tester algo GRN
-
-# Vendredi
-
-## Matin
-
-* [ ] Look at CobraPy
-
-## Aprem
-
-* [ ] Work on iClip project
+* [x] Look at CobraPy
+* [x] Work on iClip project

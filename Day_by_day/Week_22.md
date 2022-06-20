@@ -22,51 +22,17 @@
 * [ ] Lire le papier sur les différents algo de GRN
 * [ ] Regarder la conf de Andrea Reu
 
-# Lundi 30 mai
-
-## Matin
+To do
 
 * [x] Planning de la semaine
 * [x] Lecture du proto ATAC-seq
-
-## Aprèm
-
 * [x] Exp ATAC-seq
-
-# Mardi 31 mai
-
-## Matin
-
 * [x] Faire le résumé des résultats in vitro
-
-## Aprèm
-
 * [x] Lire "A cellular hierarchy framework for understanding heterogeneity and predicting drug response in AML"
 * [ ] Regarder la conf de Andrea Reu
-
-# Mercredi 01 juin
-
-## Matin
-
 * [ ] Travailler sur les algorithmes de gene regulatory network
 * [x] Réunion ATAC-seq
-
-## Aprèm
-
 * [ ] Travailler sur les algorithmes de gene regulatory network
-
-# Jeudi 02 juin
-
-* [ ] Meeting
+* [x] Meeting
 * [ ] Définir les expérimentations in vitro futures
-
-# Vendredi 03 juin
-
-## Matin
-
-* [ ] Travailler sur les algorithmes de gene regulatory network
-
-## Aprèm
-
-* [ ] Planifier semaine suivante
 * [ ] Définir les expérimentations in vitro futures

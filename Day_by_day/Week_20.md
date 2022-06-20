@@ -16,7 +16,7 @@
 ## **JOBIM**
 
 * Finish abstract JOBIM
-*
+
 
 ## **Bioinfo IRIT**
 

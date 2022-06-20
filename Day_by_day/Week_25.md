@@ -1,4 +1,4 @@
-# Week 24 13.06.2022 - 17.06.2022
+# Week 25 20.06.2022 - 24.06.2022
 
 # To-do
 
@@ -7,7 +7,7 @@
 ## Margherita Project
 
 * [x] Find overlaps iClip and rMATS
-  * [ ] Re-analysis of the rMATS data
+  * [x] Re-analysis of the rMATS data
 * [ ] find BAM files
 * [ ] Gene expression PCA on Molm14
 * [ ] DEG on Molm14 / sh 1

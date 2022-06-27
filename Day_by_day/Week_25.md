@@ -44,6 +44,27 @@
 * [ ] Lire le papier sur les différents algo de GRN
 * [ ] Regarder la conf de Andrea Reu
 
+## IN PROGRESS
+
+
+* [ ] Make Adjacency matrices
+  * [ ] Metabolic reaction layer
+  * [ ] Gene reaction layer
+  * [ ] PPI layer
+  * [ ] Chromatin contact layer
+  * [ ] GRN layer
+* [ ] Make the 7 adjacency matrix of the coupling layers
+  * [0/7]
+* [ ] Making a supra-adjacency matrix for the multilayer
+
+| Layer A | Layer B | Layer C | Layer D | Layer E |
+|---|---|---|---|---|
+| Chromatin contact | | | | X |  
+| | Gene regulatory network | | | X |  
+| | | PPI | | X |
+| | | | Gene - reaction | |
+|x|x|x| | Metabolic network |
+
 ## DONE
 
 * [x] Reconstruct Metabolic network
@@ -54,3 +75,4 @@
   * [x] Sommaire
   * [x] Introduction
   * [x] Materials and Methods
+*

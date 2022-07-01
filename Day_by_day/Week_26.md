@@ -1,19 +1,33 @@
 # Week 26 27.06.2022 - 01.07.2022
 
+# **Lab info park**
+
+* [ ] Faire le tour des besoins en matériels info
+* [ ] Faire un overview des capacité de chaque PC
+
+# **POSTER**
+
+* [x] Find metabolic figure for summary
+* [x] Find a higher resolution data sample figure
+* [x] Look at M&M Pchic
+* [x] Redo figure network (high res)
+
+use network methods to identify the most suitable chromatin 3D structure to map the epigenomic data
 
 # **Margherita Project**
 
 * [ ] Make introns Genomic Ranges
 * [ ] Overlap iCLIP w/ introns & exons
 * [ ] Overlap iCLIP w/ AS
-* [ ] find BAM files
-* [ ] Gene expression PCA on Molm14
-* [ ] DEG on Molm14 / sh 1
+* [x] Gene expression PCA on Molm14
+* [x] DEG on Molm14 / sh 1
+* [x] AS Rmats on M14 vs MV4-11
+* [x] GE for each cell lines
 
 # Mai/juin 2022
 
 * [ ] Définir les expérimentations in vitro futures (ATACseq, protéomique, CYTOF avec des lignées IDH +/- mIDHi)
-* [ ] Faire le résumé des résultats in silico (network etc.)
+* [x] Faire le résumé des résultats in silico (network etc.)
 * [ ] Identifier tous les IDH mutants avec les kmer dans beataml, Verhaak, TCGA : approches nathaniel et GSEA sur les stem cells ?
 
 # In biblio
@@ -47,4 +61,13 @@
 
 # **DONE**
 
-* [x] 
+* [x] Reduce Metabolic network size
+* [x] Make modifications on Poster
+* [x] Find metabolic figure for summary
+* [x] Find a higher resolution data sample figure
+* [x] Look at M&M Pchic
+* [x] Redo figure network (high res)
+* [x] Gene expression PCA on Molm14
+* [x] DEG on Molm14 / sh 1
+* [x] AS Rmats on M14 vs MV4-11
+* [x] GE for each cell lines

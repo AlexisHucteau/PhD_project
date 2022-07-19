@@ -1,5 +1,7 @@
 # Jour par Jour organisation
 
+[**Short Term Plan**](./Short_term_plan)
+
 * [Week 13](./Week_13)
 * [Week 18](./Week_18)
 * [Week 19](./Week_19)

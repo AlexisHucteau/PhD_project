@@ -27,3 +27,5 @@
 * Commencer à faire un résumé des analyses des datas sur overleaf
 
 # **DONE**
+
+* [x] Prepare Group meeting Presentation

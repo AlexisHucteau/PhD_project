@@ -6,6 +6,7 @@ library(stringr)
 library(data.table)
 library(dplyr)
 library(RCy3)
+library(factoextra)
 
 "%ni%" <- Negate("%in%")
 RNAseq_diff_gene_expression_analysis <- list()
@@ -14,7 +15,14 @@ Clinical_patient_data <- read.csv("~/GitHub/Koichi_gene_expression_analyses_git/
   .[!duplicated(.),]
 
 
-PCA_rnaseq <- PCA(t(RNAseq))
+res.pca <- prcomp(t(RNAseq[Factor_R_OR_NR_B=="NR.B" | Factor_R_OR_NR_B=="R.B" | Factor_R_OR_NR_B=="R.REL"]))
+
+p <- fviz_pca_ind(res.pca, label="none", habillage=Factor_R_OR_NR_B[Factor_R_OR_NR_B=="NR.B" | Factor_R_OR_NR_B=="R.B" | Factor_R_OR_NR_B=="R.REL"],
+                               addEllipses=F, ellipse.level=0.95)
+p <- p + ggtitle("PCA gene expression")
+png("GitHub/Multiplex_DNAmet_PPI_Chrom_Coexp/Results/GRN/PCA.png")
+print(p)
+dev.off()
 
 Make_factor <- function(Samplesheet = Clinical_patient_data,
                         Samples_names,
